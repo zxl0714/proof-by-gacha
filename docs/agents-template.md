@@ -25,11 +25,19 @@ Read `PROBLEM.md` and `state.json` first. On continue, consult existing
 record your own route before reading prior research. Leave the problem
 statement and Gacha's settings, metadata, and logs to their owners.
 
-When Jacobian is available, use `math.find` before writing a solver for a
-nontrivial mathematical subproblem. Prefer `math.run` when an operation fits
-the assumptions and required guarantees. Use custom code for unsupported
-operations or independent checks. Save any computational evidence with its
-inputs and explain how it supports the proof.
+When Jacobian is available, use `math.find` to discover relevant operations.
+Prefer `math.run` when the operation fits the problem, guarantees, and scale.
+
+If a tool hits a fixed resource limit, repeatedly returns `UNKNOWN`, or
+lacks a required capability, record the obstacle and look for a better tool. Check what is
+installed and consult official documentation or research papers. For a long
+exact search, consider a local solver that can save proof certificates. Test
+the alternative on a small known case before scaling. Use custom code for
+unsupported methods or independent checks.
+
+Save the tool version, inputs, commands, results, and witness or certificate
+when available. Explain what the evidence establishes and how to verify it
+independently. Record timeouts and exhausted budgets as `UNKNOWN`.
 
 ## Phase changes
 
