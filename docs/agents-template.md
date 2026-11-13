@@ -39,6 +39,10 @@ Save the tool version, inputs, commands, results, and witness or certificate
 when available. Explain what the evidence establishes and how to verify it
 independently. Record timeouts and exhausted budgets as `UNKNOWN`.
 
+Run a short trial before committing to a long computation. If a search is
+worth pursuing, run it in the background with its own time limit, which may
+be two or three hours, and continue exploring other routes.
+
 ## Phase changes
 
 Before every phase change, save the evidence, update `STATUS.md` with the
