@@ -58,7 +58,12 @@ with the new phase, relevant paths, and `updatedAt`. Keep `runId` and
   paths in `state.json`, then finish the Goal.
 
 While staying in `RESEARCH`, save each substantive result or failed check.
-Refresh `STATUS.md` when evidence changes and `INDEX.md` when reusable
-artifacts change. At wrap-up, save the current checkpoint and write
-`runs/<run-id>/SUMMARY.md` with findings, evidence links, remaining gaps,
-and the next concrete step.
+Refresh `STATUS.md` when evidence changes. In `INDEX.md`, link each reusable
+note, review, script, input, or result, with its purpose and verification status.
+For a batch, link its manifest and describe what it covers. Use relative links.
+Skip scratch files and Gacha logs.
+
+At wrap-up, compare `INDEX.md` with the artifacts saved under `notes/` and
+`experiments/` in this run. Add missing evidence links and refresh verification
+statuses before saving the checkpoint and writing `runs/<run-id>/SUMMARY.md`
+with findings, evidence links, remaining gaps, and the next concrete step.

@@ -147,7 +147,7 @@ export async function runItem(
     const wrapAt = quota - Math.min(600_000, Math.round(quota * 0.15));
     const hardStop = quota + Math.min(60_000, Math.max(1000, Math.round(quota * 0.05)));
     const at = (offset: number) => new Date(startTime + offset).toISOString();
-    const wrapPrompt = `Gacha is wrapping up run ${runId}. Save evidence and the current state.json checkpoint. Write ${summary} with findings, remaining gaps, and the next concrete step. Stop substantive research now. Use DONE only for a result already verified against PROBLEM.md.`;
+    const wrapPrompt = `Gacha is wrapping up run ${runId}. Save evidence, refresh INDEX.md for the artifacts saved in this run, and save the current state.json checkpoint. Write ${summary} with findings, remaining gaps, and the next concrete step. Stop substantive research now. Use DONE only for a result already verified against PROBLEM.md.`;
     const prompt = [
       `Run ID: ${runId}`, `Mode: ${record.mode}`, `Wrap-up begins: ${at(wrapAt)}`,
       `Run summary: ${summary}`, '',
