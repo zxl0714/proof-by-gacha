@@ -1,0 +1,28 @@
+{
+  "name": "proof-by-gacha",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "gacha": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "docs/agents-template.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0"
+  }
+}
