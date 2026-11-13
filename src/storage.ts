@@ -156,16 +156,44 @@ export function items(ws: Workspace): Item[] {
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
-export function lock(ws: Workspace, id: string): () => void {
+function lockFile(ws: Workspace, id: string): string {
   validId(id);
-  const locks = join(ws.root, '.gacha', 'locks');
-  mkdirSync(locks, { recursive: true });
-  const fd = openSync(join(locks, `${id}.lock`), 'a', 0o600);
+  return join(ws.root, '.gacha', 'locks', `${id}.lock`);
+}
+
+function tryLock(fd: number, id: string): boolean {
   const result = spawnSync('flock', ['-n', '-E', '75', '3'], { stdio: ['ignore', 'ignore', 'pipe', fd] });
-  if (result.status === 0) return () => closeSync(fd);
-  closeSync(fd);
-  if (result.status === 75) throw new Error(`Problem "${id}" is busy in another Gacha invocation.`);
+  if (result.status === 0) return true;
+  if (result.status === 75) return false;
   throw new Error(`Could not lock "${id}": ${result.error?.message ?? result.stderr?.toString().trim()}`);
+}
+
+export function isLocked(ws: Workspace, id: string): boolean {
+  let fd: number;
+  try {
+    fd = openSync(lockFile(ws, id), 'r');
+  } catch (error) {
+    if (missing(error)) return false;
+    throw error;
+  }
+  try {
+    return !tryLock(fd, id);
+  } finally {
+    closeSync(fd);
+  }
+}
+
+export function lock(ws: Workspace, id: string): () => void {
+  const path = lockFile(ws, id);
+  mkdirSync(dirname(path), { recursive: true });
+  const fd = openSync(path, 'a', 0o600);
+  try {
+    if (tryLock(fd, id)) return () => closeSync(fd);
+    throw new Error(`Problem "${id}" is busy in another Gacha invocation.`);
+  } catch (error) {
+    closeSync(fd);
+    throw error;
+  }
 }
 
 export function add(ws: Workspace, id: string, title: string, problem: string, settings: Settings): Item {

@@ -8,7 +8,7 @@ import { stripVTControlCharacters, styleText } from 'node:util';
 import { Command, InvalidArgumentError } from 'commander';
 import { batch, runs, settingsFor } from './run.js';
 import {
-  add, atomicJson, checkpoint, initialize, item, items, lock, message,
+  add, atomicJson, checkpoint, initialize, isLocked, item, items, lock, message,
   validateSettings, workspace, type Settings,
 } from './storage.js';
 
@@ -173,8 +173,15 @@ program.command('status [id]').description('Show research phase and latest run')
     const recent = runs(entry)[0];
     const conclusion = id && state.conclusion ? join(entry.dir, state.conclusion) : undefined;
     const summary = id && recent?.summary ? join(entry.dir, recent.summary) : undefined;
+    const active = Boolean(recent && !recent.endReason && isLocked(ws, entry.id));
+    const outcome = recent?.endReason ?? (active ? 'running' : 'unfinished');
+    const startedAt = recent ? Date.parse(recent.startedAt) : NaN;
+    const elapsed = recent?.elapsedMs ?? (active && Number.isFinite(startedAt)
+      ? Math.max(0, Date.now() - startedAt)
+      : undefined);
+    const runtime = elapsed === undefined ? undefined : statusDuration(elapsed);
     if (!process.stdout.isTTY) {
-      console.log(`${entry.id}\t${state.phase}\t${entry.config.title}${recent ? `\t${recent.endReason ?? 'unfinished'}` : ''}`);
+      console.log(`${entry.id}\t${state.phase}\t${entry.config.title}${recent ? `\t${outcome}` : ''}${runtime ? `\t${runtime}` : ''}`);
       if (conclusion) console.log(conclusion);
       if (summary) console.log(summary);
       continue;
@@ -182,13 +189,15 @@ program.command('status [id]').description('Show research phase and latest run')
 
     const title = stripVTControlCharacters(entry.config.title).replace(/\s+/g, ' ').trim();
     const phase = styleText(phaseColors[state.phase], `[${state.phase}]`);
-    const details = [entry.id];
-    if (recent) {
-      const outcome = recent.endReason ?? 'unfinished';
+    const details = [`ID: ${entry.id}`];
+    if (active) {
+      const quota = recent?.settings.quota;
+      details.push(`Running${runtime ? `: ${runtime}${quota ? ` / ${quota}` : ''}` : ''}`);
+    } else if (recent) {
       if (state.phase !== 'DONE' || outcome !== 'done') {
         details.push(`Last run: ${outcome === 'quota' ? 'time budget reached' : outcome}`);
       }
-      if (recent.elapsedMs !== undefined) details.push(statusDuration(recent.elapsedMs));
+      if (runtime) details.push(runtime);
     }
 
     console.log(`${phase}  ${styleText('bold', title)}  ·  ${details.join(' · ')}`);
