@@ -92,6 +92,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; source-proof transfer checkpoint; 15m | 2026-11-14T12-56-39-331Z-290fea0b | quota; 781.3s; source mechanism checked, quadratic-code repair excluded uniformly, narrow-weight code route retained as unproved; PLAN/RESEARCH/PLAN |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; sharpen narrow-weight code route; 15m | 2026-11-14T13-15-43-251Z-0462dc35 | quota; 780.9s; conditional pencil obstruction and full coefficient-tail barrier; specific second-order calibration next; current-source coverage gap noted |
 | erdos-1159-r30-fresh (continue) | Revision13; current-source checks and second-order calibration; 10m | 2026-11-14T13-34-40-068Z-d6478f78 | quota; 526.4s; current source checked, calibrated pair transform, 174 direction orbits; uniform choice nonintegral, general profile still open |
+| erdos-1159-r30-fresh (continue) | Revision13 unchanged; nonuniform orbit diagnostic and route value; 10m | 2026-11-14T13-48-07-021Z-73061a45 | quota; 534.5s; exact integer orbit model feasible; low-four output dimension at most two; stops cutoff expansion and returns to all-plane proof audit |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3101,3 +3102,97 @@ back toward the original quantifiers rather than creating more auxiliary work.
 The observer supplies no mathematical hint and edits no research-owned files.
 The passing build and seven CLI tests remain the product validation; subsequent
 changes are only this experiment log.
+
+## Revision 13 continued — value of the nonuniform orbit diagnostic
+
+The previous goal turn made progress: r36 exposed a current-source omission,
+the guide received one generic clarification, and r37 calibrated the proposed
+second-order tools while identifying an uninformative aggregation and a failed
+uniform candidate. The guide and observations were pushed in 8d8223f. The
+checkout is clean, the latest run is terminal in RESEARCH, the item guide
+matches revision13 and no item process remains.
+
+Continue for ten minutes with the guide unchanged. The researcher's saved next
+action is a 174-variable nonuniform direction-orbit model for the fixed q13
+profile, with calibrated frame multiplicities and integer target-orbit counts.
+Seven starting files are copied outside the item to
+_review/erdos-1159-r30-fresh/nonuniform-orbits-r38. Observe whether the researcher
+can turn its small calibrated tools into a useful exact test, distinguish a
+rational relaxation from actual geometry, and use the outcome to reassess the
+route's value before expanding computation. A finite profile result must remain
+connected to the outstanding original quantifiers. Do not feed a mathematical
+hint or edit its plan. The preceding product checks still apply because this
+turn has made no product change.
+
+Observed outcome:
+
+- The researcher resumes RESEARCH, reads the saved handoff and current Yang
+  record, and refreshes its active checkpoint at 13:48:44.745940 UTC before
+  the first delegated check at 13:48:59.349. Existing calibration helpers
+  and orbit exports are reused. It explicitly aligns the two direction
+  conventions and preserves the full GL frame/stabilizer multiplicities.
+- The 174-variable model is assembled exactly. Uniform orbit weights
+  reproduce the previously saved coefficient 14976/11, and weighted totals
+  are invariant within each local point type. Z3 5.4.1 returns SAT for both
+  rational and integer models within their separate limits. Assembly and
+  both solver calls take about 0.157 seconds. Raw and normalized integer
+  rows, input hashes, variable identities and exact assignments are saved;
+  every exported assignment is substituted back using Fraction arithmetic.
+- The integer witness has four-secant orbit counts (26,0,26), giving
+  direction-resolved coefficients (1248,0,3744). Together with three-
+  transitivity and the fixed histogram totals, it passes the tested
+  support-four conditions. This repairs the uniform candidate's
+  fractionality. The researcher states correctly that it gives neither
+  a higher-order enumerator nor a code, common incidence structure or
+  blocking set. These low-four constraints cannot exclude this profile.
+- The route audit identifies that rational feasibility was already known:
+  that solver call is a calibration, not a new obstruction test. After
+  population totals, the variable target image has dimension at most two.
+  A direct quartic-feature expansion derives
+  q^2 a_O = H_O + (|O|/M)(q^2 t4-E), reducing the varying part to an
+  orbit-count lattice condition. The observer checks the factorization,
+  three-transitivity argument, saved builder and result without replaying
+  computation. No claim of automatic integer repair for all profiles or
+  field orders follows.
+- For the symmetry context, the researcher consults the current
+  [Tricot record](https://arxiv.org/abs/2408.14714) and uses only the stated
+  consequence that PGL2 subset orbits form three-designs. An unavailable
+  2006 mirror is explicitly not used as evidence. The new source is not
+  misrepresented as supplying geometric realization or a classification
+  theorem for blockers.
+- A separate checker validates all exported assignments and independently
+  recomputes the fixed dependent contribution and 24 matrix entries using
+  a set-partition formula. These include every representative used by the
+  integer witness. No solver is replayed; the review clearly describes its
+  sampled matrix scope rather than claiming a second full matrix rebuild.
+
+Route decision and final handoff:
+
+- The researcher does not raise the support cutoff or solver budget after
+  SAT. It records PLAN at 13:56:34.690938, retires low-four exclusion of this
+  profile, and selects an original-goal proof audit: read the polynomial
+  mechanism in
+  [Heger-Nagy, Avoiding secants of given size in finite projective planes](https://arxiv.org/abs/2409.14213).
+  The current abstract/version record has been checked; the proof and its
+  precise all-plane scope have not. The next step must identify a justified
+  multi-forbidden-count extension or the exact step preventing it, before
+  computation. No extension or all-plane construction is asserted.
+- Wrap-up arrives at 13:56:47.197. The independent audit was already saved
+  before wrap-up; only its final handoff/index reconciliation follows.
+  The run ends at 13:57:12.474, endReason quota, elapsedMs 534471, on the
+  same thread. No original candidate enters VERIFY or DONE. All launched
+  computations and reviews are terminal, with no timeout or UNKNOWN.
+- PROBLEM, AGENTS and item settings are unchanged. All four automatic
+  before-run copies match the external snapshots. INDEX/PLAN/SUMMARY have
+  55/0/4 local links. All 167 recursively reached paths and eight checkpoint
+  paths exist; no old index target is removed and no item process remains.
+  Public trace and final observation are saved outside the research item.
+
+Keep revision13 unchanged. This run supplies direct evidence for the behavior
+being tested: a finite diagnostic is completed cheaply, its mathematical
+strength is assessed, and the researcher changes direction instead of merely
+enlarging the calculation. The next proof audit remains unstarted, so whether
+this new direction yields a useful lemma is still open. This is one observed
+continuation, not a general performance or novelty claim. The observer supplies
+no hint and modifies no research-owned file. Only the experiment log changes;
+the existing passing product tests are not rerun.
