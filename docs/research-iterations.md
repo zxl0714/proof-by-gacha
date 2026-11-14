@@ -60,6 +60,8 @@ establish an improvement.
 | erdos-1159-r08 | Revision 6; r06 checkpoint, new thread; 20m | 2026-11-14T04-24-06-554Z-99611d52 | quota; RESEARCH; 1036.1s; summary/index links valid |
 | erdos-1159-r09-control | Revision 6; r07 checkpoint, new thread | 2026-11-14T04-49-41-725Z-20f6abc5 | quota; RESEARCH; 526.8s; summary/index links valid |
 | erdos-1159-r09 | Revision 7; same r07 checkpoint, new thread | 2026-11-14T04-49-41-737Z-436ee096 | needs input; 93.3s; no current-run summary |
+| erdos-1159-r10-control | Revision 6 guidance; repaired environment; r07 checkpoint | 2026-11-14T05-21-19-807Z-a4749fba | quota; RESEARCH; 527.5s; no approval requests |
+| erdos-1159-r10 | Revision 7 guidance; repaired environment; r07 checkpoint | 2026-11-14T05-21-19-821Z-01dec749 | quota; RESEARCH; 530.4s; no approval requests |
 
 ## Revision 1 — literature-informed decisions
 
@@ -466,3 +468,108 @@ the revised instructions match the new template, and the diff is clean.
 No runtime code changed. The next iteration should resolve the unattended
 environment/recovery failure before drawing conclusions from a new paired
 research test.
+
+
+## Revision 8 — make the authorized execution environment effective
+
+The revision-7 trial ended when a tool-installation approval could not be
+answered unattended. The WSL user's prior authorization allows networking
+and tool installation inside the research sandbox. Its config nevertheless
+had no explicit sandbox or approval settings. Back up that local config, set
+workspace-write with network access and approval policy never, and allow the
+specific package-cache directory. This is a local environment configuration,
+not a new unconditional Gacha permission grant.
+
+A real app-server probe confirmed workspace/cache writes and public PyPI
+network access, and rejected writes outside the allowed roots. Downloading
+the 36.8 MiB Z3 wheel then exceeded bounded 45-, 60-, and 180-second probes.
+This is a separate transfer-time issue; do not classify it as a permission
+failure or a mathematical result. Complete dependency preparation outside
+the mathematical trial quota and record it as observer intervention.
+
+The live resume probe exposed another issue: a stored thread retained its
+old on-request approval policy after the user config had changed to never.
+The sandbox networking setting did refresh, but approval did not. Gacha now
+passes the configured approval policy and legacy sandbox mode on both start
+and resume, while retaining the permission-profile guard. It records the
+actual approval policy and sandbox returned by the server in run.json and
+the event log. No credentials or full configuration are logged.
+
+Validation before the research trials:
+
+- Five integration tests pass. The continuation test changes the config
+  between runs and checks the parameters sent on resume. A separate case
+  checks that recorded policy comes from the server response rather than
+  being inferred from config.
+- Resuming the previously interrupted real thread with the revised
+  parameters returned approval policy never and sandbox networking enabled.
+- Existing research statements and mathematical notes are unchanged.
+  Documentation explains unattended sandbox networking and writable caches.
+
+Repeat the literature-guidance comparison using two new cold copies of r07:
+erdos-1159-r10-control has revision-6 instructions, and erdos-1159-r10 has
+revision-7 instructions. Both use the same repaired runtime, local environment,
+model, effort, and ten-minute quota. This tests whether the operational
+barrier is removed and permits a new comparison; it is not a clean
+cross-environment estimate of the previous failed trial's prompt effect.
+
+
+Dependency preparation completed before both runs. The observer downloaded
+the Linux Z3 5.4.1 wheel from PyPI, verified its published package digest,
+installed it inside the app-server sandbox, and also installed it in the
+WSL user's Python site so both agents can discover the same ready solver.
+The Windows transfer took approximately twelve minutes; it did not consume
+either mathematical quota. This preinstalled solver is an explicit observer
+intervention, not an autonomous tool-discovery result.
+
+The final app-server probe passed workspace writes, cache writes, PyPI access,
+offline package installation, and a native Z3 invocation. An out-of-scope
+write was rejected. Both actual run records show approval policy never and
+workspace-write with network access enabled.
+
+
+Observed outcomes:
+
+- Both runs ended normally, at 527.5 and 530.4 seconds, with no approval
+  request and no VERIFY/DONE transition. They saved current plans,
+  checkpoints, and compact summaries. The control's summary/index have
+  8/32 valid local links; the revised run's have 6/28. No matching solver
+  process remains. The original problem digest is unchanged.
+- Both found and used the preinstalled native Z3. The fixed Jacobian work
+  allowance was no longer the immediate limit, but q13 trials still timed
+  out under explicit 20-120 second limits. They remained UNKNOWN. The agents
+  diagnosed missing assertions in tactic-solver SMT export and repaired the
+  saved inputs; this was a reproducibility issue, not evidence that native
+  solver answers were false.
+- The revised run independently found and read the Illes-Pisinger primary
+  report. It treated the old incidence model and max-five examples as known
+  baselines. Following further literature located the 2003
+  Blokhuis-Brouwer-Wilbrink paper. Its prime-plane theorem and equality tangent
+  count exclude max-four sets of sizes 20 and 21 in PG(2,13), leaving 22-37
+  in this branch's current search. The observer checked Theorem 2.1 and the
+  short moment deduction. This is recovered prior knowledge, not a newly
+  established public bound.
+- Literature use went beyond a bibliography: the revised run reproduced the
+  published 21-point max-five construction as a positive control, checked
+  the scope of a forbidden-secant theorem, and incorporated the known size
+  restrictions in its next planned search. It also produced a complete
+  three-branch symmetry reduction with valid inclusion-minimality constraints.
+  The finite q13 trials nevertheless remained UNKNOWN.
+- The control also made useful decisions under the older guidance. It
+  derived an exact all-plane incidence/congruence equivalence, used coding
+  literature to check its scope, and derived a tangent normalization. Its
+  next action is a primary-catalogue lookup before more finite search.
+  These strengths cannot be attributed to revision 7.
+- Neither run resolved the original problem or established mathematical
+  novelty. The paired observations support effective execution and provide
+  an example of improved literature coverage under revision 7; they do not
+  establish a causal speed or research-quality gain.
+
+The revised checkpoint proposes a different SAT backend and cardinality-CNF
+encoding, validated first against known q7 controls, then tried on the saved
+q13 minimal branches with the proved size restrictions. It explicitly says
+not to replay the Z3 timeouts, and to reassess the finite target's value if
+the alternative gives no structural progress. Next, continue that item
+without adding a new instruction: test whether the agent actually carries
+out its own tool-change plan. A longer continuation can also check whether
+useful research continues after the initial setup and calibration.

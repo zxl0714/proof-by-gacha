@@ -63,14 +63,18 @@ rl.on('line', line => {
   }
   const reply = result => console.log(JSON.stringify({ id, result }));
   if (method === 'initialize') reply({});
-  else if (method === 'config/read') reply({ config: { model: 'mock' } });
+  else if (method === 'config/read') reply({ config: fs.existsSync('test-codex-config.json')
+    ? JSON.parse(fs.readFileSync('test-codex-config.json', 'utf8')) : { model: 'mock' } });
   else if (method === 'model/list') reply({ nextCursor: null, data: [{
     model: 'mock', id: 'mock', isDefault: true, defaultReasoningEffort: 'high',
     supportedReasoningEfforts: [{ reasoningEffort: 'high' }],
   }] });
   else if (method === 'thread/start' || method === 'thread/resume') {
     resumed = method === 'thread/resume';
-    reply({ thread: { id: threadId }, model: 'mock', modelProvider: 'openai' });
+    const policy = fs.existsSync('test-resolved-policy.json')
+      ? JSON.parse(fs.readFileSync('test-resolved-policy.json', 'utf8')) : {};
+    fs.writeFileSync('test-thread-params.json', JSON.stringify(params));
+    reply({ thread: { id: threadId }, model: 'mock', modelProvider: 'openai', ...policy });
   } else if (method === 'thread/read') reply({ thread: { id: threadId } });
   else if (method === 'thread/goal/get') reply({ goal: goal ?? { status: 'paused', objective: 'Previous objective' } });
   else if (method === 'thread/goal/clear') reply({});
@@ -185,12 +189,49 @@ test('wrap-up saves a resumable checkpoint and excludes concurrent writers', asy
 
   const runs = join(dir, 'slow/runs');
   await writeFile(join(runs, record.id, 'run.json'), JSON.stringify({ ...record, objective: 'Previous objective' }));
+  const updatedPolicy = { approvalPolicy: 'never', sandbox: { type: 'readOnly' } };
+  await writeFile(join(dir, 'slow/test-codex-config.json'), JSON.stringify({
+    model: 'mock', sandbox_mode: 'read-only', approval_policy: 'never',
+  }));
+  await writeFile(join(dir, 'slow/test-resolved-policy.json'), JSON.stringify(updatedPolicy));
   await gacha(dir, 'run', 'slow', '--executable', executable, '--quota', '2s');
   const [continuedId] = (await readdir(runs)).filter(id => id !== record.id);
   const continued = await json(join(runs, continuedId, 'run.json'));
   assert.notEqual(continued.objective, 'Previous objective');
   assert.equal(continued.startingCheckpoint.phase, 'RESEARCH');
+  assert.deepEqual(continued.executionPolicy, updatedPolicy);
+  const resumeParams = await json(join(dir, 'slow/test-thread-params.json'));
+  assert.equal(resumeParams.threadId, 'test-thread');
+  assert.equal(resumeParams.sandbox, 'read-only');
+  assert.equal(resumeParams.approvalPolicy, 'never');
   assert.equal(await readFile(join(dir, 'slow', continued.summary), 'utf8'), 'Resumed and saved progress');
+});
+
+test('preserves configured permissions and records the server-resolved policy', async t => {
+  const dir = await workspace(t);
+  const executable = await mock(t, dir);
+  await add(dir, 'configured');
+  const configured = {
+    model: 'mock', sandbox_mode: 'workspace-write', approval_policy: 'never',
+    sandbox_workspace_write: { network_access: true },
+  };
+  // The resolved policy may differ from config because the server applies
+  // requirements and session settings. Record its response, not an inference.
+  const resolved = {
+    approvalPolicy: 'on-request',
+    sandbox: { type: 'workspaceWrite', networkAccess: false, writableRoots: [] },
+  };
+  await writeFile(join(dir, 'configured/test-codex-config.json'), JSON.stringify(configured));
+  await writeFile(join(dir, 'configured/test-resolved-policy.json'), JSON.stringify(resolved));
+  await gacha(dir, 'run', 'configured', '--executable', executable, '--quota', '10s');
+  const params = await json(join(dir, 'configured/test-thread-params.json'));
+  assert.equal(params.sandbox, configured.sandbox_mode);
+  assert.equal(params.approvalPolicy, configured.approval_policy);
+  const { record, events } = await onlyRun(dir, 'configured');
+  assert.deepEqual(record.executionPolicy, resolved);
+  const event = events.find(e => e.type === 'codex.execution_policy');
+  assert.deepEqual(event.sandbox, resolved.sandbox);
+  assert.equal(event.approvalPolicy, resolved.approvalPolicy);
 });
 
 test('batch isolates a failed item and skips archived items', async t => {

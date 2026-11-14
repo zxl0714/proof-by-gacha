@@ -19,11 +19,14 @@ interface Thread {
   id: string;
   status?: { type: string };
 }
-interface ThreadResult {
+interface ExecutionPolicy {
+  approvalPolicy?: string | Record<string, unknown>;
+  sandbox?: { type: string; [key: string]: unknown };
+}
+interface ThreadResult extends ExecutionPolicy {
   thread: Thread;
   model: string;
   modelProvider: string;
-  sandbox?: { type: string };
 }
 interface Goal {
   objective: string;
@@ -49,6 +52,7 @@ export interface RunRecord {
   endingCheckpoint?: Checkpoint;
   threadId?: string;
   modelProvider?: string;
+  executionPolicy?: ExecutionPolicy;
   goalStatus?: string;
   summary?: string;
 }
@@ -248,6 +252,7 @@ export async function runItem(
       const { config } = await request<{ config: {
         model?: string; model_provider?: string; model_reasoning_effort?: string; sandbox_mode?: string;
         default_permissions?: string; permissions?: unknown;
+        approval_policy?: ExecutionPolicy['approvalPolicy'];
       } }>('config/read', { cwd: problem.dir });
       const models: Model[] = [];
       let cursor: string | null = null;
@@ -277,7 +282,9 @@ export async function runItem(
         entry.settings?.model === model.model && entry.problemSha256 === problemSha256);
       const threadParams = {
         cwd: problem.dir, model: model.model,
-        ...(!config.sandbox_mode && !config.default_permissions && !config.permissions ? { sandbox: 'workspace-write' } : {}),
+        ...(!config.default_permissions && !config.permissions
+          ? { sandbox: config.sandbox_mode ?? 'workspace-write' } : {}),
+        ...(config.approval_policy ? { approvalPolicy: config.approval_policy } : {}),
       };
       let thread: ThreadResult | undefined;
       if (old?.threadId) {
@@ -304,6 +311,10 @@ export async function runItem(
       threadId = thread.thread.id;
       record.threadId = threadId;
       record.modelProvider = thread.modelProvider;
+      if (thread.approvalPolicy !== undefined || thread.sandbox !== undefined) {
+        record.executionPolicy = { approvalPolicy: thread.approvalPolicy, sandbox: thread.sandbox };
+        log('codex.execution_policy', record.executionPolicy);
+      }
       atomicJson(runPath, record);
 
       // Create a paused Goal so native continuation cannot race the first turn.

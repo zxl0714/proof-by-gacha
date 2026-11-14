@@ -22,6 +22,30 @@ npm install --global --prefix ~/.local .
 Make sure `~/.local/bin` is on your `PATH`. Run `gacha --help` to see the commands.
 Run `npm test` from the source checkout to test the CLI with a simulated Codex app-server.
 
+For unattended research, configure Codex's sandbox and approval policy for the
+operations you authorize. Gacha applies the current configuration when starting
+or resuming a thread and records the server's resolved policy in each run's
+`run.json`. Shell networking is off by default in `workspace-write`; enabling web search or an MCP does not
+also enable shell downloads.
+
+For sandboxed research that may download papers and install tools, merge
+these settings into the WSL user's `~/.codex/config.toml`:
+
+```toml
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+
+[sandbox_workspace_write]
+network_access = true
+```
+
+Install dependencies in the research directory or temporary storage. Package
+caches also need a writable location; use a workspace-local cache or add the
+specific cache directory to `sandbox_workspace_write.writable_roots`.
+Gacha declines requests requiring a person, so an approval-dependent action
+can end a run early. See [OpenAI's sandbox and approval documentation](
+https://learn.chatgpt.com/docs/agent-approvals-security) for configuration details.
+
 ## Your research backlog, on the night shift
 
 - **Keep a list of questions.** Each gets a folder directly under the workspace for its statement, research state, evidence, and runs.
