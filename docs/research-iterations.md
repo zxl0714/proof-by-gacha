@@ -81,6 +81,7 @@ establish an improvement.
 | erdos-1159-r24-phase | Revision10; new item and thread; original statement; 10m | 2026-11-14T09-20-31-870Z-d43e0764 | quota; 524.9s; research recorded before delegation/computation; scoped all-order relaxation barrier; PLAN -> RESEARCH -> PLAN |
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; natural PLAN checkpoint; same thread; 10m | 2026-11-14T09-31-05-437Z-afd73765 | quota; 563.2s; research recorded before delegated continuation; scoped residue identity and route barriers; PLAN -> RESEARCH -> PLAN |
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; encoding-value checkpoint; same thread; 10m | 2026-11-14T09-45-17-032Z-632ba054 | quota; 529.8s; failed encoding not escalated; literature-informed route barriers and neutral-move repair; PLAN -> RESEARCH -> PLAN |
+| erdos-1159-r24-phase (continue) | Revision10 unchanged; neutral-repair checkpoint; same thread; 20m | 2026-11-14T09-57-17-614Z-2c84f803 | quota; 1070.5s; literature-derived repair trap, checked escape and all-plane sampler barrier; transient PLAN absent from sampled events |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2021,3 +2022,88 @@ continuation, not proof of general research capability or a causal comparison.
 The next research-value question is whether neutral exploration reveals a
 useful structural statement or remains a succession of small implementation
 checks; an original-scope theorem remains missing.
+
+## Continued evaluation — from finite repairs to a structural question
+
+Resume the naturally saved neutral-exchange checkpoint for twenty minutes,
+keeping the statement, guide, runtime, model and effort unchanged. The longer
+window allows a small implementation trial and the subsequent mathematical
+decision to occur in one quota; it does not require a longer computation.
+Check whether successful finite repairs lead to a precise general claim,
+whether a failure is scoped correctly, and whether literature or a resource
+estimate changes the chosen method before a growing search consumes the run.
+
+The previous run is terminal, and external copies of all six input/handoff
+files are saved under _review/erdos-1159-r24-phase/neutral-repair-r27.
+The observer adds no mathematical lead and leaves the agent's plan intact.
+The pending known order-five repair is explicitly calibration in that plan;
+reproducing it alone will not count as new research progress.
+
+Observed outcome:
+
+- RESEARCH is saved before the first delegated check. The known q5 repair
+  serves as calibration. Radius-four perturbation enumeration examines36456
+  point sets and finds12 strict one/two-toggle traps; all twelve have checked
+  neutral three-step repairs. These are scoped controls, not an assertion
+  about all configurations or orders.
+- A primary-source search leads to
+  [Dover–Mellinger's published conic construction](https://msp.org/iig/2011/12-1/iig-v12-n1-p06-p.pdf).
+  Two explicit conics in PG(2,7), with or without their common interior
+  center, give a closed two-state component at energy one. The agent gives
+  an algebraic explanation and exhausts114 single and3192 double toggles.
+  This refutes the proposed universal nonincreasing one/two-point repair
+  algorithm. Existing cap-four blockers in the same plane prevent confusing
+  an algorithmic trap with nonexistence. The construction is attributed and
+  no novelty claim is made for the derived reconfiguration interpretation.
+- Allowing energy two first reaches a5000-node BFS limit, recorded as
+  UNKNOWN. Instead of increasing that bound, the agent tests a finite
+  geometric four-move template, then a short seeded search avoiding revisits.
+  The latter finds a six-toggle path with energies1,2,2,2,1,1,0. Exact
+  coordinate/line replay checks the path. Together with the closed-component
+  lower bound, this establishes the minimum ceiling as two for this starting
+  set, not a uniform ceiling or a general search-performance result.
+- The literature branch proves a simpler original-scope sufficient condition:
+  total hinge defect E_k<=r can be repaired by at most r added points to give
+  a blocker with cap k+r, in any plane. This exposes the unnecessary strength
+  of insisting on zero defect at the original auxiliary cap. Known geometric
+  stability and generic reconfiguration/factor algorithms are checked against
+  their size, field and grouped-incidence hypotheses rather than applied by
+  analogy. No absolute bound on the achievable defect is proved.
+- After the monotone route fails, the parent selects independent fixed-size
+  choices on punctured pencil lines as a different correlated sampler. It
+  derives exact empty-line marginals and pair moments for every plane, proves
+  negative pair covariance, and obtains quadratic typical hole counts for
+  fixed selections per group. Full q2/q3 sample enumerations check the
+  formulas. It explicitly leaves rare successes and dependence between groups
+  open; a high-probability failure is not called an existence obstruction.
+- A recent primary-source check correctly separates
+  [balanced intersection-size frequencies](https://arxiv.org/html/2605.23644v2)
+  from bounded intersection sizes. The paper's dense sampling and coloring
+  hypotheses do not imply a thin blocker or an unbounded lower bound. Its
+  overlap-conditioning idea is relevant methodological context, rather than
+  a theorem closing the present gap.
+- The run exits normally, reporting1070.5 seconds, and ends in PLAN with a
+  proposed incidence-based generalization of the saved energy-two repair.
+  No computation or additional review starts after wrap-up. All four
+  automatic before-run snapshots match, PROBLEM/AGENTS are unchanged, all
+  ten checkpoint paths and128 recursively reached artifact paths exist,
+  and earlier index targets remain. INDEX/PLAN/SUMMARY contain31/6/11 local
+  links; no missing target or research process remains.
+
+There is also a phase-observability limitation. At10:08:31 UTC one successful
+shell command atomically replaces state.json with PLAN, writes the new route,
+then replaces it again with RESEARCH. Both reasons remain in STATUS, and the
+public command proves that both file updates occurred. Gacha's250ms polling
+observes only the final RESEARCH checkpoint. The external phase-observation
+record saves the command, its zero exit status and the observed event sequence.
+This is not the earlier failure to update state at all, and no historical
+event is backfilled. It means that sampled checkpoints alone cannot be used
+to audit every short-lived phase.
+
+The research behavior supports retaining the mathematical guidance: retrieved
+knowledge supplies an adversarial example, a limited search prompts a method
+change, and an unnecessarily strong auxiliary requirement is relaxed toward
+the original quantifiers. One run still cannot demonstrate frontier novelty
+or general autonomy. The next engineering check is a small clarification of
+phase-update boundaries so consecutive phase changes are separately observable,
+without adding a second journal or a mandatory research scheduler.
