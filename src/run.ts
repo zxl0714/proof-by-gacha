@@ -3,6 +3,7 @@ import { appendFileSync, mkdirSync, readFileSync, readdirSync, writeFileSync } f
 import { join } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
 import { AppServer, RpcError, type Notice } from './app-server.js';
+import { describeHandoff, inspectHandoff, repairAdvice, snapshotHandoff } from './handoff.js';
 import {
   atomicJson, checkpoint, digest, duration, evidence, item, lock, message, readJson,
   savedPhase, summaryName, validateSettings, type Checkpoint, type Item, type Settings, type Workspace,
@@ -123,7 +124,8 @@ export async function runItem(
     if (phase === 'DONE') return { id, status: 'already done', elapsedMs: elapsed(), detail: previous.conclusion };
     if (signal.aborted) return { id, status: 'cancelled', elapsedMs: elapsed(), failed: true };
 
-    const pastRuns = fresh ? [] : runs(problem);
+    const history = runs(problem);
+    const pastRuns = fresh ? [] : history;
     const runId = `${new Date(startTime).toISOString().replace(/[:.]/g, '-')}-${randomUUID().slice(0, 8)}`;
     const relativeRun = `runs/${runId}`;
     const runDir = join(problem.dir, relativeRun);
@@ -146,12 +148,25 @@ export async function runItem(
       appendFileSync(eventPath, JSON.stringify({ at: new Date().toISOString(), type, ...data }) + '\n');
     };
     log('run.started', { id: runId, mode: record.mode, phase });
+    const snapshotFiles = snapshotHandoff(problem.dir, runDir);
+    log('research.snapshot', { path: `${relativeRun}/checkpoint-before`, files: snapshotFiles });
+    const snapshotRuns = [relativeRun, ...history.map(run => `runs/${run.id}`)];
+    let lastHandoffWarnings = '[]';
+    const checkHandoff = () => {
+      const warnings = inspectHandoff(problem.dir, snapshotRuns);
+      const value = JSON.stringify(warnings);
+      if (value !== lastHandoffWarnings) {
+        log('research.handoff_check', { warnings });
+        lastHandoffWarnings = value;
+      }
+      return warnings;
+    };
 
     const quota = duration(settings.quota!);
     const wrapAt = quota - Math.min(600_000, Math.round(quota * 0.15));
     const hardStop = quota + Math.min(60_000, Math.max(1000, Math.round(quota * 0.05)));
     const at = (offset: number) => new Date(startTime + offset).toISOString();
-    const wrapPrompt = [
+    const wrapPrompt = () => [
       `Gacha is wrapping up run ${runId}.`,
       `Finish by: ${at(quota)}`,
       `Stop research now. First save state.json and ${summary} using existing evidence, with findings, evidence links, pending checks, remaining gaps, and the next concrete step.`,
@@ -159,10 +174,13 @@ export async function runItem(
       'For unresolved work, keep this handoff compact; do not expand it into new verification or conclusion reports. Do not launch or replay computations or wait for additional reviews.',
       'Markdown links are relative to their containing file: this summary uses ../../notes/... or ../../experiments/.... Paths in state.json are item-relative.',
       'Use DONE only for a result already verified against PROBLEM.md. Finish this turn after saving.',
+      repairAdvice(checkHandoff()),
     ].join('\n');
     const prompt = [
       `Run ID: ${runId}`, `Mode: ${record.mode}`, `Wrap-up begins: ${at(wrapAt)}`,
       `Finish by: ${at(quota)}`, `Run summary: ${summary}`, '',
+      `Before-run handoff snapshot: ${relativeRun}/checkpoint-before/`,
+      repairAdvice(checkHandoff()),
       'Follow the research instructions in AGENTS.md. Start work now from state.json.',
       'For DONE, set state.json candidate, verification, and conclusion to item-relative paths of the saved files. Keep problemSha256 and runId on every checkpoint, and refresh updatedAt. Save the run summary before ending the Goal, including on successful completion.',
       '', 'Use the following launch copy of PROBLEM.md as the statement and acceptance criteria for this run.',
@@ -364,7 +382,7 @@ export async function runItem(
           }
           if (turnId) {
             try {
-              await request('turn/steer', { threadId, expectedTurnId: turnId, input: [{ type: 'text', text: wrapPrompt }] });
+              await request('turn/steer', { threadId, expectedTurnId: turnId, input: [{ type: 'text', text: wrapPrompt() }] });
               finalTurnStarted = true;
             } catch (error) {
               if (turnId && !(error instanceof RpcError && /no active|mismatch|turn id/i.test(error.message))) throw error;
@@ -378,7 +396,7 @@ export async function runItem(
             break;
           }
           finalTurnStarted = true;
-          await startTurn(wrapPrompt);
+          await startTurn(wrapPrompt());
         }
         if (!turnId && !finishing && lastTurn) {
           if (goalStatus && endOfGoal.has(goalStatus)) {
@@ -443,7 +461,7 @@ export async function runItem(
       record.endedAt = new Date().toISOString();
       record.elapsedMs = elapsed();
       record.endReason = outcome;
-      record.error = errorText ?? checkpointProblem;
+      record.error = [errorText ?? checkpointProblem, describeHandoff(checkHandoff())].filter(Boolean).join('\n') || undefined;
       record.endingCheckpoint = ending;
       record.goalStatus = goalStatus;
       record.summary = evidence(problem.dir, summary) ? summary : undefined;

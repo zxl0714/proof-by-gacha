@@ -122,9 +122,9 @@ rl.on('line', line => {
 });
 `;
 
-async function mock(t, dir) {
+async function mock(t, dir, source = fake) {
   const path = join(dir, 'fake-codex.cjs');
-  await writeFile(path, fake);
+  await writeFile(path, source);
   await chmod(path, 0o755);
   t.after(() => rm(path, { force: true }));
   return path;
@@ -232,6 +232,65 @@ test('preserves configured permissions and records the server-resolved policy', 
   const event = events.find(e => e.type === 'codex.execution_policy');
   assert.deepEqual(event.sandbox, resolved.sandbox);
   assert.equal(event.approvalPolicy, resolved.approvalPolicy);
+});
+
+const damagingFake = fake.replace(
+  "if (process.cwd().endsWith('/slow')) return;",
+  "fs.writeFileSync('INDEX.md', JSON.stringify(state())); if (process.cwd().endsWith('/slow')) return;",
+);
+
+test('preserves pre-run handoff bytes and warns about an overwritten index on wrap-up and resume', async t => {
+  const dir = await workspace(t);
+  const executable = await mock(t, dir, damagingFake);
+  await add(dir, 'slow');
+  const original = {
+    'state.json': await readFile(join(dir, 'slow/state.json')),
+    'PLAN.md': Buffer.from('# Plan\r\n\r\nCurrent route.\r\n'),
+    'INDEX.md': Buffer.from('# Index\r\n\r\n- [已有结果](notes/result.md)\r\n'),
+  };
+  for (const [file, bytes] of Object.entries(original)) await writeFile(join(dir, 'slow', file), bytes);
+  await gacha(dir, 'run', 'slow', '--executable', executable, '--quota', '2s');
+  const { record, events } = await onlyRun(dir, 'slow');
+  const backup = join(dir, 'slow/runs', record.id, 'checkpoint-before');
+  assert.deepEqual((await readdir(backup)).sort(), Object.keys(original).sort());
+  for (const [file, bytes] of Object.entries(original)) assert.deepEqual(await readFile(join(backup, file)), bytes);
+  assert.equal(record.endReason, 'quota');
+  assert.match(record.error, /INDEX.md contains checkpoint JSON/);
+  assert.equal((await json(join(dir, 'slow/INDEX.md'))).phase, 'RESEARCH');
+  assert.ok(events.some(event => event.type === 'research.snapshot'));
+  const inputs = (await readFile(join(dir, 'slow/test-inputs.jsonl'), 'utf8')).trim().split('\n').map(JSON.parse);
+  assert.doesNotMatch(inputs[0].text, /Handoff repair needed/);
+  assert.match(inputs[1].text, /Handoff repair needed/);
+  assert.ok(inputs[1].text.includes(`runs/${record.id}/checkpoint-before/INDEX.md`));
+
+  // The new snapshot also contains damage. Recovery must find the older copy.
+  await gacha(dir, 'run', 'slow', '--executable', executable, '--quota', '2s');
+  const [continuedId] = (await readdir(join(dir, 'slow/runs'))).filter(id => id !== record.id);
+  const prompt = await readFile(join(dir, 'slow/runs', continuedId, 'prompt.md'), 'utf8');
+  assert.ok(prompt.includes(`Earlier copy: runs/${record.id}/checkpoint-before/INDEX.md`));
+  assert.equal((await json(join(dir, 'slow/runs', continuedId, 'checkpoint-before/INDEX.md'))).phase, 'RESEARCH');
+  assert.deepEqual(await readFile(join(backup, 'INDEX.md')), original['INDEX.md']);
+});
+
+test('agent repair clears the handoff warning and ordinary Markdown is not flagged', async t => {
+  const dir = await workspace(t);
+  const repairingFake = damagingFake.replace(
+    "if (goal.status !== 'paused') throw new Error('Continuation was not paused');",
+    "if (goal.status !== 'paused') throw new Error('Continuation was not paused');" +
+    "fs.copyFileSync('runs/' + state().runId + '/checkpoint-before/INDEX.md', 'INDEX.md');",
+  );
+  const executable = await mock(t, dir, repairingFake);
+  await add(dir, 'slow');
+  const original = '# Index\n\nState example:\n```json\n{"phase":"RESEARCH","runId":"example"}\n```\n';
+  await writeFile(join(dir, 'slow/INDEX.md'), original);
+  await gacha(dir, 'run', 'slow', '--executable', executable, '--quota', '2s');
+  const { record, events } = await onlyRun(dir, 'slow');
+  assert.equal(record.error, undefined);
+  assert.equal(await readFile(join(dir, 'slow/INDEX.md'), 'utf8'), original);
+  const checks = events.filter(event => event.type === 'research.handoff_check');
+  assert.equal(checks.length, 2);
+  assert.equal(checks[0].warnings[0].file, 'INDEX.md');
+  assert.deepEqual(checks[1].warnings, []);
 });
 
 test('batch isolates a failed item and skips archived items', async t => {

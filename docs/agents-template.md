@@ -17,6 +17,7 @@ Work in this problem directory. The launch prompt gives the run ID, mode, and de
     ├── run.json              # Gacha metadata
     ├── prompt.md             # Gacha's saved launch prompt
     ├── events.jsonl           # Gacha's event log
+    ├── checkpoint-before/   # Gacha's copies of the pre-run handoff files
     └── SUMMARY.md            # This run's findings, evidence, and gaps
 ```
 
@@ -26,8 +27,9 @@ own route from the problem and published literature before consulting earlier
 attempts in this directory. Leave the problem statement and Gacha's settings,
 metadata, and logs to their owners.
 
-Keep `PLAN.md` focused on the current route, gap, and next action. Replace
-superseded next steps; retain useful history in `STATUS.md` or `notes/`.
+Keep `PLAN.md` and `state.json` focused on the current route, gap, and next
+action. Remove completed or superseded next steps and pending checks when
+saving a checkpoint; retain useful history in `STATUS.md` or `notes/`.
 
 Use the literature to locate an unresolved gap worth pursuing. Read the
 results you rely on, check their scope, and explain how they affect the route.

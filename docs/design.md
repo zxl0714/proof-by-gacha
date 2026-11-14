@@ -75,6 +75,7 @@ workspace/
             ├── run.json       # Settings, problem revision, thread, timing, end reason, phase checkpoints
             ├── prompt.md      # Exact initial turn prompt sent to Codex
             ├── events.jsonl   # Execution events appended in recorded order
+            ├── checkpoint-before/ # Byte-for-byte copies of pre-run handoff files
             └── SUMMARY.md     # Run findings, evidence links, and remaining gaps
 ```
 

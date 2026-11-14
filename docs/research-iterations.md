@@ -73,6 +73,8 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; PLAN marked-gluing checkpoint; same thread; 10m | 2026-11-14T07-22-08-974Z-451ea5b8 | quota; 526.8s; PLAN -> RESEARCH; scoped three-pencil compatibility, no original resolution |
 | erdos-81-r17 | Unchanged guidance/runtime; user's quoted graph problem; new item; 10m | 2026-11-14T07-22-08-974Z-33d997d1 | done; 550.1s; complete phase sequence; attributed reconstruction of an existing proposed proof |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; critical global-system control; same thread; 10m | 2026-11-14T07-39-45-207Z-3912e047 | quota; 560.6s; known-witness control, scoped algebraic reformulation and construction-class barrier; RESEARCH |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; marked-value lifting gap; same thread; 20m | 2026-11-14T07-53-20-201Z-b15e27e8 | quota; 1040.9s; literature-based counterfamily to auxiliary sufficiency; mixed-jet repair; INDEX accidentally overwritten |
+| erdos-1159-r10 (continue) | Revision 9; handoff recovery and current pending checks; same thread; 10m | 2026-11-14T08-22-50-434Z-00c0447b | quota; 542.5s; index recovered with earlier entries retained; all-pair refinement, finite controls and a literature-dependent next gap; RESEARCH |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1336,3 +1338,191 @@ value, rather than merely accumulating more controls. Twenty minutes is a
 reasonable next quota: it permits a longer argument while retaining a bounded
 handoff, without prescribing the agent's mathematics. This iteration changes
 the evaluation record only; documentation diff checks pass.
+
+## Longer lifting evaluation — deciding the value of a reformulation
+
+The preceding goal turn made progress by completing the known-witness and
+mutation checks, inspecting the exact full-module criterion and recording the
+next unresolved lifting question. Continue that saved thread for twenty
+minutes with the same guide, runtime, model and effort. The longer quota
+allows an argument or counterexample to develop without another ten-minute
+handoff. No mathematical hint or observer-derived object is injected.
+
+Observe whether the agent distinguishes arbitrary marked solutions from
+solutions with every required scaling coefficient nonzero, whether a concrete
+lifting failure changes its formulation, and whether any positive conclusion
+has the stated generality. The finite mutation test does not establish
+sufficiency or a faster algorithm. A useful outcome can be a precisely scoped
+barrier or a decision to abandon or strengthen the formulation.
+
+Before-run input and checkpoint snapshots are stored outside the research
+item at _review/erdos-1159-r10/lifting-r19. The original problem and agent-owned
+research artifacts are not changed by the observer. This is a duration and
+continuity evaluation, not an isolated test of a new prompt.
+
+Observed outcome:
+
+- The agent compares the marked system with the full module on the saved
+  mutation data. Nonblockers with extra marked solutions do not by themselves
+  refute the nonzero-scaling version of its lifting conjecture. It preserves
+  this distinction and records a bounded 2000-sample trial as inconclusive.
+  The mutation comparison and random trial together take about11 seconds.
+- Primary literature changes the decision. The agent finds
+  [Dover's tangent-free conic construction](https://arxiv.org/html/2505.08551v1),
+  Theorem3.3, and shows that it passes the nonzero marked conditions at
+  critical size while missing lines. This gives an analytic counterfamily to
+  the auxiliary sufficiency claim. The PG(2,7) instance has15 points,
+  maximum intersection3 and12 missed lines. Jacobian confirms the marked and
+  full-module ranks. The original problem is not refuted.
+- The observer independently finds the same finite incidence parameters in
+  published arc literature without sending them to the research thread.
+  Its held-out record is outside the item. The research agent had already
+  computed its Dover instance before that observer record was written.
+- The agent changes RESEARCH to PLAN, then back to RESEARCH for a repair.
+  Leading normal jets turn out to admit an automatic Saito-normalized
+  solution; the agent records that failure instead of presenting the repair
+  as an obstruction. A mixed tangential first-jet identity then rejects the
+  Dover construction analytically. A chart-adapted finite control preserves
+  a known blocker and rejects Dover. The observer reads the identity and
+  coefficient extraction. Neither a global lifting theorem nor useful
+  abstract-search pruning has been established.
+- An auxiliary affine-subspace argument extends the earlier low-rank
+  construction barrier to trimming and repair by outside points. It proves
+  that fixed-depth constructions near an affine subspace of growing
+  codimension require approximately a full plane-order's worth of outside
+  points. This remains conditional on that approximation hypothesis, which
+  is not proved for arbitrary blockers. The agent records that limitation.
+- At an intermediate checkpoint, route and nextStep reflect the failed
+  lifting conjecture, but pendingChecks still say the lifting comparison
+  and a completed review have not started. Final wrap-up removes the stale
+  entries. An interruption before that cleanup would have left conflicting
+  continuation instructions.
+- A more serious storage regression survives wrap-up. At08:09:55 UTC, a
+  Python checkpoint script reuses its path variable for INDEX.md, then
+  renames a state JSON temporary file onto that path. The public tool trace
+  confirms the overwrite. INDEX.md becomes1360 bytes of checkpoint JSON;
+  all earlier index entries disappear from that entry point. The research
+  artifacts themselves remain present, and the pre-run observer snapshot
+  preserves the complete earlier index.
+- The run ends at quota after1040.9 seconds, in RESEARCH. Its summary
+  distinguishes the auxiliary counterexample, the promising repair and
+  the original unresolved scope. Post-wrap actions only save the handoff
+  and finish. There is no VERIFY/DONE claim or remaining research process.
+
+This run supplies good evidence of literature-driven falsification and
+route repair, but fails the durable-handoff criterion. More mathematical
+instructions would not address the accidental overwrite. The next revision
+should preserve pre-run handoff files, identify this structural damage,
+and let the research agent reconcile recovery with later findings.
+
+## Revision 9 — recover handoff files and keep pending work current
+
+Gacha now saves byte-for-byte copies of existing state.json, PLAN.md,
+STATUS.md and INDEX.md under each run's checkpoint-before directory before
+the agent starts. Launch and wrap-up inspect those Markdown handoff files
+for accidental replacement by checkpoint JSON. If found, the prompt names
+an earlier copy without that symptom, skipping newer corrupted snapshots.
+The controller does not rewrite research documents. Remaining damage is
+reported in the final run record and command output.
+
+This is a narrow structural check, not a proof validator or a claim to detect
+all document loss. Snapshots support other manual or agent recovery, but
+are not a replacement for version control. No route, mathematical claim or
+verification standard is added by the controller.
+
+The guide's existing current-plan paragraph now also covers state.json and
+removing completed or superseded pending checks at checkpoints. It replaces
+the paragraph rather than adding a new research stage. The mathematical
+workflow and tool-trust guidance are otherwise unchanged.
+
+Validation: TypeScript builds and all seven integration tests pass. New
+regressions exercise byte preservation despite subsequent writes, optional
+missing documents, corruption discovered at wrap-up and on continuation,
+selection of an older intact copy over a damaged new snapshot, agent-driven
+repair clearing the warning, and Markdown containing a JSON example not
+being flagged.
+
+For the live ten-minute trial, import the existing pre-r19 observer copies
+into r19's checkpoint-before directory with explicit provenance: these are
+recovery copies imported after the run, not snapshots made by its old
+runtime. Leave the current damaged index for the agent to repair. Only the
+experimental item's AGENTS.md is updated; the statement and mathematical
+research files are not rewritten by the observer.
+
+Before-run copies and provenance are outside the item at
+_review/erdos-1159-r10/recovery-r20. The guide hash is
+c1a126418fd7e0cf7658bad689c37024c35c27ce8d9e98e5b260532edbdb770d.
+Observe whether the launch repair actually preserves the earlier index and
+later r19 evidence, whether pending work remains current, and whether useful
+research continues after the recovery. This jointly tests the runtime change
+and the concise guide edit; it is not an isolated causal comparison.
+
+Observed outcome:
+
+- The launch detects checkpoint JSON in INDEX.md and identifies the imported
+  pre-r19 Markdown copy. At08:23:50 UTC the agent restores that copy and
+  appends r19 findings, manifests and review status. The entire earlier
+  index remains a byte-identical prefix at run end, with no prior target
+  removed. Both the imported recovery copies and this run's automatic
+  snapshots remain byte-identical. The wrap-up check clears the warning;
+  no handoff error remains in run.json.
+- The agent clears stale pending checks during the repair checkpoint and
+  continues its saved research question. It does not restart a blocking-set
+  search or replay exhausted searches. The observer supplies no mathematical
+  hint; the operational recovery prompt and copied guide are the only
+  interventions.
+- A chart-consistent global mixed-jet system preserves the known blocker
+  and rejects Dover. After a short pilot, all260 saved maximum-four mutations
+  complete in about2.05 seconds under a30-second limit. Exactly52 nonblockers
+  retain an extra nonliftable direction, localized at a pencil with five
+  bisecants, three quadruple secants and no triple secant. The agent explains
+  this omission in the tested equations instead of enlarging the search.
+  Those directions do not have all complementary scalars nonzero.
+- A corrected all-pair radial/normal relation includes the missing bisecant
+  data. The observer reads its derivation and encoding. Its full saved batch
+  takes about1.45 seconds and matches the full-module image dimensions on
+  all260 inputs and both controls. Jacobian confirms the two control ranks.
+  The agent calls this finite evidence for a necessary condition, not a
+  general sufficiency theorem or a search-speed result.
+- Literature supplies an applicable full graded restriction-cokernel
+  formula in [Abe-Kawanoue, Theorem2.5](https://arxiv.org/html/2406.00305v2).
+  The agent distinguishes it from the degree-p piece and from its truncated
+  equations. Its separate descent proposal uses the
+  [Stacks Project cohomology calculation](https://stacks.math.columbia.edu/tag/01XS),
+  but identifies a missing normal-quotient condition: ordinary component
+  gluing can admit a trivial lift of the known nonlifting example. It does
+  not promote that attractive incomplete argument to a theorem.
+- Algebraic deductions give an explicit local pencil basis and an analytic
+  bisecant-cycle rejection of Dover. Weighted skew-line moments lead to
+  coding theory and product ideals. The agent locates a projective
+  Reed-Muller duality result, then notices that the product-ideal theorem
+  it read assumes characteristic zero. Its checkpoint asks for the relevant
+  characteristic-p statement and treatment of triples within four-fold
+  flats, instead of silently transferring the theorem.
+- This is an unresolved applicability question, not evidence that the
+  finite-characteristic result is unknown in the literature. The observer's
+  subsequent source check finds newer related work and an author's warning
+  that older arXiv versions may be outdated. Whether those sources resolve
+  this particular gap remains to be checked. Preserve this distinction in
+  the next evaluation rather than supplying a proof route to the agent.
+- The run remains in RESEARCH and ends at quota after542.5 seconds.
+  Checkpoints retain the run and problem revision, and final pending checks
+  name the current mathematical gaps. Post-wrap actions save the checkpoint,
+  summary and latest lead; no new computation or review is launched.
+- Final INDEX/SUMMARY contain137/6 local link occurrences. All nine
+  checkpoint paths exist; the original index's116 distinct destinations
+  are retained. Recursive traversal reaches251 existing paths and reports
+  one nonexistent target, notes/v, caused by an unquoted inline mathematical
+  expression being parsed as a Markdown link. This is a formatting defect,
+  not missing research evidence; no research file is changed by the observer
+  to hide it. PLAN uses plain file paths. Inputs and guide are unchanged,
+  and no research process remains.
+
+The recovery worked in the actual failure case and normal research continued.
+The small guide edit also coincides with current checkpoints, but one run
+does not isolate its causal effect. Do not add more instructions for the
+isolated formula-formatting defect. Keep revision9 and evaluate the next
+literature-dependent step for twenty minutes: does it locate an applicable
+result or expose a precise remaining obstruction, and does that change the
+value of the proposed formulation? No original-problem improvement or public
+novelty claim is established by this run.

@@ -136,4 +136,11 @@ The agent chooses how to investigate: read papers, write programs, test examples
 
 Each problem records its current phase in `state.json`. Codex plans a route, investigates it, and verifies a specific candidate against the original statement before marking the problem done. If the run ends with the problem open, the next run can pick up from the last saved phase and evidence.
 
+Before each run, Gacha copies the existing `state.json`, `PLAN.md`, `STATUS.md`,
+and `INDEX.md` into `runs/<run-id>/checkpoint-before/`. If a handoff Markdown
+file has accidentally been replaced by checkpoint JSON, the launch or wrap-up
+prompt points the agent to an earlier copy for recovery. Gacha preserves the
+files as found and reports any remaining damage; the agent reconciles the
+recovery with later research.
+
 Curious about how it will work? See the [design notes](docs/design.md).
