@@ -80,6 +80,7 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Unchanged revision9; structural PLAN checkpoint; same thread; 10m | 2026-11-14T09-09-26-247Z-702d9c22 | quota; 562.8s; intrinsic invariant and scoped countermodels; PLAN -> RESEARCH recorded after experiments |
 | erdos-1159-r24-phase | Revision10; new item and thread; original statement; 10m | 2026-11-14T09-20-31-870Z-d43e0764 | quota; 524.9s; research recorded before delegation/computation; scoped all-order relaxation barrier; PLAN -> RESEARCH -> PLAN |
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; natural PLAN checkpoint; same thread; 10m | 2026-11-14T09-31-05-437Z-afd73765 | quota; 563.2s; research recorded before delegated continuation; scoped residue identity and route barriers; PLAN -> RESEARCH -> PLAN |
+| erdos-1159-r24-phase (continue) | Revision10 unchanged; encoding-value checkpoint; same thread; 10m | 2026-11-14T09-45-17-032Z-632ba054 | quota; 529.8s; failed encoding not escalated; literature-informed route barriers and neutral-move repair; PLAN -> RESEARCH -> PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1938,3 +1939,85 @@ encoding trial changes a useful decision, and whether the agent pursues a
 route relevant to arbitrary caps and planes instead of indefinitely optimizing
 one finite cap-four instance. The observer has not changed the mathematical
 plan or supplied a preferred route.
+
+## Continued evaluation — value after inconclusive finite searches
+
+The r25 checkpoint proposes a small Boolean residue-encoding comparison,
+after the integer encoding failed to solve a known q7 instance within its
+short budget. It also records that cap-four sparsity does not address the
+original all-cap quantifier. Continue the same thread for ten minutes with
+revision10 unchanged. This tests whether the agent uses its comparison to
+make a research decision and reconnects its work to the original problem,
+rather than repeatedly optimizing one finite instance without new evidence.
+
+Observe what a positive or negative comparison changes, whether retrieved
+knowledge affects a subsequent step, and whether the agent distinguishes
+an equivalent formulation or a finite control from a stronger mathematical
+conclusion. A longer computation can be justified by prospective value and
+measured cost; elapsed time alone is not a reason to reject it.
+
+The previous run is authoritatively terminal before launching this quota.
+External copies of the six input/handoff files are saved under
+_review/erdos-1159-r24-phase/route-value-r26. The statement, guide, runtime,
+model and effort are unchanged. The observer supplies no mathematical hint,
+preferred tool or route, and does not edit the research artifacts.
+
+Observed outcome:
+
+- RESEARCH is recorded at09:45:54 UTC before the first delegated check at
+  09:46:01. After the substantive checks, the agent records PLAN at09:52:53
+  with a different concrete next step. No original-scope candidate or DONE
+  claim appears.
+- Both unpinned Boolean-residue q7 trials, default Z3 and QF_FD, return
+  UNKNOWN at three seconds. Pinning the existing witness gives SAT in18ms
+  and checks the custom encoding. The agent explicitly declines a q13
+  escalation or longer repetition. The earlier direct line-bound witness
+  is a useful control, but this is not a controlled performance study across
+  encodings and cardinality settings; no general speed ratio is inferred.
+- It identifies the all-cap residue defect as an exact sum of convex hinge
+  penalties and connects it to the primary
+  [soft global cardinality literature](https://www.andrew.cmu.edu/user/vanhoeve/papers/softglob.pdf).
+  The flow assignment model does not preserve the coupled contribution of
+  one selected point to all its incident lines. The uniform fractional
+  solution has zero penalty, so an additional integrality or rounding result
+  is needed. The agent does not sell the re-expression as a new existence
+  theorem or use the unrelated flow algorithm without its hypotheses.
+- A strict-greedy failure is tested against a repair. In the fully enumerated
+  PG(2,3), cap-three case,260 positive-energy configurations have no improving
+  one- or two-point toggle. Yet the whole4940-state energy-at-most-one graph
+  is connected by nonincreasing single toggles to its468 zero-energy states,
+  with maximum distance four. The agent distinguishes this finite repair
+  from a universal exchange theorem. It saves a bounded order-five trial as
+  the next check and identifies the initial known repair as calibration.
+- A separate primary-source check of BSS/MSS explains why the raw incidence
+  frame does not provide sparse two-sided spectral approximation: its full
+  and centered selected spectra depend only on cardinality, and the full
+  lower PSD bound requires all columns. The report explicitly leaves
+  diagonal-only, group-preserving selection open. It does not rule out all
+  spectral methods or infer a blocking-set obstruction from a rank argument.
+- The parent checks a proposed transfer from Alon's half-thinned partial
+  designs. Completing every disjoint block pair by a new point creates a
+  matching-based transversal with maximum load two under a sufficient graph
+  degree condition, proved to hold with high probability in that model.
+  A q7 diagnostic uses an exact Jacobian maximum matching; its degree is
+  below the asymptotic sufficient threshold, which is explicitly noted.
+  The enlarged family is not a projective plane. This blocks the naive
+  transfer, not the original negative resolution or every possible embedding.
+- The run exits normally at quota, reporting529.8 seconds. Its automatic
+  continuation reads the handoff and proposes a short calibration, but the
+  wrap instruction arrives before execution. It records the work as still
+  pending and only saves files after wrap; no computation or review begins.
+  All four automatic snapshots match the external copies. PROBLEM/AGENTS
+  remain unchanged; all eight checkpoint paths and86 recursively reached
+  artifact paths exist. Earlier index targets are retained, with no missing
+  link or remaining research process. INDEX/PLAN/SUMMARY contain22/4/8 local
+  link occurrences.
+
+Keep revision10 unchanged after this trial. The observed agent stops a weak
+encoding, uses related algorithms with scope checks, and tests a repair
+before discarding a broader idea. More mandatory roles, counters or guidance
+are not justified by this evidence. This is behavioral evidence from one
+continuation, not proof of general research capability or a causal comparison.
+The next research-value question is whether neutral exploration reveals a
+useful structural statement or remains a succession of small implementation
+checks; an original-scope theorem remains missing.
