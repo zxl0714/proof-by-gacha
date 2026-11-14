@@ -72,6 +72,7 @@ establish an improvement.
 | matrix-power-control-r16 | Unchanged guidance/runtime; new matrix-analysis problem; 10m | 2026-11-14T07-04-03-275Z-9e30af09 | done; 573.3s; correct complete ranges, analytic proof, exact counterexample, full phase sequence |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; PLAN marked-gluing checkpoint; same thread; 10m | 2026-11-14T07-22-08-974Z-451ea5b8 | quota; 526.8s; PLAN -> RESEARCH; scoped three-pencil compatibility, no original resolution |
 | erdos-81-r17 | Unchanged guidance/runtime; user's quoted graph problem; new item; 10m | 2026-11-14T07-22-08-974Z-33d997d1 | done; 550.1s; complete phase sequence; attributed reconstruction of an existing proposed proof |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; critical global-system control; same thread; 10m | 2026-11-14T07-39-45-207Z-3912e047 | quota; 560.6s; known-witness control, scoped algebraic reformulation and construction-class barrier; RESEARCH |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1244,3 +1245,94 @@ actually changes the #1159 route. In choosing further benchmarks, establish
 the current literature position first: an old OPEN label alone does not
 make a problem an appropriate novelty test. Keep this as an evaluation
 decision, not an extra mathematical acceptance criterion in PROBLEM.md.
+
+## Global-system continuation — testing whether a scoped condition is usable
+
+Continue the saved #1159 thread with unchanged guidance and runtime for ten
+minutes. Its agent-authored next step is a known-witness check of the
+critical-size marked-value system. No research note, preferred construction,
+or observer-derived equation is supplied to the research thread.
+
+The previous turn made progress by completing and auditing two real trials,
+adding the user's #81 fixture, and recording their different result types.
+This continuation asks whether the new compatibility condition survives an
+actual blocker control, and whether that result changes the next research
+decision. Local feasibility alone is not an all-k obstruction. Compare the
+chosen next step to the original scope and to the stated unresolved gap.
+
+Before-run copies of the six checkpoint/input files and their provenance
+are outside the research item in _review/erdos-1159-r10/global-marked-r18.
+The guide has not changed, so this is an evaluation of continuity and
+research decisions, not a causal test of a new instruction.
+
+Observed outcome:
+
+- The deferred control starts immediately. It reuses the saved actual
+  PG(2,7),size15 witness without rerunning a blocking-set search. All
+  fifteen local charts and Frobenius complements are retained, along with
+  a 76x52 marked-value matrix of rank50 and nullity2 and an explicit
+  solution with every required scaling coefficient nonzero. Jacobian
+  computes the same finite-field nullspace.
+- A separate global logarithmic matrix is 120x108, of rank78 and nullity30.
+  The agent constructs a complementary derivation, checks the symbolic
+  Saito determinant, and matches its normal-killed restrictions to every
+  saved local chart and all22 marked secants. These are purposeful
+  formulation controls on one known witness, not new blockers.
+- A short pilot precedes all630 single-point swaps of that witness.
+  Of260 swaps retaining maximum line intersection four, all256
+  nonblockers are rejected by a forced-zero scaling coefficient and all
+  four blockers pass with explicit assignments. The full sweep takes
+  about1.06 seconds. These are actual point sets in this finite
+  neighborhood; they establish neither general sufficiency nor coverage
+  of every set of that size.
+- The observer reads the mutation encoding. Its results are calibration,
+  not evidence of faster search: the same nonblockers already fail a
+  direct line-incidence check. Whether this algebraic condition usefully
+  prunes an abstract search remains a separate question.
+- The agent derives a precise full-module criterion at critical size:
+  for2p+1 rational hyperplanes, an additional degree-p logarithmic
+  derivation beyond Euler multiples and Frobenius exists exactly when
+  the hyperplanes cover the finite vector space. Its proof uses a
+  saturation argument, Saito's criterion and the finite-field complement
+  count. The observer reads the complete deduction and finds no gap.
+  The inherited [Yoshinaga theorem](https://arxiv.org/html/math/0606005),
+  Theorem10, and the arbitrary-characteristic restriction statements in
+  [Abe-Kawanoue](https://arxiv.org/html/2406.00305v2), Theorems2.1 and2.4,
+  have the required scope. This is an attributed reformulation, not a
+  claim of a previously unknown theorem.
+- The distinction between the full polynomial module and the weaker
+  marked-value equations survives into PLAN, STATUS and the summary.
+  The agent does not infer an equivalence from the perfect finite
+  neighborhood test. Its next check asks whether marked solutions lift
+  to actual derivations, retaining the nonzero-scaling requirement.
+- On the auxiliary route, a rank-budget argument replaces larger
+  enumeration of low-rank additive-graph perturbations. It gives analytic
+  obstructions in growing binary dimension, and a later extension allows
+  several ideal points while preserving a fixed-depth obstruction for
+  that construction class. The observer reads the functional-counting
+  argument. The research checkpoint correctly records the late extension
+  as not independently reviewed within the run. It is not a statement
+  about arbitrary blockers, trimmed graphs or every projective plane.
+- The agent remains in RESEARCH and ends at quota after560.6 seconds.
+  The current route and next action change to the lifting gap. There is
+  no original-problem candidate or VERIFY/DONE transition. The only
+  post-wrap public actions save the handoff and finish the turn.
+- SUMMARY/INDEX have8/117 valid direct local links. All nine checkpoint
+  paths exist. Recursive Markdown traversal reaches215 existing paths
+  with no missing targets and no prior index target removed. Inputs and
+  guide remain byte-identical to their before-run snapshots; the guide
+  matches the repository template. No research process remains.
+
+The run turns an untested condition into a checked formulation and exposes
+a specific next mathematical question. It also replaces a restricted finite
+enumeration with a parameterized class obstruction. These are useful
+research behaviors, but no new bound for the original problem is established,
+and no novelty claim is supported by this evaluation.
+
+Keep the current guide and runtime. There is no observed failure here that
+justifies another instruction. A subsequent longer continuation should test
+whether the lifting question produces a decision about the formulation's
+value, rather than merely accumulating more controls. Twenty minutes is a
+reasonable next quota: it permits a longer argument while retaining a bounded
+handoff, without prescribing the agent's mathematics. This iteration changes
+the evaluation record only; documentation diff checks pass.
