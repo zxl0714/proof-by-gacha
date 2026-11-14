@@ -73,6 +73,8 @@ or its verification status changed. Then atomically replace `state.json`
 with the new phase, relevant paths, and `updatedAt`. Keep `runId` and
 `problemSha256`.
 
+Save each phase change in its own tool call before starting work in the new phase.
+
 - **PLAN → RESEARCH.** Once you choose a concrete check, save `PLAN.md`
   with the key lemma and how it advances the original claim. Record
   `RESEARCH` in `state.json` before running or delegating that check,

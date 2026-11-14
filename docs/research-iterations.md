@@ -82,6 +82,7 @@ establish an improvement.
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; natural PLAN checkpoint; same thread; 10m | 2026-11-14T09-31-05-437Z-afd73765 | quota; 563.2s; research recorded before delegated continuation; scoped residue identity and route barriers; PLAN -> RESEARCH -> PLAN |
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; encoding-value checkpoint; same thread; 10m | 2026-11-14T09-45-17-032Z-632ba054 | quota; 529.8s; failed encoding not escalated; literature-informed route barriers and neutral-move repair; PLAN -> RESEARCH -> PLAN |
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; neutral-repair checkpoint; same thread; 20m | 2026-11-14T09-57-17-614Z-2c84f803 | quota; 1070.5s; literature-derived repair trap, checked escape and all-plane sampler barrier; transient PLAN absent from sampled events |
+| erdos-1159-r24-phase (continue) | Revision11; separate phase operations; same thread and mathematical checkpoint; 20m | 2026-11-14T10-28-07-221Z-16b2d54d | quota; conditional repair and cover-objective limits; PLAN/RESEARCH/PLAN observed |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2107,3 +2108,111 @@ the original quantifiers. One run still cannot demonstrate frontier novelty
 or general autonomy. The next engineering check is a small clarification of
 phase-update boundaries so consecutive phase changes are separately observable,
 without adding a second journal or a mandatory research scheduler.
+
+## Revision 11 — separate phase-update operations
+
+Add one sentence to the guide: save each phase change in its own tool call
+before starting work in that phase. The existing evidence/status/index and
+atomic-replacement procedure remains. Clarify the matching design paragraph
+and its observed-checkpoint semantics. The runtime and research strategy are
+unchanged; do not add a ledger, phase inference, sleep requirement or forced
+research cycle.
+
+The r27 command demonstrates why this distinction matters: its two successful
+state replacements occurred between observations of the 250 ms sampler. Keep
+that historical omission intact. Update only the experimental item's guide
+after its terminal run, then continue its own saved mathematical task for
+twenty minutes with the same model and effort. Observe whether naturally
+occurring phase changes are separate operations and appear in the event log;
+do not inject a phase change merely to make the regression pass. A passing
+trial will not establish lossless state-history guarantees for arbitrary
+external writers.
+
+The TypeScript build and all seven existing CLI integration tests pass.
+The experimental guide hash becomes
+8af6685c5a83a41e2101bc2a70e34ed3989b48db47bec5a6be780a5d5bb333a9;
+guide-revision11.json records the old/new hashes and unchanged research-file
+hashes. The before-run copies are under
+_review/erdos-1159-r24-phase/phase-boundary-r28. Only AGENTS changes in the
+item; the original statement and its agent-authored mathematical checkpoint
+are preserved byte for byte before launching the continuation.
+
+Observed outcome:
+
+- The resumed thread explicitly acknowledges the updated phase instruction.
+  RESEARCH is written at 10:29:00.680 UTC and observed at 10:29:00.792, before
+  the first delegation at 10:29:08.183. The initial orchestration call waits
+  for the shell invocation to save state, then performs Jacobian discovery;
+  it contains no second phase change. Later, the conditional repair route's
+  missing starting configurations motivate PLAN at 10:44:17.398, observed
+  at 10:44:17.530. That successful call saves the transition reason and state;
+  a later call writes the next plan. Both natural transitions are recorded.
+- The six-toggle q7 witness becomes an explicit sufficient incidence lemma
+  for every plane and auxiliary cap at least four. Initial tangents and
+  saturated lines give an eight-term defect formula, also a directed-cut
+  frontier. All 64 packet subsets and 720 orders are checked; 208 orders have
+  ceiling two. A typed Jacobian DAG operation confirms the packet's optimum
+  ceiling. This generalizes a supplied local configuration, without claiming
+  that suitable packets or bounded-defect starting sets always exist.
+- The hole-cover branch distinguishes the number of defects from their
+  geometric repair cost. In any plane, a cap-k set whose holes are covered
+  by r points extends to a blocker of cap at most k+r. Reproducing the known
+  [Bruen–Fisher characteristic-three family](https://msp.org/pjm/1974/53-1/pjm-v53-n1-p06-p.pdf)
+  gives an infinite diagnostic: deleting one point can create at least q/3
+  concurrent holes, all repaired by restoring that point with cap four.
+  Exact extension-field checks at q=9/q=27 give three/nine holes. This is a
+  purposeful reproduction and derived comparison, not a new blocker family
+  or a lower bound on the plane's minimum defect. The branch also recognizes
+  that an unrestricted thin residual-cover theorem would essentially restate
+  the original problem, and checks why published small partial-cover results
+  do not supply the desired initial sets.
+- Reading the quantitative proof of
+  [Asgarli–Ghioca–Yip](https://arxiv.org/html/2510.15332v2)
+  gives a restricted but stronger route obstruction: fixed-degree reflexive
+  nonlinear algebraic support in odd Galois planes leaves a positive fraction
+  of all lines uncovered. Since a new point meets only q+1 lines, any repair
+  needs Omega(q) new points, even if old points may be deleted. The note keeps
+  the reflexivity/degree/field hypotheses and explicitly allows the unresolved
+  possibility of a linear-size repair with bounded line congestion. Exact
+  q=23/q=31 conic diagnostics illustrate the mechanism; they do not establish
+  the asymptotic result or a lower bound for arbitrary blockers.
+- Further literature changes the proposed optimization target. The known
+  [minimum external-conic-cover classification](https://media.accademiaxl.it/memorie/S5-VXXXI-P1-2009/Korchmaros89-112.pdf)
+  says that for odd q>=9 every minimum-cardinality cover is a secant with
+  its two conic points removed. Adding it to the conic therefore gives cap
+  q+1. A larger cover from the known characteristic-three family gives cap
+  at most six instead. Checked q=9/q=27 examples compare caps 10/28 against 6.
+  The agent separates this cardinality obstruction from the desired minimax
+  congestion bound. Its residual optimum is within two of the whole-plane
+  optimum, which is an equivalence of the unresolved Galois-plane question,
+  not a shortcut or a resolution for non-Desarguesian planes.
+- The saved next step is to read the original minimum-cover proof and seek
+  applicable near-minimum stability results before a short q=11 size-11/cap-3
+  trial. The equality classification alone is not extrapolated to larger
+  covers. The stated trial distinguishes SAT, finite UNSAT and UNKNOWN;
+  neither the proof review nor that trial starts in this run.
+- Gacha reports 1034.4 seconds and exits normally with endReason quota at
+  10:45:34.086 UTC. The agent first saves its handoff and ends a turn; the
+  automatic continuation reads the checkpoint before wrap-up arrives at
+  10:45:19.700. Its only later tool action refreshes the handoff. It launches
+  no computation or additional review and leaves the research phase PLAN.
+- PROBLEM/AGENTS remain byte-identical and the guide matches the template.
+  All four automatic before-run copies match. All eight checkpoint paths
+  and 153 recursively reached artifact paths exist; earlier index targets
+  remain. INDEX/PLAN/SUMMARY contain 37/4/8 local links. No research process
+  remains in the item directory.
+
+The external phase-observation record preserves the public calls, successful
+tool returns and sampled checkpoints. This trial covers the two ordinary
+phase changes above. It does not contain an intermediate PLAN-to-RESEARCH
+return, so it does not reproduce r27's rapid two-transition pattern or prove
+lossless observation of arbitrary writes. Keep that limitation explicit;
+do not force an artificial mathematical route change to increase coverage.
+
+Research behavior is encouraging at the decision level: primary literature
+changes the chosen objective, known constructions test an overly strong
+proxy, and local conclusions retain their missing existence hypotheses.
+None establishes novelty or an original-scope advance. The parent handoff
+also joins some English words together, reducing readability despite complete
+links; the observer leaves the agent-owned files intact and records this
+for further observation rather than adding another instruction from this case.
