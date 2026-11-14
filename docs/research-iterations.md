@@ -66,6 +66,7 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; same thread; nearfield checkpoint; 10m | 2026-11-14T05-57-17-566Z-b4899381 | quota; 561.6s; scoped infinite-family construction and failed direct extension; unresolved |
 | graph-product-control-r11 | Unchanged guidance/runtime; new problem; 10m | 2026-11-14T05-57-17-541Z-a3a78a12 | done; 325.6s; published counterexample applied; full phase sequence |
 | erdos-1159-r10 (fresh) | Unchanged guidance/runtime; existing research directory; new thread; 10m | 2026-11-14T06-11-24-306Z-39604a78 | quota; 521.0s; prior work consulted, new conditional route, earlier artifacts and index entries retained |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; inverse-route checkpoint; same thread; 20m | 2026-11-14T06-27-23-686Z-fec9a44b | quota; 1055.4s; free-arrangement reformulation, scoped local restrictions and Dickson construction barriers; unresolved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -825,3 +826,83 @@ rediscovery, nor that the conditional route can solve #1159. The next
 substantive check is a longer continuation of the new route: can the agent
 advance or reject its concrete inverse-incidence subproblem, rather than
 repeatedly restating an unproved conjectural dependency?
+
+
+## Inverse-route continuation — move beyond identifying an open dependency
+
+Continue the current same-item fresh thread for twenty minutes, without
+changing its guide, runtime, problem or mathematical checkpoint. The previous
+run made a valid conditional reduction and named an unproved structural
+premise. Its next step is to inspect prime-field arc/envelope results and
+line-section polynomial identities for the near-extremal four-secant spectrum.
+
+Observe whether the agent uses the saved scope restrictions, advances a
+specific individual-incidence question or rules out a proposed approach,
+and changes the plan accordingly. Repeating the conditional statement or
+listing nearby theorems alone is not evidence of further progress. The
+observer supplies no mathematical lemma, source or preferred repair. The
+longer budget tests follow-through after initial route selection, not a
+causal effect of a new prompt.
+
+Observed continuation outcome:
+
+- The native thread and its existing research memory were reused. The
+  problem and guidance are byte-identical to the external pre-run snapshot;
+  the observer supplied no mathematical direction during the trial.
+- Literature checks reject direct use of one-value secant stability and
+  characteristic-modulus results for the two-value spectrum under study.
+  A slice-polynomial test also defeats an attempted lifting inference.
+  The countermodel is explicitly not a point-set blocker: retaining the
+  actual point-product and individual pencil conditions still matters.
+- The agent finds Yoshinaga's finite-field free-arrangement theorem and
+  derives a rank-two multirestriction formulation retaining actual
+  directions. The observer read Theorem 10(1), the arbitrary-field
+  rank-two/Saito preliminaries cited in the note, and the saved restriction
+  and primitive-Frobenius arguments. The relevant forward theorem has no
+  cardinality threshold. The resulting local exponent test is automatic
+  for blocker sizes s>=2p; the agent records this as a limitation rather
+  than claiming stronger pruning in that range.
+- At s=2p-1, complete pure-three direction tests leave 42 of 70 models at
+  p=7 and 1274 of 3003 at p=13. A later mixed-multiplicity p=7 pilot and
+  complete batch leave 1148 of 8092 models. These are exact local models,
+  not classifications of blockers or evidence resolving the all-k claim.
+  The batches have saved equations, inputs, versions and results; the
+  p=13 pure-three calculation took about 0.62 seconds. Jacobian confirms
+  representative ranks. No full-incidence search is replayed.
+- On the alternative route, the agent resolves the saved degree-five
+  Dickson check: the former cubic pair really has a 244-secant. A repair
+  yields depth q+1 for the stated Dickson pairs, still dependent on q.
+  A separate analytic obstruction covers every scalar Frobenius graph
+  in a growing family; a density corollary also limits bounded unions of
+  arbitrarily trimmed or translated graphs. Reviews preserve the graph-
+  covering hypothesis. These construction-class results do not exclude
+  arbitrary blocking sets or settle the original problem.
+- The observer inspected the scoped arguments and source hypotheses; no
+  novelty claim is established. An initial Jacobian polynomial request
+  used the wrong coefficients, which the agent noticed and corrected.
+  The corrected input/output is retained as evidence, and the discarded
+  request is documented.
+- The run ends normally at quota after 1055.4 seconds. All four recorded
+  checkpoints remain in RESEARCH. The wrap signal arrives at 17 minutes;
+  the subsequent public trace contains only handoff updates and the
+  final response, with no new computation or review. No matching research
+  process remains.
+- SUMMARY/INDEX/PLAN have 17/80/2 valid local links. All ten checkpoint
+  artifact paths exist; recursively following the index and summary
+  reaches 144 local artifacts with no missing link targets. No prior
+  index target is removed.
+
+This continuation advances beyond merely restating the earlier conditional
+premise: it finds a relevant published reformulation, derives its useful range
+and its limitation, and closes an old construction check. It still leaves
+the crucial global compatibility and all-k gaps open. The short local tests
+support a concrete next experiment, not indefinite investment or a prediction
+of a solution.
+
+The guide and runtime remain unchanged. This observation does not justify
+adding another mandatory research stage or claim that a new instruction
+caused improvement. The next evaluation should follow whether these local
+restrictions support a usable global argument or a deliberate route change,
+rather than treating additional excluded local models as sufficient progress
+toward the original quantifiers. Record this outcome without modifying the
+agent-owned mathematical plan or notes.
