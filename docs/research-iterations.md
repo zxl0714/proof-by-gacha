@@ -76,6 +76,7 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; marked-value lifting gap; same thread; 20m | 2026-11-14T07-53-20-201Z-b15e27e8 | quota; 1040.9s; literature-based counterfamily to auxiliary sufficiency; mixed-jet repair; INDEX accidentally overwritten |
 | erdos-1159-r10 (continue) | Revision 9; handoff recovery and current pending checks; same thread; 10m | 2026-11-14T08-22-50-434Z-00c0447b | quota; 542.5s; index recovered with earlier entries retained; all-pair refinement, finite controls and a literature-dependent next gap; RESEARCH |
 | erdos-1159-r10 (continue) | Unchanged revision9; product-span applicability gap; same thread; 20m | 2026-11-14T08-37-11-154Z-0c15b146 | quota; 1061.6s; applicable literature closes critical criterion, published larger minimal blocker refutes deletion reduction; RESEARCH |
+| erdos-1159-r10 (continue) | Unchanged revision9; value after intermediate success; same thread; 10m | 2026-11-14T08-57-41-235Z-5ab5ac77 | quota; 525.9s; known-example extraction refutes a gauge shortcut; value reassessment records RESEARCH -> PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1633,3 +1634,105 @@ Final operational audit:
 Only this evaluation log changes in the repository. The documentation diff
 passes git diff --check; runtime and guidance retain the previously tested
 revision9 implementation.
+
+## After an intermediate success — reassess the route's value
+
+The preceding goal turn completed the product-span continuation, inspected
+its primary sources and artifacts, and pushed the evaluation as70e0eec.
+That was progress: the characteristic and fourfold-moment gaps closed at
+the stated critical scope, while a published larger minimal blocker refuted
+a proposed cardinality reduction. Original-problem progress is still unproven.
+
+Continue the saved thread for ten minutes with revision9 unchanged. The
+agent's own checkpoint asks for a complementary derivation of the known
+Singer19 example and its local polynomial corrections. Observe whether it
+uses that bounded check to decide if the formulation offers an existence
+or obstruction argument, or merely continues extending a finite decision
+test. A completed intermediate theorem is a useful point to reassess value
+even when the local work has not stalled.
+
+No mathematical route, paper, or preferred outcome is supplied to the agent.
+The original problem and research artifacts are untouched. Before-run copies
+of the six handoff/input files are saved outside the item under
+_review/erdos-1159-r10/value-r22. Retain the same run settings and thread;
+this is a continuity observation, not evidence for a new guide revision.
+
+Observed research and decision:
+
+- The agent explicitly separates the coefficient extraction from a parallel
+  assessment of whether polynomial corrections add an existence obstruction.
+  It searches logarithmic-module restrictions, scalar descent and recent
+  extendability work. These are agent-chosen tasks; the observer supplies
+  no mathematical hint or request to abandon the route.
+- The saved Singer19 input yields an actual normalized degree11 complement
+  with determinant equal to the defining product. All19 local expressions
+  have the predicted quartic Frobenius coefficients. The complete extraction
+  takes about0.18 seconds, with internal60-second and external65-second
+  limits; a two-pencil pilot precedes the remaining17 checks. Jacobian
+  supplies exact nullity and rank operations on the saved inputs.
+- The proposed simplification fails for these fixed local bases: the
+  95-by15 ambient quartic restriction matrix has rank15, but adjoining the
+  actual local coefficient family raises the rank to16. Two local values
+  at the same rational vector are0 and5. One global quartic therefore cannot
+  remove all raw local corrections. The agent correctly distinguishes this
+  basis-dependent failure from a geometric obstruction: its input is an
+  actual blocker and the extracted global complement already exists.
+- The corrected analytic statement describes genuine normalized coefficient
+  families as an affine translate of global polynomial restrictions. Scalar
+  descent tests their differences, not the existence of an initial lift.
+  The agent reviews the distinction, retains derivative terms in the
+  abovecritical mixed rows, and gives the exact scope of the finite control.
+  It launches no larger search to compensate for the failed simplification.
+- Literature is used to check possible consequences, not just cited.
+  [Yoshinaga's finite-field theorem](https://arxiv.org/html/math/0606005v1)
+  already provides a fixed-arrangement freeness/covering equivalence.
+  The recent [B2 extendability result](https://link.springer.com/article/10.1007/s00026-026-00869-z)
+  assumes characteristic zero and a different multiplicity regime.
+  [Asgarli-Ghioca-Yip's curve obstruction](https://arxiv.org/html/2510.15332v2)
+  requires bounded curve degrees; a complementary derivation whose degree
+  grows with p does not supply that hypothesis. The observer checks these
+  primary scopes independently without sending the findings into the run.
+- At09:04:37 UTC the agent explicitly rejects further expansion of a
+  decision system as the present next step: the corrected formulation has
+  produced no bound or construction for arbitrary blockers. At09:05:12 it
+  records RESEARCH -> PLAN, with the failure reason in STATUS, new artifact
+  links in INDEX, and a current checkpoint. It proposes comparing
+  basis-independent data with the saved conditional structural route,
+  looking for a degree bound depending on the intersection cap rather than
+  p. No such structural lemma is claimed.
+
+This addresses the particular concern left by r21: the agent reassesses
+value after completing an intermediate result and actually changes the
+recorded phase and next work. The known-example control prevented a false
+shortcut, and the corrected theorem was not treated as an original existence
+advance. The new planning question is still ambitious and has no established
+answer; whether it yields a useful next experiment or proof step is the next
+continuity test. One successful reassessment does not establish that route
+selection is generally reliable, nor that this behavior was caused by a
+particular guide sentence. Keep revision9 unchanged.
+
+Final operational audit:
+
+- Normal quota exit after525.9 seconds. The phase sequence is RESEARCH,
+  PLAN, PLAN. STATUS explains the transition and the saved plan names the
+  missing structural hypothesis and the existing notes to compare. No
+  original candidate, VERIFY or DONE claim appears.
+- The agent spends the last minute before wrap checking its handoff,
+  including one16-second wait. It does not yet execute the new structural
+  planning check. Post-wrap actions only refresh the checkpoint and summary;
+  no new computation or review starts. This run establishes reassessment
+  and persistence, not successful execution of the replacement route.
+- PROBLEM.md and AGENTS.md remain byte-identical, and the guide still
+  matches the template. All four automatic snapshots match the observer's
+  pre-run copies. All eight checkpoint paths exist; all old INDEX targets
+  are retained; no research process remains.
+- INDEX/SUMMARY have156/5 local link occurrences. Recursive traversal
+  reaches284 existing paths plus the previously identified notes/v formula
+  formatting defect; no new missing target appears. The observer makes no
+  repair to agent-authored research files.
+
+The repository change is this evaluation log only. Documentation whitespace
+checks pass; the runtime and guide are unchanged from the previously tested
+implementation. Next observe whether the PLAN checkpoint produces a
+discriminating structural question and starts useful work without reopening
+completed finite controls or merely restating the original conjecture.
