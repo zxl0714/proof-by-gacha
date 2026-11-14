@@ -102,6 +102,7 @@ establish an improvement.
 | erdos-1159-r43-fresh (continue r45) | Revision14 unchanged; global composition compatibility; 15m | 2026-11-14T15-38-22-630Z-3a69709c | interrupted; process and session missing, unlocked, run metadata unfinished; resumed normally |
 | erdos-1159-r43-fresh (r45 recovery) | Revision14 unchanged; resumed compatibility experiment; 15m | 2026-11-14T15-42-40-388Z-8cfdb744 | quota; old infinite family excluded, targeted repair passes moments and q47 rational flags; stronger pair system UNKNOWN; two transient missing evidence references |
 | erdos-1159-r43-fresh (continue r46) | Revision15 saved evidence references; 10m | 2026-11-14T16-02-03-050Z-209f53a2 | quota; known Johnson bound rejects W20/W30, W40 has an exact rational pair witness; all-cap lattice formulation; no missing references in seven observed checkpoints |
+| erdos-1159-r43-fresh (continue r47) | Revision15 unchanged; integer compatibility and route value; 10m | 2026-11-14T16-14-43-122Z-bb34aabb | quota; exact signed integer span passes, nonnegative trial UNKNOWN, partial integer branch survives; signed cap-four bridge to cap seven; complete references but late checkpoint refresh |
 
 ## Revision 1 — literature-informed decisions
 
@@ -4053,3 +4054,118 @@ sentences. The next experiment should test whether integer compatibility
 produces a route-changing decision and whether saved references remain
 complete in another continuation. Do not add further workflow instructions
 on the basis of this single clean run.
+
+## Revision 15 continuation — integer compatibility and route value
+
+The preceding goal turn made progress: revision15 and the r45/r46
+observations were tested, committed and pushed in ccded3b. Reinspection
+finds a clean checkout, matching revised guides, an unchanged statement
+and settings, a quota-ended run in RESEARCH, and no process in the item.
+
+Retain the guide and research-owned files. Save an external seven-file
+snapshot in _review/erdos-1159-r43-fresh/integer-compatibility-r47, then
+continue normally for ten minutes with the same model and effort. The
+run starts at 16:14:43.122. Start the same read-only checkpoint observer
+after Gacha supplies the run ID. Product tests are not repeated because
+this continuation changes no product behavior or guidance.
+
+The mathematical decision under observation is whether integer
+compatibility changes the value of the finite route after its stronger
+rational relaxation passed. A failed restricted support must not become
+a claim about all possible histograms, and a compatible linear lattice
+does not prove a nonnegative integer solution or actual incidence. Also
+observe whether the parallel all-cap formulation yields a concrete next
+step and whether new evidence references remain saved before checkpoint
+publication. Supply no hints, steer no research worker, and leave their
+plan, status, index and artifacts to them.
+
+Observed continuation:
+
+- The same thread resumes and explicitly rereads AGENTS.md. New searches
+  cover incidence lattices, integer normal forms, tactical refinements and
+  signed versus weighted blocking sets before substantial extensions. No
+  observer hint or intervention is supplied.
+- Eleven primes, 2 through 31, pass modular span checks in about 2.99
+  seconds. Each saved sparse witness is checked against all 65 reduced
+  equations. Membership in a subset of columns proves membership in the
+  complete span, but does not establish the complete matrix rank or
+  integral membership. Those distinctions are retained in the notes.
+- Jacobian's row Hermite normal form on 45 selected columns takes 24 ms.
+  Its transformation reconstructs an exact signed integer combination
+  giving the target in all 65 coordinates. The selected matrix has rank
+  43. Twenty of the 45 nonzero coefficients are negative, so this is not
+  a histogram. A further full-column scan finds 852 original columns
+  outside the selected integer lattice; the researcher correctly avoids
+  claiming the subset generates the complete lattice. The target witness
+  itself is unaffected.
+- The class-I Johnson pair budget has slack exactly one. Its integral
+  residual identity forces precisely one exceptional line, excludes all
+  6,200 columns with residual at least two, and leaves 35,968 admissible
+  integer variables. A local Z3 5.4.1 trial includes the complete remaining
+  support and all 65 equations. Its 10-second limit expires after about
+  10.07 seconds; the saved outcome is UNKNOWN and the budget is not
+  repeated. The remote Jacobian SMT admission limits do not fit this
+  13.5 MB input, so the agent uses the local established solver.
+- A separate 12-variable Jacobian trial returns SAT in 336 ms for the
+  type-three histogram, under its flags, 55 pair-capacity inequalities and
+  residual bound. Four compositions have multiplicities 21,12,12,1. A
+  first class-I point-side refinement also survives. These are a specific
+  partial branch and local parameters, not a complete integer histogram.
+  The next action fixes this branch, subtracts its pair ledger and tests
+  rational completion on every residual-zero column of the other types
+  before another integer trial. A failed fixed branch would not reject
+  every possible histogram.
+- The all-cap investigation produces a directly relevant sufficient
+  condition. For integer point weights with line sums from 1 to k, the
+  positive support is blocking and has cap at most k plus the total
+  negative mass. The reconstruction energy bounds that mass by E/(2q).
+  When k=4, the scalar moment bound and energy divisibility give E<=6q,
+  hence cap at most seven. Universal existence of such signed weightings
+  remains unproved. The argument is valid for arbitrary projective planes;
+  no novelty or unconditional solution is claimed.
+- The researcher explicitly distinguishes existing nonnegative weighted
+  blocking results from this signed problem. The observer checks the
+  indexed published Definition 2.2 of Blazsik--Heger--Szonyi, DOI
+  10.1002/jcd.21686, confirming that restriction. No classification theorem
+  is imported. The independent core review and small exact repair checks
+  support the saved deductions, not universal existence.
+- The one-second observer records five checkpoint versions, all in
+  RESEARCH and all referring to existing files, with no read error. This
+  is a second continuation without the sampled missing-path failure.
+  However, the first post-start research checkpoint update is at
+  16:21:50.754520, about 428 seconds after launch. The exact HNF result
+  was already saved at 16:17:05.114437. Complete final references therefore
+  do not establish that the central next action is kept current promptly
+  or that an interruption would recover the newer evidence efficiently.
+- The researcher saves its summary before scheduled wrap-up and makes
+  only checkpoint/summary updates afterward. Gacha sends wrap-up at
+  16:23:26.968. The run ends at 16:23:41.516, endReason quota,
+  elapsedMs 523734, in RESEARCH. There is no complete candidate, VERIFY or
+  DONE transition, or remaining computation.
+- Statement, guide and item settings remain unchanged, and all four
+  automatic before-run copies match the external snapshot. INDEX/PLAN/
+  SUMMARY have 46/4/6 direct local links. All 185 recursively reached paths
+  and 37 checkpoint paths exist; no old index target is removed. All 20
+  JSON artifacts in the three relevant experiment groups parse normally.
+  Public trace, snapshots, timing observations and final audit are stored
+  outside the research item.
+
+This run changes the next action through exact integer compatibility,
+a bounded inconclusive search and a useful structural restriction. It also
+develops an all-plane sufficient route while retaining its missing
+existence theorem. Retain revision15 rather than adding an instruction for
+each observed behavior.
+
+The next experiment should test actual interruption recovery, not merely
+final link completeness. Inspecting the current CLI confirms that ordinary
+SIGINT enters a cancellation path that requests pausing the active child
+Goal and interrupting its turn, closes the app-server, saves the outcome
+and releases the lock. The experiment will check this behavior in practice.
+On a run launched specifically by the observer, take external snapshots,
+send ordinary SIGINT while research is active, verify terminal metadata and
+process exit, then continue through Gacha normally. Observe whether saved
+results newer than the central handoff are recovered and whether completed
+work is needlessly repeated. Do not alter research files or metadata to
+manufacture the condition, and do not treat an observation timeout as a
+reason to stop or restart. This remains a prospective experiment; r47 itself
+was not interrupted.
