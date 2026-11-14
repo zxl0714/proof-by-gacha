@@ -89,6 +89,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; geometric-compatibility checkpoint; 20m | 2026-11-14T11-54-10-198Z-f7540afc | quota; 1079.7s; scoped structural results and finite repair traps; RESEARCH to PLAN, no full candidate |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; return to a general route; 15m | 2026-11-14T12-17-26-391Z-f45b1ae0 | quota; 826.7s; finite traps generalized to every fixed even cap and deletion budget; PLAN/RESEARCH/PLAN, original problem open |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; value of the next route; 15m | 2026-11-14T12-36-28-867Z-d45106c9 | quota; 785.7s; odd-cap obstruction closed, coexistence with known blockers motivates route change; PLAN/RESEARCH/PLAN, original problem open |
+| erdos-1159-r30-fresh (continue) | Revision12 unchanged; source-proof transfer checkpoint; 15m | 2026-11-14T12-56-39-331Z-290fea0b | quota; 781.3s; source mechanism checked, quadratic-code repair excluded uniformly, narrow-weight code route retained as unproved; PLAN/RESEARCH/PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2807,3 +2808,102 @@ should be assessed by whether the proposed source-proof inspection yields a
 useful original-goal lemma or an early rejection, rather than another long
 sequence of intermediate targets. This is a log-only update; existing passing
 product checks are not repeated without a code or guide change.
+
+## Revision 12 continued — transferring a related theorem into a useful question
+
+The previous goal turn made progress: r34 completed its scoped obstruction,
+used known constructions to reassess the route, saved an original-goal plan,
+and pushed the audited observation in 143bd63. The current checkout is clean;
+the latest run is terminal in PLAN and no item process remains. Its own next
+step is to inspect the proof of a recent one-value stability theorem before
+attempting a two-value extension. Preserve this research-owned plan.
+
+Continue for fifteen minutes with revision12 unchanged. Seven before-run
+files are saved outside the item in
+_review/erdos-1159-r30-fresh/source-transfer-r35. Evaluate whether the source
+inspection identifies a useful transferable argument, a precise missing
+hypothesis, or an early reason to reject the route. Distinguish a genuinely
+discriminating next question from simply creating another intermediate target.
+Observe renewed literature/tool choices, phase changes and the final handoff.
+The observer may check the cited source independently without supplying a
+mathematical hint or modifying research artifacts. No additional guide rule
+is justified before observing this behavior.
+
+Observed outcome:
+
+- RESEARCH is saved at 12:57:14.952807 UTC. The researcher awaits the
+  state-saving command before fetching the source, and first delegates at
+  12:57:25.631. It investigates the proof mechanism, the binary-input repair
+  and the proposed inverse geometry in parallel.
+- Inspection of the
+  [coloring paper](https://arxiv.org/html/2610.41357v1) identifies the
+  one-residue codeword and correction steps that do not transfer to two
+  values. The actual one-residue exceptional count is quadratic, so the
+  cited small-exception hypotheses fail. A conditional nonlinear pencil
+  representation is retained without assuming that a small point cover exists.
+- The researcher turns the finite membership test into a self-contained
+  proposition: for every cap-four blocker in any plane of prime order p>=5,
+  h=(r-1)(r-4) lies outside the original incidence code. Incidence moments
+  bound the nonempty bad-line family below p^2; constant pencil sums would
+  force this binary family to be a full pencil, contradicted by the selected
+  and outside point counts modulo three. A saved independent review and
+  the observer's scoped inspection check this argument. It excludes the
+  particular repair, not cap-four blockers or any larger cap.
+- Saved actual blockers at p5 and p7 supply exact nonmembership certificates.
+  Incidence ranks 16/29 rise to 17/30 after adjoining h. A further tiny test
+  excludes every nonzero constant weighting of the two bad secant classes
+  on those two examples. The note explicitly limits this latter result to
+  finite cases; it is not an all-large-primes weighting theorem. Jacobian
+  checks use inspected exact-operation contracts and a small calibration.
+- The inverse audit rejects specific ordinary-arc and dual-envelope theorem
+  transfers because their hypotheses or geometric carrier differ. It gives
+  the exact dimension-three projective code formulation with every nonzero
+  weight in [n-k,n-1]; the upper bound is essential for blocking. Homogeneous
+  relations correspond to code-power rank defects, consistent with
+  [Randriambololona, Proposition 1.28](https://arxiv.org/html/1312.0022v3).
+  This selected-point code is distinguished from the whole-plane incidence
+  code whose Schur square was previously shown to be full.
+- Exact interpolation of the saved p5/p7 witnesses gives least vanishing
+  degrees three and five. The p7 example only refutes an all-primes quartic
+  assertion, not a statement with a larger prime threshold. Its degree-five
+  relation is already forced by having more monomials than points, and is
+  explicitly not counted as evidence of asymptotic structure. The exporter
+  rebuilds the source matrices and checks returned nullspace vectors;
+  zero-nullity conclusions use the established tool guarantee without a
+  second rank implementation.
+- The audit also recognizes that, given the saved AGY reduction, the
+  eventual bounded-degree inverse statement is as substantial as eventual
+  nonexistence itself. A reformulation has not reduced that difficulty.
+  Exploratory Pexider/BLR searches are visible, but no theorem from that
+  direction is applied and the final summary marks it undeveloped.
+
+Final handoff and evaluation:
+
+- The researcher returns to PLAN at 13:08:36.389769, preserving evidence and
+  replacing the exhausted membership repair with a primary-source search
+  for narrow-weight projective codes. It retains projectivity, the upper
+  weight bound, growing prime characteristic and the every-fixed-cap
+  quantifier. It expressly avoids further interpolation samples without a
+  discriminating proposed lemma. The rank-defect implication is still
+  unproved; no complete original candidate enters VERIFY or DONE.
+- Wrap-up arrives at 13:09:36.879. Only a checkpoint and summary refresh
+  follows. The run ends at 13:09:53.615, endReason quota, elapsedMs 781276,
+  on the same thread. All launched computations and reviews are terminal.
+- PROBLEM, AGENTS and item settings are unchanged; all four automatic
+  before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY have
+  39/2/5 local links. All 133 recursively reached artifact paths and nine
+  checkpoint paths exist, no old index target is removed, and no item
+  process remains. Public trace, source control and final observation are
+  stored outside the research item. The observer supplies no mathematical
+  hints and changes no research-owned files.
+
+Keep revision12 unchanged. This continuation tests the intended behavior:
+source reading exposes an exact transfer failure, a small test develops into
+a general obstruction to that repair, and the plan records the consequence.
+It also distinguishes a finite diagnostic and an equivalent reformulation
+from progress on the original quantifiers. The next question is still broad
+and difficult: assess whether the researcher can sharpen the coding route
+into a discriminating lemma or reject it before a long sequence of auxiliary
+targets. No original bound, novelty claim or general performance guarantee
+is established. This is a log-only update, so the existing passing product
+checks are not repeated.
