@@ -98,6 +98,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; full-graph inverse hypothesis check; 15m | 2026-11-14T14-35-19-185Z-781935f5 | quota; 784.2s; uniform counterexample refutes exact and fixed-exception inverse; robust sublinear-exception repair remains unproved; PLAN |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; approximate inverse and related-field scope; 10m | 2026-11-14T14-53-15-328Z-02cf614d | quota; 525.0s; identifies known Green conjectural route and exact-r length obstruction; PLAN |
 | erdos-1159-r43-fresh (fresh) | Revision14; known open formulations and discussion sources; 10m | 2026-11-14T15-09-25-949Z-1b277982 | quota / PLAN; known inverse conjecture found in the first run; cap-four relaxation limits recorded; original problem unresolved |
+| erdos-1159-r43-fresh (continue r44) | Revision14 unchanged; second-moment route decision; 10m | 2026-11-14T15-23-30-820Z-a45429bd | quota / RESEARCH; known q11 witness recovered; infinite second-moment family and individual-line feasibility; global compatibility still open |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3746,3 +3747,111 @@ stronger counting formulation produces a decision relevant to the original
 problem, rather than an indefinite sequence of stronger relaxations. The
 guide already asks for that connection; observe the behavior before adding
 more instructions. Build and all seven CLI tests passed before launch.
+
+## Revision 14 continuation — a decision from the stronger relaxation
+
+The previous goal turn made progress: the revision14 wording and fresh
+trial observations were pushed in b49c391, with build and seven CLI tests
+passing. Reinspection finds a clean checkout, a terminal quota-ended run
+in PLAN, and no process in the item. Its saved next check strengthens the
+cap-four pencil relaxation with pair-of-line intersection constraints.
+
+Keep the guide and research-owned files unchanged. Save all seven handoff
+and input files outside the item in
+_review/erdos-1159-r43-fresh/second-moments-r44. Continue the same item
+using the normal gacha run command, the same model and effort, and a
+ten-minute quota. Supply no mathematical hint and impose no new workflow
+rule. Product tests need not be repeated for this observation-only change.
+
+Observe whether the inherited next step produces a useful mathematical
+decision and remains connected to the original quantifiers. In particular,
+look for a clear distinction between necessary constraints and realizable
+incidence structures, appropriate reaction to solver limits, and renewed
+literature or tool discovery when the actual question changes. Repeatedly
+strengthening a relaxation is not by itself evidence of progress toward
+unbounded required caps; the run should establish what its result changes.
+
+Observed execution:
+
+- The run starts at 15:23:30.820 in continue mode on the same thread as
+  r43. RESEARCH is saved at 15:23:59.788856 before the new formulation is
+  delegated or executed. Literature and mathematical work proceed together.
+- An early source check recovers the known order-eleven positive case:
+  Illes--Pisinger's report 97-13, Tables 1 and 3, gives a 21-point cap-four
+  blocker with spectrum (84,0,28,21). Seceleanu's Section 4.2 supplies
+  Klein configuration coordinates; roots 4 and 6 of t^2+t+2 over F11 give
+  the selected 21 points. Direct incidence checks recover the known result.
+  The observer checks both primary passages and their distinct scopes.
+- This is useful recovery, not evidence that r43's initial survey was
+  sufficient. The earlier literature note already cited report 97-13 and
+  the public trace searched its Table 1, but the specific q11 positive
+  case did not enter its plan or handoff. The old solver UNKNOWN remains a
+  valid historical outcome; it is superseded for the existence question by
+  the explicit known witness. Source discovery and using a relevant result
+  in the current task are separate behaviors to evaluate.
+- The 20-row second-moment formulation is calibrated on the saved q5
+  witness. Jacobian finds integer parameter data at q11 and q101 in
+  305 and 408 ms. The latter restricts profile support to t2,t3<=10;
+  SAT proves feasibility in that support, with no realizability claim.
+- The theory work reduces all second pencil moments to three independent
+  equations and derives an explicit integer family for q>=47 with
+  q=2 modulo 45. It includes infinitely many actual possible plane orders,
+  for example 2^(12m+1). Five exact evaluations establish the rational
+  polynomial identities of degree at most four; an independent formulation
+  checks the same identities. Positivity and integrality are treated
+  separately. The observer inspects the formulas and scope without
+  replaying the computations. No novelty claim is established.
+- New terminology searches identify tactical-decomposition and line/point
+  type methods already present in the literature. The researcher explicitly
+  separates algebraically possible parameters from geometrically realizable
+  structures. Neither the small-plane LP literature nor a small-blocking-set
+  stability theorem is promoted to the missing general inverse theorem.
+- PLAN is saved at 15:27:37.687066 after the second-moment barrier. The
+  checkpoint and index then name the theory note before its delegated
+  author writes it at 15:28:25.519. The observer's intervening file inventory
+  confirms the note is absent. Thus phase changes are recorded, but the
+  evidence-before-checkpoint convention is not fully met at this moment.
+  Final link checks cannot retrospectively erase this interruption risk.
+- RESEARCH is saved at 15:28:13.027567 before the tactical trial. Four
+  individual line types at q47 each pass necessary composition equations,
+  with Jacobian times of 270--272 ms and direct model checks. The equations
+  are first validated on the actual q5 instance. Passing each individual
+  type is explicitly distinguished from assigning compositions globally.
+
+Final handoff and evaluation:
+
+- A first turn ends at 15:31:18, then automatic continuation resumes the
+  saved next check. It extracts seven point-profile classes and complete
+  composition histograms from the actual q5 witness, validating the global
+  flag equations before wrap-up. It does not begin the q47 global search.
+- Wrap-up arrives at 15:32:15.380. The researcher persists the updated
+  handoff and turns the already-executed extraction into a reproducible
+  script. It does not execute or replay a computation after wrap-up. The
+  final plan/state remove the completed validation from the next action.
+  The summary retains an earlier paragraph followed by an explicit update;
+  the final checkpoint is clearer than that appended summary.
+- The run ends at 15:32:59.303, endReason quota, elapsedMs 553352,
+  in RESEARCH. Its next step is exact rational global multiplicity
+  feasibility for the q47 nine-class family, then integer feasibility if
+  worthwhile. It states that rejection would exclude only this family and
+  acceptance would still leave incidence realization and the original
+  all-cap question open. No complete candidate enters VERIFY or DONE.
+- PROBLEM, AGENTS and item settings are unchanged; the guide matches
+  revision14. All four automatic checkpoint-before files match the external
+  snapshots. INDEX/PLAN/SUMMARY have 15/5/7 local links; all 78 recursively
+  reached paths and nine final checkpoint paths exist. No prior index
+  target is removed and no item process remains. Public traces and the
+  final observation are stored outside the research item.
+
+The continuation supplies evidence that the agent can recover a missed
+known construction, adopt established methods for a newly formulated
+subproblem, and turn finite feasible data into a scoped infinite-family
+diagnostic. It has not improved the original bound or established a new
+published result. The next experiment should examine whether global
+compatibility yields a useful construction or a precisely scoped barrier,
+and how the agent evaluates further realization work afterward. A somewhat
+longer continuation can give this decision room without another prompt
+change. Retain revision14 for now; observe whether the premature evidence
+reference recurs rather than adding a duplicate instruction to the existing
+save-evidence-first rule. This turn changes only the observation journal;
+product tests are not repeated.
