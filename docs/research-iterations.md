@@ -93,6 +93,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; sharpen narrow-weight code route; 15m | 2026-11-14T13-15-43-251Z-0462dc35 | quota; 780.9s; conditional pencil obstruction and full coefficient-tail barrier; specific second-order calibration next; current-source coverage gap noted |
 | erdos-1159-r30-fresh (continue) | Revision13; current-source checks and second-order calibration; 10m | 2026-11-14T13-34-40-068Z-d6478f78 | quota; 526.4s; current source checked, calibrated pair transform, 174 direction orbits; uniform choice nonintegral, general profile still open |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; nonuniform orbit diagnostic and route value; 10m | 2026-11-14T13-48-07-021Z-73061a45 | quota; 534.5s; exact integer orbit model feasible; low-four output dimension at most two; stops cutoff expansion and returns to all-plane proof audit |
+| erdos-1159-r30-fresh (continue) | Revision13 unchanged; secant-avoidance proof and transfer audit; 10m | 2026-11-14T14-01-42-895Z-e751e67a | quota; 524.6s; primary proof and local-filter degree barrier audited; exact tool fallback; returns to finite-field inverse scope |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3196,3 +3197,107 @@ this new direction yields a useful lemma is still open. This is one observed
 continuation, not a general performance or novelty claim. The observer supplies
 no hint and modifies no research-owned file. Only the experiment log changes;
 the existing passing product tests are not rerun.
+
+## Revision 13 continued — reading a proposed positive mechanism
+
+The previous goal turn made progress: r38 completed the exact nonuniform
+low-four model, showed why its feasibility is a small lattice repair rather
+than a geometric realization, and changed direction without enlarging the
+calculation. The observation was pushed in 5f3f5f4. The checkout is clean,
+the latest run is terminal in PLAN, the item guide matches revision13, and
+no item process remains.
+
+Continue for ten minutes with the guide unchanged. The researcher has chosen
+to inspect the current Heger-Nagy proof for one prescribed forbidden count
+per line and assess whether its mechanism could help construct a shallow
+blocker in every finite plane. Only the source abstract has been read so far.
+Save seven before-run files outside the item in
+_review/erdos-1159-r30-fresh/secant-avoidance-r39. Observe primary-proof and
+hypothesis reading, recognition of a precise transfer barrier, reuse of
+prior work, and whether the next action addresses the original quantifiers.
+Do not suggest a lemma or alter the mathematical handoff. No product change
+has been made, so the existing passing checks are not repeated.
+
+Observed outcome:
+
+- The researcher reads the current arXiv record and Section 2, then records
+  RESEARCH at 14:02:28.612658 UTC before the first delegation at
+  14:02:41.186. It separates the primary proof, modular premise and possible
+  local repairs. The observer checks prior artifacts: the earlier use of
+  this paper covered its Introduction and Section 3, so the present proof
+  audit fills an unchecked gap rather than replaying that earlier work.
+- The complete Section 2 audit identifies the all-plane scope of the
+  one-forbidden-count theorem, its Boolean degree budget and its positive
+  matching coefficient. The paper's N+1-factor impossible list is retained
+  as a known sharpness example, not a counterexample to uniform cap lists.
+  The direct cap-C root product exceeds the degree budget, and global
+  Boolean reduction need not preserve its positive coefficient. The
+  researcher explicitly recognizes that asserting a nonzero remainder
+  without a new identity merely restates the existence question.
+- A self-contained any-field argument extends the diagnostic beyond that
+  particular product: a nonzero Boolean function supported on weights at
+  most C among m variables has reduced degree at least m-C. It gives a
+  sharp example also vanishing at zero, and correctly limits the resulting
+  obstruction to the ordinary local-filter product/top-degree argument.
+  Weighted affine factors and larger nonnegative grids do not repair that
+  direct certificate. The observer checks the complement substitution,
+  Mobius inversion, sharp example and degree accounting. No obstruction to
+  every polynomial method or to the original blocking set is claimed.
+- The modular audit proves evenness of the incidence permanent for every
+  plane, and q^2 divisibility in PG(2,q) by a free translation action on
+  perfect matchings. It distinguishes these premise failures from other
+  prime moduli: the primary q4 table has permanent 18534400, which is one
+  modulo three. One-residue avoidance still supplies no fixed upper cap.
+  The observer reads the stated source table and checks the elementary
+  determinant and matching-action arguments without replaying computation.
+- Jacobian permanent discovery and contract inspection identify a dense
+  budget admitting the q2/q3 matrices but not q4. The researcher submits
+  only the admissible controls, obtaining 24 and 3852; q4 is cited from the
+  [primary paper](https://webpages.scu.edu/ftp/sasgarli/proportion-plane-curves.pdf)
+  rather than computed beyond that limit. All canonical inputs and outputs
+  are saved, including the fact that the server version is not exposed.
+- The Fano-plane reproduction checks all 128 Boolean inputs. Its degree-7
+  one-forbidden product has full-support coefficient 24; the paper's sharp
+  degree-8 construction reduces to the zero function. A discovered Jacobian
+  multilinear-extension operation accepts Boolean-valued truth tables but
+  rejects the integer-valued polynomial control despite its rational input
+  carrier. The rejection is retained as an interface limitation, never as
+  mathematical evidence. A calibrated exact local subset transform handles
+  the integer table, and the admissible zero table succeeds in Jacobian.
+  There is no repeated retry or escalation into a large computation.
+- The repair audit consults the prior asymptotic note and does not revive
+  the already-rejected independent-sampling or hereditary-hitting shortcuts.
+  The researcher also checks the
+  [published record](https://doi.org/10.1002/jcd.21968) and clearly records
+  that detailed proof reading used current arXiv v1, rather than claiming
+  access to a different full published proof.
+
+Final handoff and evaluation:
+
+- PLAN is saved at 14:10:00.736597. The proposed next question is a primary
+  finite-field Sylvester-Gallai/design-matrix scope check, retaining growing
+  prime characteristic, n=Theta_k(p), blocking and a bounded-degree relation
+  as the target. It distinguishes such a relation from an ordinary span
+  bound and proposes cubic configurations as a scope control. The earlier
+  inverse lemma is still explicitly unproved; no applicable theorem has
+  been identified and this new check is unstarted.
+- Wrap-up arrives at 14:10:23.866. A brief automatic continuation checks the
+  clock and checkpoint, then refreshes only the existing summary and state;
+  no new research or computation starts. The run ends at 14:10:38.240,
+  endReason quota, elapsedMs 524557, on the same thread. No original
+  candidate enters VERIFY or DONE, and all computations/reviews are terminal.
+- PROBLEM, AGENTS and item settings are unchanged. All four automatic
+  before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY have
+  59/0/4 local links. All 175 recursively reached paths and seven checkpoint
+  paths exist, no old index target is removed, and no item process remains.
+  Public trace and final observation are saved outside the research item.
+
+Keep revision13 unchanged. The run demonstrates proof-level source use,
+precise method barriers, reuse of prior conclusions, and recovery from an
+operation's actual input limitation with a small exact fallback. It does not
+establish a new original bound or novelty. Returning to the inverse direction
+is justified only as the specifically untested design-matrix scope question;
+the next continuation should show whether that search supplies a discriminating
+new condition or repeats an already known reformulation. No additional guide
+rule follows from the present evidence. Only this observation log changes;
+the observer supplies no hint and edits no research-owned files.
