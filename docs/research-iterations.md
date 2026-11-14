@@ -68,6 +68,8 @@ establish an improvement.
 | erdos-1159-r10 (fresh) | Unchanged guidance/runtime; existing research directory; new thread; 10m | 2026-11-14T06-11-24-306Z-39604a78 | quota; 521.0s; prior work consulted, new conditional route, earlier artifacts and index entries retained |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; inverse-route checkpoint; same thread; 20m | 2026-11-14T06-27-23-686Z-fec9a44b | quota; 1055.4s; free-arrangement reformulation, scoped local restrictions and Dickson construction barriers; unresolved |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; local-restriction checkpoint; same thread; 10m | 2026-11-14T06-50-55-338Z-34e4662f | quota; 526.2s; scoped analytic generalizations, global-test limitations and revised next step; unresolved |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; translated-graph checkpoint; same thread; 10m | 2026-11-14T07-04-03-272Z-3e1a9c07 | quota; 569.0s; translated-pair obstruction, marked compatibility condition, RESEARCH -> PLAN |
+| matrix-power-control-r16 | Unchanged guidance/runtime; new matrix-analysis problem; 10m | 2026-11-14T07-04-03-275Z-9e30af09 | done; 573.3s; correct complete ranges, analytic proof, exact counterexample, full phase sequence |
 
 ## Revision 1 — literature-informed decisions
 
@@ -995,3 +997,125 @@ trace. Further evaluation should test whether the revised translation or
 gluing question yields useful evidence, and whether the same behavior holds
 on a materially different problem rather than only on this accumulated
 finite-geometry context.
+
+## Cross-domain scope evaluation — trace versus operator order
+
+Run the existing #1159 continuation and a new matrix-analysis control with
+the same guide, model, effort and ten-minute quotas. The #1159 checkpoint
+proposes independently translated additive graphs, where the previous
+through-origin obstruction no longer directly applies. Observe whether the
+agent checks compatibility across every shared singular direction rather
+than silently reusing the failed linear-image argument.
+
+The new fixture, docs/research-cases/matrix-power.md, asks for the complete
+positive-exponent ranges of two universal inequalities for arbitrary
+Hermitian positive semidefinite matrices: trace subadditivity and Loewner
+subadditivity. It contains only the mathematical statement and definitions,
+with no answer, named theorem, reference, or route supplied to the agent.
+
+This is a known-result control in a different area, not a frontier-research
+benchmark. Check whether the agent distinguishes the two orders, covers all
+parameters and singular inputs, uses exact examples or applicable literature,
+and only enters DONE after a complete candidate and scoped review. Numerical
+samples cannot by themselves prove a universal exponent interval. The
+observer independently establishes the expected result outside the research
+item and supplies no mathematical hint during either trial.
+
+Observed #1159 outcome:
+
+- The previously untested independent-translation repair is resolved at
+  construction-class scope. Two full independently translated binary
+  additive graphs plus vertical infinity cannot give depth four in a
+  translation plane of order at least eight. The proof checks affine
+  images, graph intersections, scattered subspaces and the count of
+  shared-image hyperplanes. The observer read the saved proof and its
+  independent version; translations are genuinely included.
+- An exact offset criterion is expressed as a binary affine linear system.
+  All 192 finite controls agree with direct projective line counts.
+  Saved inputs, commands and results include an inconsistent
+  three-equation example checked with Jacobian. These support the
+  criterion, while the infinite-family claim rests on the analytic proof.
+- The literature check retains the distinction between scattered subspaces,
+  translation hyperovals, particular spreads and arbitrary finite planes.
+  Neither a dimension-dependent kernel bound nor a known translation-plane
+  example supplies a universal blocking construction.
+- On the prime-plane route, ordinary two-pencil row/column matching is
+  shown to be automatic: bounded-three integer marginals of common total
+  at least nine satisfy Gale's criterion. All relevant totals for the
+  p13,size25 trial exceed that threshold. This prevents treating a plain
+  two-pencil matching test as an additional obstruction.
+- A different condition retains the common global free basis. Where the
+  lower local generator is unique, marked zero/nonzero evaluations must
+  agree at all selected points on a shared 3/4-secant. Both types occur
+  among locally passing templates, so this supplies actual compatibility
+  cuts. The saved checker evaluates 596 marked cases from 74 passing
+  orbit representatives. The argument explicitly excludes the
+  equal-degree ambiguity at s=2p+1. The observer inspected the coordinate
+  proof, especially the multiplicity>=2 step forcing the two Euler
+  corrections to agree on the shared axis.
+- No set of these cuts eliminates all blockers, and even a size25 C4
+  result would leave the original all-k quantifier. The agent records the
+  failure of the current translated-pair branch, updates STATUS/PLAN and
+  transitions RESEARCH -> PLAN. The next unexecuted check concerns
+  compatibility across three actual pencils, not another translated-pair
+  enumeration.
+- The run ends at quota after 569.0 seconds. After wrap-up, public actions
+  only save the handoff and final response. No research process or review
+  remains pending. SUMMARY/INDEX have 7/96 valid local links; all eight
+  checkpoint paths exist. Their recursive links reach 173 local artifacts
+  with no missing targets, and no prior index target is removed.
+
+Observed matrix-analysis control outcome:
+
+- Before reading the research output, the observer recorded expected
+  ranges and an exact proof/counterexample outside the research item.
+  The trace range is (0,1], while the Loewner range is {1}. For trace
+  sufficiency, the observer checked Bourin-Uchiyama Theorem 1.1
+  (https://arxiv.org/html/math/0702475v1) with the trace norm; scalar inputs
+  exclude r>1. Two nonorthogonal rank-one projections give an exact
+  counterexample to Loewner subadditivity for every 0<r<1.
+- The agent independently obtains both ranges. It reads Bourin-Lee's
+  primary matrix-subadditivity result
+  (https://arxiv.org/html/1109.2384), retaining the unitary conjugations
+  that permit a trace conclusion but not the stronger un-conjugated
+  operator inequality. The observer checked that cited scope as well.
+- It writes a self-contained proof by integrating an inverse-order
+  resolvent inequality against a positive weight. The argument covers
+  singular inputs, complex Hermitian matrices, noncommutativity,
+  arbitrary finite dimension and the complete exponent range. The
+  observer read the full candidate and found the integral, trace-pairing
+  and necessity arguments valid.
+- A fixed rational projection pair has sum spectrum {2/5,8/5}, confirmed
+  by Jacobian. The exact 2/5 eigenvector excludes the whole interval
+  0<r<1 analytically; it is not a floating-point sample or numerical
+  extrapolation. The endpoint and upper range are handled separately.
+- The complete candidate is saved before VERIFY. A later independent
+  review identifies and checks that saved version; its digest still
+  matches the final candidate. The final report, conclusion and summary
+  exist before DONE. Recorded transitions are PLAN -> RESEARCH -> VERIFY
+  -> DONE.
+- During wrap-up, the agent removes references to an optional artifact
+  audit it had not performed, without claiming it ran. The final
+  mathematical verification is already complete; no new computation or
+  review is started. It then completes the native Goal and the run ends
+  as done after 573.3 seconds, exercising successful completion during
+  wrap-up. The agent's final elapsed figure is the native Goal's active
+  time; comparisons here use Gacha's full elapsed run time.
+- SUMMARY/INDEX/PLAN have 7/10/3 valid local links, all four final checkpoint
+  paths exist, and recursive traversal reaches 15 local artifacts with
+  no missing targets. No research process remains.
+
+Both problem statements and both copies of the guide are unchanged; the
+guide also matches the repository template byte-for-byte. The matrix result
+is a correct known-result reproduction, not evidence of mathematical novelty.
+Together the trials exercise replanning after a scoped route obstruction and
+completion after a fully checked proof in a different area. They do not
+establish broad autonomous frontier capability or a causal effect of a new
+prompt.
+
+The only repository additions are the reusable matrix statement and this
+evaluation record. Documentation diff checks pass; runtime tests are not
+repeated for this fixture-only change. Preserve the existing guide. Further
+evaluation should include another substantive open problem, since solving a
+known analysis exercise and continuing one long geometry context do not by
+themselves establish general research performance.
