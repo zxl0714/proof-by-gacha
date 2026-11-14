@@ -94,6 +94,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision13; current-source checks and second-order calibration; 10m | 2026-11-14T13-34-40-068Z-d6478f78 | quota; 526.4s; current source checked, calibrated pair transform, 174 direction orbits; uniform choice nonintegral, general profile still open |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; nonuniform orbit diagnostic and route value; 10m | 2026-11-14T13-48-07-021Z-73061a45 | quota; 534.5s; exact integer orbit model feasible; low-four output dimension at most two; stops cutoff expansion and returns to all-plane proof audit |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; secant-avoidance proof and transfer audit; 10m | 2026-11-14T14-01-42-895Z-e751e67a | quota; 524.6s; primary proof and local-filter degree barrier audited; exact tool fallback; returns to finite-field inverse scope |
+| erdos-1159-r30-fresh (continue) | Revision13 unchanged; finite-field inverse theorem scope; 15m | 2026-11-14T14-15-38-549Z-4b11f5d8 | quota; scoped theorem barriers, exact cubic control and conditional full-graph reduction; PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3301,3 +3302,118 @@ the next continuation should show whether that search supplies a discriminating
 new condition or repeats an already known reformulation. No additional guide
 rule follows from the present evidence. Only this observation log changes;
 the observer supplies no hint and edits no research-owned files.
+
+## Revision 13 continued — distinguishing an inverse theorem from a reformulation
+
+The preceding goal turn made progress: r39 completed the secant-avoidance
+proof audit, broadened its precise local-certificate obstruction, handled an
+actual operation input limitation, and saved the next finite-field structural
+question. The observation was pushed in 5bbe7dd. The checkout is clean, the
+latest run is terminal in PLAN, the guide matches revision13, and no item
+process remains.
+
+Continue with the guide unchanged for fifteen minutes, allowing time to read
+the original structural theorem statements and their characteristic bounds.
+The researcher has selected a finite-field Sylvester-Gallai/design-matrix
+scope check, specifically asking for bounded-degree containment rather than
+an ordinary span bound in the growing-prime regime. Save seven before-run
+files outside the item in
+_review/erdos-1159-r30-fresh/inverse-scope-r40. Observe whether the investigation
+uses prior failed routes, distinguishes applicable hypotheses from analogy,
+and produces a new discriminating condition or a definite transfer barrier
+instead of repeating the earlier inverse reformulation. Do not give a
+mathematical hint or alter its plan. No product change has been made; the
+existing passing product checks remain applicable.
+
+Observed outcome:
+
+- RESEARCH is saved at 14:16:50.854016 UTC before the first delegation at
+  14:16:58.930. The public trace separates design-matrix scope, ordinary-line
+  inverse results and a cubic control. The existing notes contain no earlier
+  Sylvester-Gallai/design-matrix audit, so this is a new source question
+  within the experiment, not a claim of mathematical novelty.
+- The researcher reads current primary statements and records the exact
+  field and conclusion limitations. The
+  [BDWY characteristic transfer](https://arxiv.org/html/1009.4375v2) needs a
+  threshold depending on the matrix dimensions, with no usable comparison
+  established at n=Theta(p). The inspected finite-field LCC/design bounds
+  have p-dependent errors too weak for this regime. A bound on affine span
+  already permits a plane and supplies no bounded-degree curve. The observer
+  checks these hypotheses in the primary sources, without importing a real
+  or complex conclusion into growing prime characteristic.
+- A saved elementary obstruction sharpens that distinction: the degree-D
+  Veronese images of r distinct points on a line have rank min(r,D+1) in the
+  stated regime. For a cap-k set and D>=k-1, no nonzero relation is supported
+  on one original secant. Thus the proposed lifting cannot reuse the same
+  local SG rows. This does not exclude global dependencies or all inverse
+  methods; the note identifies the actual rank deficit a curve relation
+  would require.
+- [Green-Tao](https://arxiv.org/html/1208.4714v3) has real-field hypotheses,
+  while the inspected
+  [complex inverse theorem](https://arxiv.org/html/2508.21241v1) already
+  assumes substantial bounded-degree containment. Neither supplies the
+  missing finite-field premise. The cap4 moment bound and cubic point bounds
+  do give a conditional discriminator: every cubic misses p-O(sqrt(p))
+  points of a cap4 blocker. A cubic inverse with sublinear exceptions would
+  therefore exclude that cap, but no such finite-field inverse is proved,
+  and this observation does not cover all fixed caps.
+- The exact control U={(a,a^3): a in F_p}, p>=5, has at least p-3 special
+  partners at every point, yet (p^2-1)/3 affine empty lines. Its complete
+  secant spectrum is proved symbolically. Adding the cubic's infinity point
+  does not remove the affine empty lines. The note distinguishes this failure
+  of blocking from bounded-degree containment, which the example satisfies.
+  The observer reads the proof, script and stored outputs, not a replay.
+- Jacobian operation discovery finds an affine-plane export limited to
+  primes at most seven. The researcher calibrates at q2, compares the complete
+  q5/q7 exports, and uses a local exact implementation for p13/p31. All four
+  spectrum checks pass; the local batch takes about 0.015 seconds. Contracts,
+  canonical inputs, outputs and reproduction are saved, including the fact
+  that the server version is not exposed. No oversized call, timeout or
+  solver UNKNOWN is treated as mathematical evidence.
+- The run continues beyond those scope checks to a reviewed reduction. For
+  a cap-k blocker, choose a missing direction on the line at infinity. Each
+  parallel affine fiber contains between one and k selected points. Padding
+  fibers by repetition covers the affine set with k full cap-k function
+  graphs, with at most k further points at infinity. If every such graph lay
+  on a curve of degree D(k), their product and the infinity line would give
+  degree at most kD(k)+1 and feed the previously saved AGY negative reduction.
+  This inverse statement is explicitly UNPROVED; the decomposition and
+  sufficient implication are the reviewed claims.
+- A reciprocal-graph control prevents a false strengthening. Setting f(0)=0
+  and f(x)=1/x otherwise gives cap3 but reduced polynomial degree p-2, while
+  its graph lies on the cubic x(xy-z^2)=0. Bounded interpolation degree is
+  therefore different from bounded total-degree containment. The cap2
+  calibration uses the known odd-characteristic oval theorem; the observer
+  checks [Segre's original statement](https://doi.org/10.4153/CJM-1955-045-x).
+- The researcher locates the Ball-Gacs2009 graph-power/index paper and reads
+  its primary abstract. Its institutional full text returns 403. The note
+  records that limitation and does not claim the theorem applies: the secant
+  cap has not been shown to imply its power-degree hypotheses. The reciprocal
+  example also rules out an automatic bounded interpolation-degree premise.
+
+Final handoff and evaluation:
+
+- PLAN is saved at 14:27:42.230688. The next check is the precise graph
+  power/index hypothesis and related rational or projective formulations,
+  tested against the parabola, cubic and reciprocal controls. The new inverse
+  is retained as a sufficient unproved target, not an established bridge.
+  No original candidate enters VERIFY or DONE.
+- Wrap-up arrives at 14:28:40.035. The subsequent call only refreshes the
+  existing checkpoint and summary. The run ends at 14:28:53.926, endReason
+  quota, elapsedMs 778994, on the same thread. No new research or computation
+  starts after wrap-up; all requested reviews and launched tasks are terminal.
+- PROBLEM, AGENTS and item settings are unchanged. All four automatic
+  before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY have
+  65/1/6 local links; all 185 recursively reached paths and nine checkpoint
+  paths exist. No old index target is removed and no item process remains.
+  Public trace and final observation are saved outside the research item.
+
+Keep revision13 unchanged. The run performs source-level hypothesis checks,
+uses short controls to distinguish nearby claims, and reaches a second
+substantive step rather than stopping after the first audit. The full-graph
+reduction is a sharper conditional route, not an improved bound or a solution
+of the original problem. The next continuation should determine whether its
+specific missing hypothesis can be obtained; further source reading alone
+does not establish that. No new guide requirement is justified by this run.
+Only this observation log changes, so no product tests are repeated. The
+observer supplies no hint and edits no research-owned files.
