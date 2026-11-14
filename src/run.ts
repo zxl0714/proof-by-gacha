@@ -153,6 +153,7 @@ export async function runItem(
       `Stop research now. First save state.json and ${summary} using existing evidence, with findings, evidence links, pending checks, remaining gaps, and the next concrete step.`,
       'Make only essential updates to PLAN.md, STATUS.md, and INDEX.md for continuation. Record unfinished checks or cleanup in the summary.',
       'For unresolved work, keep this handoff compact; do not expand it into new verification or conclusion reports. Do not launch or replay computations or wait for additional reviews.',
+      'Markdown links are relative to their containing file: this summary uses ../../notes/... or ../../experiments/.... Paths in state.json are item-relative.',
       'Use DONE only for a result already verified against PROBLEM.md. Finish this turn after saving.',
     ].join('\n');
     const prompt = [

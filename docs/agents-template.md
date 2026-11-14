@@ -92,7 +92,9 @@ with the new phase, relevant paths, and `updatedAt`. Keep `runId` and
 While staying in `RESEARCH`, save each substantive result or failed check.
 Refresh `STATUS.md` when evidence changes. In `INDEX.md`, link each reusable
 note, review, script, input, or result, with its purpose and verification status.
-For a batch, link its manifest and describe what it covers. Use relative links.
+For a batch, link its manifest and describe what it covers. Markdown links
+are relative to their containing file: a run summary uses `../../notes/...`
+or `../../experiments/...`. Paths in `state.json` are item-relative.
 Skip scratch files and Gacha logs.
 
 At wrap-up, first save the checkpoint and a brief `runs/<run-id>/SUMMARY.md`

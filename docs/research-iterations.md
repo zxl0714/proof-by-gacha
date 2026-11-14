@@ -57,6 +57,7 @@ establish an improvement.
 | erdos-1159-r05 | Revision 4; r04 checkpoint, new thread | 2026-11-14T03-59-01-318Z-5f970137 | timeout; RESEARCH; 630.7s; summary saved early |
 | erdos-1159-r06 | Revision 5; r05 checkpoint, new thread | 2026-11-14T04-12-04-223Z-28b27351 | quota; RESEARCH; 552.3s; summary saved |
 | erdos-1159-r07 | Revision 5; fresh trial | 2026-11-14T04-12-04-212Z-e2062565 | quota; RESEARCH; 591.9s; summary saved |
+| erdos-1159-r08 | Revision 6; r06 checkpoint, new thread; 20m | 2026-11-14T04-24-06-554Z-99611d52 | quota; RESEARCH; 1036.1s; summary/index links valid |
 
 ## Revision 1 — literature-informed decisions
 
@@ -335,3 +336,58 @@ Next change: state the reference bases explicitly. Checkpoint paths are
 item-relative; Markdown links are relative to their containing document.
 A run summary reaches notes/ and experiments/ using ../../, not ../../../.
 Test this in another genuine continuation and inspect the saved links.
+
+
+## Revision 6 — make evidence links usable
+
+Clarify the distinct bases for Markdown links and checkpoint paths in the
+template and live wrap-up prompt. This is a file convention, not another
+mathematical verification requirement.
+
+Start a cold continuation from r06's completed checkpoint, including the
+unmodified historical summaries. Use twenty minutes this time to observe
+whether the next bounded-trade question remains productive over a longer
+research interval. Only the new summary's links are the direct test of this
+wording; the longer quota and evolving research preclude a causal performance
+comparison with earlier ten-minute trials. Original items remain untouched.
+
+
+Observed results:
+
+- The twenty-minute run ended normally at 17m16s, shortly after its scheduled
+  wrap-up at 17m. The four integration tests pass. All 11 local Markdown links
+  in the new summary and all 49 in INDEX.md resolve to files. The checkpoint's
+  saved artifact paths exist. Historical summaries were not repaired by the
+  observer. This single trial supports the clarified convention, not a
+  guarantee of future link correctness.
+- The three-insertion pilot found a checked finite escape. Instead of simply
+  extending the descent, the agent derived and reviewed a conditional bound
+  on exchange candidate pools for near-blockers. A small scaling diagnostic
+  then exposed the remaining need for suitably sparse-error seeds. No
+  asymptotic failure was inferred from the finite samples.
+- Literature had a concrete effect. The agent used
+  [Szonyi-Weiner, Theorem 1.1](https://arxiv.org/html/1901.09649v1)
+  to rule out the saved q=3u profiles in Galois planes of order 3^h, h>=3,
+  despite their satisfying stronger aggregate and per-line numerical models.
+  The observer checked the cited theorem's hypotheses and the deduction.
+  The run explicitly kept its finite-field scope separate from arbitrary
+  planes. The next question concerns that missing general-plane step.
+- The run stayed in RESEARCH while reviewing intermediate claims and made no
+  claim of a full candidate, established mathematical novelty, or DONE.
+  Main-route PLAN transitions and continuously replacing stale plan prose
+  are still less clearly exercised than the complete-candidate phase guard.
+- No truly long computation was needed. These observations do not validate
+  two-hour background computation or overnight research performance.
+
+The six revisions now have twelve real runs behind them (eleven #1159 runs
+and one original stick problem). Two earlier #1159 trials timed out; those
+failures remain recorded. The latest three finished normally. The stick
+problem validates the successful candidate/VERIFY/DONE path. These tests
+show more usable execution and handoffs, and examples of evidence changing
+research decisions; they do not establish frontier-mathematics performance.
+
+Remaining research-selection questions include algorithmic literature
+coverage, when a sharper working target is worth its cost, and whether
+longer continuation keeps producing useful general statements. Keep changes
+small and evaluate those decisions directly rather than adding a fixed
+role hierarchy, route count, or mandatory certificate pipeline.
