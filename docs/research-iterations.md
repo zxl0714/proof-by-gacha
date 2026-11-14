@@ -85,6 +85,7 @@ establish an improvement.
 | erdos-1159-r24-phase (continue) | Revision11; separate phase operations; same thread and mathematical checkpoint; 20m | 2026-11-14T10-28-07-221Z-16b2d54d | quota; conditional repair and cover-objective limits; PLAN/RESEARCH/PLAN observed |
 | erdos-1159-r24-phase (continue) | Revision11 unchanged; near-minimum external-conic covers; 25m | 2026-11-14T10-52-38-254Z-114aa506 | quota; literature changes the route; finite exclusions; incomplete SMT exports detected by observer |
 | erdos-1159-r30-fresh | Revision12; fresh statement-only control; 10m | 2026-11-14T11-19-55-524Z-3d69fc9d | quota; 553.8s; RESEARCH; saved JSON readbacks pass, formal profiles remain feasible, fixed q13 diagnostic UNKNOWN |
+| erdos-1159-r30-fresh (continue) | Revision12 unchanged; finite-diagnostic checkpoint; 15m | 2026-11-14T11-37-07-679Z-0fa6eda4 | quota; 792.3s; autonomous export repair, bounded solver campaign stopped, all-order formal coding barrier; RESEARCH/PLAN/RESEARCH |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2401,3 +2402,125 @@ the route, and a bounded timeout remains a bounded timeout. File counts or
 the quantity of finite calculations are not evidence of original-problem
 progress. The external content observation and artifact audit remain under
 _review/erdos-1159-r30-fresh, separate from the researcher's checkpoint.
+
+## Revision 12 continued — value of a finite diagnostic
+
+The previous goal turn made concrete progress: revision12 was evaluated in a
+fresh run and pushed as 152cc8d. That run is terminal. Continue its own saved
+checkpoint with the same guide for fifteen minutes, allowing time to inspect
+the encoding and test a response to the five-second timeout. Seven before-run
+files are preserved outside the item under
+_review/erdos-1159-r30-fresh/fixed-incidence-r31.
+
+Observe whether the agent diagnoses the bottleneck, finds applicable methods
+or tools, and explains what a finite result would change in its mathematical
+route. Also watch whether checking its own encoding stays proportionate to
+the claim, and whether a saved pending review becomes an unproductive loop.
+No mathematical hint, new instruction, revised plan or larger solver budget
+is supplied by the observer. A useful outcome can be a justified abandonment
+or reformulation; repeated calculations alone do not establish progress.
+
+Observed outcome:
+
+- The original finite encoding passes a review at its exact five-type q13
+  scope. The reviewer explicitly notes that the earlier pinned q9 control
+  covered only the incidence/cap shell, not the profile constraints. It
+  reads the Z3 authors' cardinality/PB documentation, discovers that the
+  available Jacobian operation is not a suitable exact solver, and builds
+  a Boolean-selector formulation with a full-profile q5 control. The old
+  nested arithmetic is identified as a plausible bottleneck, not a proven
+  explanation of the timeout.
+- The ten-second PB trial, thirty-second proven flag normalization and
+  fifteen-second double-tangent/singleton normalization all remain UNKNOWN.
+  The transformations preserve a representative of every profile placement;
+  there is no unproved orbit restriction. The agent explicitly stops this
+  solver campaign pending a structural argument or measurable improvement.
+- The QF_FD serialization failure recurs naturally. A new parse/count check
+  initially passes because both pre-check assertion lists are empty. The
+  old record later reports a post-solve internal count of 12,524 despite
+  its 77-byte export containing no constraints. The observer preserves the
+  initial files outside the item and does not intervene.
+- At 11:41:24 UTC the researcher inspects sizes, hashes and actual export
+  contents. At 11:42:48 it implements its own repair: record every original
+  added formula and serialize that source list with the ordinary solver.
+  A nonempty two-assertion control and complete parsed-AST comparisons check
+  the replacement method. The three saved exports contain 2,754/2,769/2,795
+  source assertions; observer readback and hashes agree. The note explicitly
+  retracts the vacuous check and labels both old exports invalid. Native
+  solve statuses remain UNKNOWN. This supplies the specific export-path
+  coverage missing from r30, without establishing that one guide sentence
+  alone caused the repair.
+- An observer-only contradictory two-formula control independently reproduces
+  the defect outside the item: native QF_FD returns UNSAT, but its empty
+  export reloads as SAT; ordinary Solver preserves the two formulas and
+  returns UNSAT after reload. This locates the reproduction problem without
+  questioning the native computation. Script and output are retained in
+  the external r31 review directory.
+- The coding-theory route derives a formal cap-four weight enumerator with
+  nonnegative integral MacWilliams coefficients for every integer q>=13,
+  interpreted as a necessary condition only at prime-power field orders.
+  It uses exact moment divisibility, an all-high-degree bound and fourteen
+  low-degree rational-polynomial certificates. A separate review checks
+  those identities without replaying the large transforms. The extension
+  beyond the original congruence progression does not also claim the same
+  local point types or an actual projective code/blocking set.
+- Jacobian's transform works on its documented binary example but errors on
+  the prime-field target calls and rejects extension fields. The researcher
+  records those as operational limitations and uses a tested exact local
+  transform. It does not infer mathematical infeasibility or keep retrying
+  the same failing operation.
+- Related-field search reaches shallow hitting sets, hereditary hypergraph
+  methods and finite-geometry polynomial techniques. The agent checks why
+  the cited small-set, girth, dimension and hereditary hypotheses fail here.
+  Its explicit restriction-to-one-line argument refutes a too-strong
+  hereditary premise, and an all-plane Bernoulli estimate shows that simple
+  independent rejection sampling has exponentially small fixed-cap success
+  probability. Neither argument excludes correlated repair or resolves the
+  original problem.
+
+The observer separately retrieves the public
+[1997 Illes–Pisinger report](https://di.ku.dk/forskning/Publikationer/tekniske_rapporter/tekniske-rapporter-1997/97-13.pdf),
+whose journal abstract the researcher had previously read. Visual inspection
+of pages 5/9/13 confirms that its q13 table gives a size-24, cap-5 example,
+with spectrum (117,9,33,18,6). This does not answer the exact size-27, cap-4,
+no-trisecants profile under investigation. It is an independent literature
+control, not a latest-bound survey or a hint supplied during the trial. The
+agent's literature coverage remains bounded, and no novelty claim follows.
+
+Final handoff and evaluation:
+
+- The researcher records PLAN at 11:48:25.717 UTC after the geometric search
+  remains UNKNOWN and the counting/coding repairs remain feasible. Its new
+  plan asks for a coefficient or direction-multiplicity constraint before
+  more search, and explicitly asks whether an expensive finite campaign can
+  inform growing orders or general caps. Completed encoding reviews are
+  removed from the current pending work.
+- Automatic continuation records RESEARCH at 11:49:51.047 in a separate
+  state-writing call. Wrap-up arrives at 11:50:05.323 before any result of
+  the selected coefficient extraction is saved. The agent records that
+  step as pending, starts no computation or review after wrap-up, and saves
+  the final handoff. No unperformed step becomes a finding. The run ends at
+  11:50:33.027, endReason quota, elapsedMs 792259, with the same thread ID as
+  r30. This is a naturally observed RESEARCH-to-PLAN-to-RESEARCH cycle.
+- PROBLEM, AGENTS and item settings remain byte-identical. All four automatic
+  pre-run handoff copies match the observer's originals. All nine checkpoint
+  paths and 59 recursively reached artifact paths exist; INDEX/PLAN/SUMMARY
+  have 16/2/10 local links, no previous index target is removed, and no item
+  process remains. The earlier no-timeout sentence still appears above the
+  manifest's new continuation section, which correctly records the UNKNOWN
+  trials. Current notes, summary and index clearly identify the invalid
+  exports and their valid replacements.
+- The observer's final audit initially rejects its own differently shaped
+  snapshot metadata. Its helper is updated to read either stored hash format;
+  the preserved before-run bytes are not changed. The completed audit is
+  saved beside the public trace and content observations outside the item.
+
+Keep revision12 unchanged. This run provides concrete examples of autonomous
+formulation repair, scoped related-field research, artifact correction and
+route reassessment. It does not prove a general performance gain, a novel
+mathematical contribution or that the current geometric continuation will
+be useful. No product code or guide changes are made from this observation,
+so the already-passing integration suite is not repeated for this log-only
+update. A subsequent continuation should test whether the new structural
+step produces information that affects the original route, rather than
+assuming that a new representation is automatically progress.
