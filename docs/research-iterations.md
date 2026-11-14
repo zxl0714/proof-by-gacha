@@ -70,6 +70,8 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; local-restriction checkpoint; same thread; 10m | 2026-11-14T06-50-55-338Z-34e4662f | quota; 526.2s; scoped analytic generalizations, global-test limitations and revised next step; unresolved |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; translated-graph checkpoint; same thread; 10m | 2026-11-14T07-04-03-272Z-3e1a9c07 | quota; 569.0s; translated-pair obstruction, marked compatibility condition, RESEARCH -> PLAN |
 | matrix-power-control-r16 | Unchanged guidance/runtime; new matrix-analysis problem; 10m | 2026-11-14T07-04-03-275Z-9e30af09 | done; 573.3s; correct complete ranges, analytic proof, exact counterexample, full phase sequence |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; PLAN marked-gluing checkpoint; same thread; 10m | 2026-11-14T07-22-08-974Z-451ea5b8 | quota; 526.8s; PLAN -> RESEARCH; scoped three-pencil compatibility, no original resolution |
+| erdos-81-r17 | Unchanged guidance/runtime; user's quoted graph problem; new item; 10m | 2026-11-14T07-22-08-974Z-33d997d1 | done; 550.1s; complete phase sequence; attributed reconstruction of an existing proposed proof |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1119,3 +1121,126 @@ repeated for this fixture-only change. Preserve the existing guide. Further
 evaluation should include another substantive open problem, since solving a
 known analysis exercise and continuing one long geometry context do not by
 themselves establish general research performance.
+
+## Recent-claim evaluation — a second research problem
+
+Continue #1159 from its saved PLAN checkpoint while starting a separate
+#81 item with the same guide, model, effort and ten-minute quota. For #1159,
+observe whether the proposed marked-derivation compatibility test really
+starts, respects its uniqueness and coordinate conditions, and changes the
+route without replaying the excluded translated-pair construction.
+
+The new fixture, docs/research-cases/erdos-81.md, reproduces the user's quoted
+mathematical statement, quantifiers and reference list, with normalized
+Markdown links. The older saved #81 problem also contains extensive route
+instructions after those references; those are not part of the user's quoted
+statement and are not imported. The original item is not edited and its
+research notes are not seeded into the new item.
+
+The observer's current search finds recent full-resolution claims as well
+as an older catalog OPEN label, so this is not assumed to be an uncontested
+open-problem benchmark. The new research thread receives only the user's
+statement and existing references. Observe whether it discovers current
+sources, distinguishes a sharp leading coefficient from a linear error,
+and reads the concrete arguments behind any purported resolution rather
+than treating a source title, status label, or formal-package description
+as sufficient evidence. No extra mathematical acceptance condition or
+preferred proof route is supplied.
+
+Observed #1159 continuation outcome:
+
+- PLAN is updated and the first marked-compatibility check starts. The
+  checkpoint then changes to RESEARCH. There is no replay of the excluded
+  two-additive-graph search.
+- Below the equal-degree case, the agent derives a three-pencil scalar
+  compatibility condition in actual common coordinates. The p13,size25
+  trial excludes combinations which pass pair tests, but every one of the
+  eight tested edge-weight patterns still has survivors. These local
+  module combinations are not actual projective point sets.
+- At size2p+1, it replaces the inapplicable unique-generator argument with
+  a distinguished Frobenius generator and complementary radial values.
+  Complement changes act affinely on each pencil. The resulting necessary
+  condition forbids a triangle with exactly one unequal marked pair and
+  two equal pairs, assuming every shared line is a 3/4-secant. The observer
+  read the proof, including the nonzero complementary coefficients and
+  common-axis normal-killing identity. No claim of historical novelty is
+  made.
+- The saved critical trial covers 462 stated normalized p13 templates:
+  21 equal and 441 unequal types. Jacobian checks only the abstract scalar
+  linear implication, not complete projective-plane coverage. The agent
+  explicitly defers a known-witness control on the saved order-seven
+  blocker; it does not claim that control ran.
+- An auxiliary trial covers 602112 normalized parameter cases in one
+  restricted three-additive-graph family over order eight, corresponding
+  to 243936 distinct affine sets. The complete finite negative result is
+  distinguished from its earlier case-limited pilot and from arbitrary
+  triple constructions. Other auxiliary arguments have a deferred review
+  recorded in the handoff and are not premises of an original resolution.
+- The original all-plane/all-k problem remains unresolved. The next
+  concrete step is a global marked-value system on a known witness, then
+  tests of hypothetical configurations. The agent stays in RESEARCH.
+- Gacha ends at quota after 526.8 seconds. After wrap-up, public actions
+  only save the handoff and final response. No research process remains.
+  SUMMARY/INDEX have 11/108 valid local links; all eight checkpoint paths
+  exist. Recursive Markdown traversal reaches 196 existing paths, with
+  no missing targets and no prior index target removed.
+
+Observed #81 outcome:
+
+- The agent autonomously finds recent full-resolution claims and reads
+  their actual arguments. It distinguishes an old catalog status from
+  newer sources, split graphs from all chordal graphs, and asymptotic
+  quadratic error from the requested linear error. The observer supplied
+  none of these discoveries to the research thread.
+- The final candidate reconstructs the existing Morluto/Anonymous
+  manuscript from [N0zoM1z0/erdos-81](https://github.com/N0zoM1z0/erdos-81),
+  source commit cbde8a0a0563372b23b1b39a44180d2c0fb02f44. It attributes that
+  argument explicitly. A second recent preprint is corroborating
+  literature, not a missing premise in the saved proof.
+- The observer reads the full saved candidate. The near-extremal case uses
+  an integral construction. In the remaining case fixed quadratic slack
+  absorbs uniform weighted-packing error. A first-entry argument connects
+  the two regimes. A single finite graph-independent threshold, together
+  with a single-edge partition at smaller orders, supplies one absolute C.
+  No gap was found in this reading; this is not a claim of specialist
+  consensus or a new result produced by Gacha.
+- The exact list-edge-colouring bound is checked against the original
+  [Haggkvist-Janssen publisher abstract](https://www.cambridge.org/core/journals/combinatorics-probability-and-computing/article/abs/new-bounds-on-the-listchromatic-index-of-the-complete-graph-and-other-simple-graphs/18498E8F4291D12FA5D03FF011F3D2E2).
+  The observer also reads the weighted theorem and its uniform use in
+  [Rohatgi-Urschel-Wellens](https://math.mit.edu/~urschel/publications/p2021d.pdf),
+  Theorem 3.4 and the proof of Theorem 3.6. Finite Jacobian examples and
+  exact rational margin checks remain evidence only at their stated scope.
+- The complete candidate exists before VERIFY. A bibliographic title
+  correction is followed by two saved full-candidate reviews and a final
+  verification report, all identifying the final version. Reports,
+  conclusion and summary exist before DONE. Recorded transitions are
+  PLAN -> RESEARCH -> VERIFY -> DONE.
+- Gacha ends as done after 550.1 seconds. After wrap-up the agent records
+  the already-completed verification, sets DONE and completes its native
+  Goal; no new computation or review starts. No research process remains.
+- SUMMARY/INDEX/PLAN have 11/19/3 valid direct local links, and all seven
+  checkpoint paths exist. Recursive traversal reaches 28 existing paths
+  and five missing figure assets referenced inside imported third-party
+  manuscripts. These are incomplete local source mirrors, not missing
+  candidate/review files; the source URLs are retained. Other archived
+  third-party README links likewise require their source repository.
+  No claim of a self-contained offline archive is made.
+
+Both inputs and guide copies remain byte-identical to their before-run
+snapshots, and both guides match the repository template. The original #81
+statement also retains its recorded digest. The observer makes no changes
+to agent-owned research artifacts.
+
+These trials support two useful behaviors: a continuation can repair the
+scope of its proposed next step, and a new problem can be resolved through
+attributed use and examination of existing work. They do not establish
+novel mathematical discovery, general frontier performance, or a causal
+improvement from a new prompt. Preserve the guide and runtime; this
+iteration adds the reusable user-provided #81 statement and evaluation
+record only. Documentation diff checks suffice for these changes.
+
+The next evaluation should observe whether the saved global-system control
+actually changes the #1159 route. In choosing further benchmarks, establish
+the current literature position first: an old OPEN label alone does not
+make a problem an appropriate novelty test. Keep this as an evaluation
+decision, not an extra mathematical acceptance criterion in PROBLEM.md.
