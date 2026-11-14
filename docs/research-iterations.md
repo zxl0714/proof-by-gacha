@@ -105,6 +105,7 @@ establish an improvement.
 | erdos-1159-r43-fresh (continue r47) | Revision15 unchanged; integer compatibility and route value; 10m | 2026-11-14T16-14-43-122Z-bb34aabb | quota; exact signed integer span passes, nonnegative trial UNKNOWN, partial integer branch survives; signed cap-four bridge to cap seven; complete references but late checkpoint refresh |
 | erdos-1159-r43-fresh (controlled interruption r48) | Revision15 unchanged; planned ordinary SIGINT after about 4m | 2026-11-14T16-30-01-340Z-b36cac36 | cancelled intentionally; exit130, lock released, 31 newer artifacts retained, central next action stale and no current summary |
 | erdos-1159-r43-fresh (r48 recovery) | Revision15 unchanged; ordinary continue after verified SIGINT exit; 10m | 2026-11-14T16-35-36-494Z-0ada9fab | quota; recovered 31 unchanged artifacts without replay, stale plan corrected; old branch rejected and replacement refined; conditional signed-weight progress, original unresolved |
+| erdos-1159-r43-fresh (continue r49) | Revision15 unchanged; surviving refinement and route value; 10m | 2026-11-14T16-54-09-996Z-8e073eb6 | quota; five-class rational flags survive after batch-pricing repair, finer pairs remain open; conditional cap-five theorem and two-pencil obstruction; useful signed-weight literature lead |
 
 ## Revision 1 — literature-informed decisions
 
@@ -4303,3 +4304,113 @@ one late but successfully recovered handoff. This result has the explicit
 same-thread limitation above. The next research continuation should test
 whether the surviving refined branch produces another useful decision,
 while preserving bounded trials and the separate original-problem gap.
+
+## Revision 15 continuation — value of the surviving refinement
+
+The previous goal turn made progress: the controlled cancellation/recovery
+experiment was audited and pushed in 9291927. Reinspection confirms a clean
+checkout, unchanged inputs and revision15 guide, terminal run metadata and
+no process in the item. The research-owned handoff proposes a finer
+line-composition check on the surviving 32/14 branch; the signed route
+requires a structural or formulation advance before more search.
+
+Keep the guide unchanged and continue for ten minutes with the same model
+and effort. Save the seven-file and artifact inventories outside the item
+in _review/erdos-1159-r43-fresh/continue-r49. Observe whether this next check
+changes the route, whether new bottlenecks trigger relevant literature or
+tool discovery, and whether the remaining original-problem gap stays
+explicit. Also sample checkpoint references and inspect the actual wrap-up.
+Do not supply mathematical hints or edit research-owned plans, evidence,
+settings or metadata. Product tests are not repeated for observation alone.
+
+Observed in run 2026-11-14T16-54-09-996Z-8e073eb6:
+
+- Gacha continues the same parent thread. The parent reads the current
+  statement/checkpoint and pursues the saved finite check alongside
+  structural and literature work. Public traces cover the parent and three
+  new descendants; hidden reasoning and private message bodies are excluded.
+- The saved point model gives fifteen nonzero point classes and five line
+  classes. The new export is checked against all 31 actual lines at q5.
+  All five per-line integer composition queries return SAT through
+  Jacobian in 339–344 ms, within five-second bounds. These are necessary
+  local conditions, not an incidence realization.
+- The researcher next tests global first flags. A class-zero column-
+  generation trial reaches its fifty-iteration limit after 0.35 seconds
+  and is explicitly UNKNOWN. Instead of discarding the columns or raising
+  the time limit, it retains the 51 generated columns and adds up to eight
+  negative-price columns per iteration. This reaches an exact rational
+  solution at 75 columns in another 0.05 seconds. The other four classes
+  already pass their initial short trials. This is a concrete algorithmic
+  adjustment after a trial limit, not a claim of solving a difficult
+  long-running benchmark or replacing a slow solver.
+- A combined 36-composition witness satisfies all 80 first-flag/count
+  equations. Exact reconstruction and Jacobian's supplied-LP checker
+  confirm those equations; the latter takes 209 ms. Its zero-objective
+  optimality flag adds no mathematical claim. All 32,767 refined Johnson
+  subset screens also pass. Crucially, the saved witness fails 119 of the
+  120 finer point-pair equations, which were not imposed in its search.
+  The notes and final handoff distinguish this particular witness's failure
+  from infeasibility of all possible mixtures. That stronger system is the
+  next finite check, not a completed construction.
+- Structural work proves a conditional support bound: for q>=5 with
+  3 not dividing q, every integer signed-cap-four weighting has ordinary
+  positive support of cap at most five. A defect-line singleton argument
+  removes the former cap-six possibility, including the remaining q7 case.
+  The parent reviews the counting and scope. The observer reads the proof
+  and checks its residue cases, covering inequalities and exceptional case;
+  no new tool-verification requirement is imposed on the researcher.
+  Existence of the signed weighting remains unproved.
+- An all-cap intermediate lemma rules out bounded positive words generated
+  modulo integer q by two pencils when q>2(k-1) and their total must be
+  divisible by q+1. The proof uses rectangle lifting and mass divisibility;
+  q4/k2 and q5/k3 scalar export queries return UNSAT in 233/204 ms.
+  Those two checks are not presented as the infinite proof. Before saving
+  the handoff, the parent narrows a prospective inverse target to admitted
+  words along growing prime orders, explicitly avoiding a false all-order
+  classification in light of known fixed-characteristic constructions.
+  No general inverse theorem or original all-k conclusion is claimed.
+- Literature work searches related coding, covering, finite-Radon and
+  weighted-arc terminology. It finds Bierbrauer's signed affine weighted-
+  arc paper and records the important distinction between upper-only
+  affine bounds and the present lower-and-upper projective question.
+  The observer independently inspects the [primary publisher abstract](https://link.springer.com/article/10.1007/BF01788137): integer weights,
+  affine scope and upper-only line integrals agree with the note. The
+  full paper remains inaccessible in this run, so no detailed theorem
+  is imported. Both the new source lead and its unresolved applicability
+  are retained for continuation. Novelty is not established here.
+- An observer-side search also locates [Orbiter's existing row/column
+  refinement implementation](https://www.math.colostate.edu/~betten/orbiter/html/d7/d81/tdo__refinement_8cpp_source.html). This is not injected into the research item
+  or claimed to have been used by the agent. The current trial is already
+  subsecond, and the known tactical-decomposition framework is cited in
+  the research notes; this observation alone does not justify installing
+  another tool or adding a tool-specific instruction.
+- Three checkpoint versions are sampled at one-second granularity, all
+  RESEARCH and all with existing references. The first research refresh
+  is saved at 17:02:37.628586, about 508 seconds after run start, after
+  individual artifacts have already been saved. The observer starts about
+  16 seconds after launch and sees no read error. Late central refresh
+  remains an observation, not proof of a broken recovery path; this run
+  does not repeat r48's controlled interruption experiment.
+- Gacha sends wrap-up at 17:02:51.984. Only a compact existing-evidence
+  handoff update follows; no computation or review is started. The run
+  ends at 17:03:05.136 with endReason quota, elapsedMs 523335, exit0,
+  no error and child Goal paused. No complete candidate enters VERIFY
+  or DONE, and no process remains in the item.
+- PROBLEM, AGENTS and item settings remain unchanged. All four automatic
+  before-run copies match the external snapshot. INDEX/PLAN/SUMMARY have
+  71/3/7 direct links; all 297 recursively reachable paths and thirteen
+  checkpoint paths exist, with no old index target removed. All 41 JSON
+  artifacts in the three new batches parse normally. The 296 earlier
+  notes/experiment files are unchanged; new artifacts include 142 saved
+  pricing requests described as a batch by its manifest and one scratch
+  Python cache file. Observations and snapshots stay outside the item.
+
+Retain revision15. This continuation supplies evidence of small discriminating
+trials, useful reuse of generated work, a concrete algorithmic repair,
+related-field literature discovery and explicit limits on intermediate
+claims. It does not establish an original-problem result, mathematical
+novelty, or general research capability across domains. Avoid turning every
+successful behavior or late checkpoint into another instruction. The next
+continuation can test whether the finer pair system produces a useful
+decision; assess route value again before substantially increasing its
+computational effort, and preserve the structural/literature alternatives.
