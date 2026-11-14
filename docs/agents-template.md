@@ -95,8 +95,10 @@ note, review, script, input, or result, with its purpose and verification status
 For a batch, link its manifest and describe what it covers. Use relative links.
 Skip scratch files and Gacha logs.
 
-At wrap-up, first save the current checkpoint and `runs/<run-id>/SUMMARY.md`
-using existing evidence: findings, evidence links, pending checks, remaining
-gaps, and the next concrete step. Then refresh `INDEX.md` from saved artifacts.
-Leave unfinished checks pending; do not start or replay computations or wait
-for additional reviews. Finish the turn by the deadline in the launch prompt.
+At wrap-up, first save the checkpoint and a brief `runs/<run-id>/SUMMARY.md`
+using existing evidence: findings, evidence links, remaining gaps, and the
+next concrete step. Make only essential plan, status, and index updates for
+continuation; record unfinished checks or cleanup in the summary. For
+unresolved work, keep this handoff compact instead of producing new
+verification or conclusion reports. Do not start or replay computations or
+wait for additional reviews. Finish the turn by the launch deadline.

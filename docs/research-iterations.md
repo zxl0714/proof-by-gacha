@@ -55,6 +55,8 @@ establish an improvement.
 | erdos-1159-r04 | Revision 3; fresh replication | 2026-11-14T03-39-45-185Z-19568ebd | timeout; RESEARCH; 630.7s; summary saved |
 | stick-allocation-regression-r03 | Revision 3; original stick problem | 2026-11-14T03-39-45-183Z-0f9fc349 | done; DONE; 540.1s; summary saved |
 | erdos-1159-r05 | Revision 4; r04 checkpoint, new thread | 2026-11-14T03-59-01-318Z-5f970137 | timeout; RESEARCH; 630.7s; summary saved early |
+| erdos-1159-r06 | Revision 5; r05 checkpoint, new thread | 2026-11-14T04-12-04-223Z-28b27351 | quota; RESEARCH; 552.3s; summary saved |
+| erdos-1159-r07 | Revision 5; fresh trial | 2026-11-14T04-12-04-212Z-e2062565 | quota; RESEARCH; 591.9s; summary saved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -255,7 +257,10 @@ Observed results:
   reports and a PLAN.md replacement. The patch used delete/add operations
   for the same file, which apply_patch rejected. It did not recover before
   the 04:09:31 hard stop. PLAN.md remained stale, while state.json and the
-  summary preserved the new findings and actual next step.
+  summary preserved the new findings and actual next step. The checkpoint
+  also referenced three planned files that the rejected patch never created
+  (verification, conclusion, and an artifact manifest). These are incomplete
+  references in RESEARCH, not evidence of a completed result.
 - The 4 integration tests pass, but they establish protocol delivery and
   lifecycle behavior, not reliable model compliance. This live trial is
   explicitly a timeout, not a successful wrap-up.
@@ -264,3 +269,69 @@ Next change: make unresolved-run wrap-up a compact handoff rather than a
 second report-writing phase. Keep the summary as the central handoff, make
 only essential continuation updates, and leave unfinished checks or cleanup
 pending. Do not add tool-specific patch instructions to the research guide.
+
+
+## Revision 5 — keep unresolved-run handoffs compact
+
+Revision 4 preserved the important checkpoint but the agent still generated
+a large, redundant final documentation batch. Limit wrap-up to a compact
+summary and essential continuation updates. Unfinished checks and cleanup
+remain explicit pending work. Full original-problem VERIFY and DONE still
+require the saved candidate, verification, and conclusion.
+
+Test two new items: a cold continuation from r05's interrupted checkpoint
+(including its stale plan, copied without edits) and a fresh #1159 run.
+Both use the same ten-minute quota and run concurrently. This checks recovery
+from imperfect documentation as well as a fresh handoff, without injecting
+an observer-written plan or a mathematical answer.
+
+
+Additional observer finding, not injected into either live trial:
+
+The directly relevant [Illes-Pisinger technical report, 1997, pp. 6-9](
+https://di.ku.dk/forskning/Publikationer/tekniske_rapporter/tekniske-rapporter-1997/97-13.pdf)
+already models this covering problem with integer programming and a simulated
+annealing heuristic. It permits infeasible intermediate states, penalizes
+empty/overfull lines, and incrementally updates the objective in O(q) per
+point change. Its finite upper-bound table does not prove a constant bound
+over all planes.
+
+The observer read the original method and result-table pages. The r04-r06
+notes inspected so far do not cite this algorithmic baseline. This does not
+make their bounded-trade obstructions invalid or redundant: the mathematical
+claims and the old heuristic are different. It is a concrete literature
+coverage question before further search engineering. Future evaluation should
+check whether citation/terminology expansion finds relevant algorithms and
+whether those findings actually change a decision, without adding this
+problem-specific paper to the generic instructions.
+
+
+Revision-5 outcomes:
+
+- Both live trials ended normally before the ten-minute target, without
+  new computations/replays or new final verification/conclusion reports at
+  wrap-up. Checkpoints and summaries were saved about 33 seconds after the
+  steer; essential plan/index updates followed. Neither entered VERIFY/DONE.
+  The four integration tests also pass.
+- Cold recovery selected the newer net-coverage question from state.json,
+  despite the stale plan. It did not repeat the old preserving-trade test.
+  It removed the inherited nonexistent report/manifest pointers rather than
+  inventing completed reports. Saved scripts and a flow reduction supplied
+  stronger finite neighborhood obstructions and a few improving trades.
+  The all-plane problem remains unresolved.
+- The fresh run recovered known moment bounds, produced abstract profile
+  families, and tried two finite q13 encodings under the fixed work limit.
+  Both returned UNKNOWN; scope was kept explicit. It still chose familiar
+  small-case work, so reliable wrap-up does not imply improved research
+  selection or novelty.
+- A separate relative-link audit found 10/10 broken evidence links in r06's
+  new SUMMARY.md: each used ../../../ from runs/<run-id>/, one level too high.
+  Its INDEX.md links were valid. The fresh run's 15 summary links were valid.
+  The inherited r05 summary has the same error (16/16 links). No observer
+  repaired these research files. This is a handoff usability failure even
+  though the files and mathematical findings remain present.
+
+Next change: state the reference bases explicitly. Checkpoint paths are
+item-relative; Markdown links are relative to their containing document.
+A run summary reaches notes/ and experiments/ using ../../, not ../../../.
+Test this in another genuine continuation and inspect the saved links.
