@@ -77,6 +77,9 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Revision 9; handoff recovery and current pending checks; same thread; 10m | 2026-11-14T08-22-50-434Z-00c0447b | quota; 542.5s; index recovered with earlier entries retained; all-pair refinement, finite controls and a literature-dependent next gap; RESEARCH |
 | erdos-1159-r10 (continue) | Unchanged revision9; product-span applicability gap; same thread; 20m | 2026-11-14T08-37-11-154Z-0c15b146 | quota; 1061.6s; applicable literature closes critical criterion, published larger minimal blocker refutes deletion reduction; RESEARCH |
 | erdos-1159-r10 (continue) | Unchanged revision9; value after intermediate success; same thread; 10m | 2026-11-14T08-57-41-235Z-5ab5ac77 | quota; 525.9s; known-example extraction refutes a gauge shortcut; value reassessment records RESEARCH -> PLAN |
+| erdos-1159-r10 (continue) | Unchanged revision9; structural PLAN checkpoint; same thread; 10m | 2026-11-14T09-09-26-247Z-702d9c22 | quota; 562.8s; intrinsic invariant and scoped countermodels; PLAN -> RESEARCH recorded after experiments |
+| erdos-1159-r24-phase | Revision10; new item and thread; original statement; 10m | 2026-11-14T09-20-31-870Z-d43e0764 | quota; 524.9s; research recorded before delegation/computation; scoped all-order relaxation barrier; PLAN -> RESEARCH -> PLAN |
+| erdos-1159-r24-phase (continue) | Revision10 unchanged; natural PLAN checkpoint; same thread; 10m | 2026-11-14T09-31-05-437Z-afd73765 | quota; 563.2s; research recorded before delegated continuation; scoped residue identity and route barriers; PLAN -> RESEARCH -> PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1736,3 +1739,202 @@ checks pass; the runtime and guide are unchanged from the previously tested
 implementation. Next observe whether the PLAN checkpoint produces a
 discriminating structural question and starts useful work without reopening
 completed finite controls or merely restating the original conjecture.
+
+## From reassessment to an executable structural question
+
+The preceding goal turn completed a ten-minute continuation, audited its
+RESEARCH -> PLAN transition and artifacts, and pushed9a50c5c. That was
+progress: the agent rejected a demonstrated gauge shortcut and declined to
+extend an equivalent decision test without a link to existence. The
+replacement structural question has not yet been made into a proved lemma
+or an executed discriminating check.
+
+Continue the same item and thread for ten minutes with revision9 unchanged.
+Observe how the agent turns its own PLAN checkpoint into work: does it name
+a specific invariant, structural assertion or alternative route, check known
+results and saved counterexamples, record the appropriate phase transition,
+and act on the findings? An unexplained request for a bounded-degree inverse
+theorem could be as hard as the original problem, so merely repeating that
+request would not establish progress.
+
+The observer supplies no candidate invariant, literature lead or preferred
+outcome. Before-run copies of all six input/handoff files are saved outside
+the item at _review/erdos-1159-r10/plan-bridge-r23. PROBLEM, AGENTS, runtime,
+model and effort remain unchanged. Revalidate the terminal preceding run
+before starting this independent quota; this is not a restart of a live job.
+
+Observed outcome:
+
+- The agent selects a specific gauge-independent expression,
+  I=F(Q)/Q=sum alpha_H^(p-1), and relates it to the complementary bracket
+  coefficient. It evaluates to size minus line load modulo p and is defined
+  even without blocking. Three saved PG7 inputs check the expression;
+  Singer19 gives a special cubic-norm-square identity that does not extend
+  to the critical control. A separate bracket computation checks the exact
+  coefficient identity. These are short scoped controls, not an original
+  existence result.
+- It seeks projective-plane code and projection-function classifications.
+  The [small-weight codeword theorem](https://arxiv.org/abs/2411.19201)
+  requires small support, not merely a bounded alphabet; the
+  [few-special-direction result](https://arxiv.org/abs/2609.21779)
+  controls nonconstant projection directions, not the number of values.
+  It records why those hypotheses have not been obtained here.
+- Countermodels distinguish the full geometric problem from weaker
+  few-value or pure-power assertions. An elementary counting family refutes
+  bounded factor descriptions from few values alone; a two-point source
+  refutes a pure-power shortcut but is not blocking. Neither is presented
+  as a counterexample to the original structural conjecture.
+- The agent proves and reviews injectivity of this invariant for source
+  sets with line cap k when p>2k. Integer lifting of line-load differences
+  and rational incidence inversion recover the source. It distinguishes
+  this faithful encoding from the missing bounded-degree inverse theorem.
+  The final next step retains the actual binary, bounded-secant source
+  condition rather than treating arbitrary few-valued words as equivalent.
+- State timing is incorrect. A completed new experiment is saved at
+  09:12:40 UTC, while the only checkpoint is still PLAN. An external
+  phase-observation.json records the same mismatch at09:14:29. The first
+  RESEARCH checkpoint appears at09:16:12, about212 seconds after that
+  completed experiment, following substantive delegated mathematical work.
+  The final phase is reasonable, but its event time does not describe when
+  research actually began.
+- Normal quota exit after562.8 seconds; no original candidate or DONE claim.
+  Post-wrap work saves the handoff, with no new computation or review.
+  Inputs and guide are unchanged, all four automatic snapshots match the
+  before-run copies, all eight checkpoint paths exist, and all earlier
+  index targets remain. INDEX/SUMMARY contain164/6 local links. Recursive
+  traversal reaches296 existing paths and the same older notes/v formatting
+  defect; no new missing target or remaining process appears.
+
+## Revision 10 — record research before executing the chosen check
+
+Replace the PLAN-to-RESEARCH instruction with an explicit ordering: once a
+concrete check is chosen, save its plan and record RESEARCH before running
+or delegating it. Keep the same four states and the existing evidence/status/
+index update procedure. Update the matching design-table row. The failure
+does not justify inferring mathematical phases from shell commands, a new
+scheduler, or a requirement to approve every delegated task.
+
+Do not rewrite the delayed historical transition or the agent's mathematical
+files. Test the revised guidance on a fresh isolated Erdős1159 item for ten
+minutes, using the exact same problem text, model and effort. Observe the
+state update relative to the first selected mathematical check, including
+delegated execution. This is a fresh-path regression, not a controlled replay
+of the continued thread; a pass cannot prove that every continuation will
+follow the ordering.
+
+The existing seven CLI integration tests and TypeScript build pass. The new
+item's guide hash is4ea09278362bddb0864a567ed9c1441e9bf98c4a0cf1be8f2c6a972a36dc0eef;
+its problem hash remains be1ab2f64347f22bd30aa220ebce8fe748355be25b69ffe228c911e37a0639a1.
+Before-run files are saved at _review/erdos-1159-r24-phase/phase-r24.
+The mode is continue because this is the first ordinary run after gacha add;
+there is no earlier thread or imported mathematical checkpoint in this item.
+
+Initial timing evidence:
+
+- The new agent reads the actual AGENTS.md at09:20:43 UTC, then checks
+  sources and tool capabilities while in PLAN.
+- It saves PLAN, STATUS, INDEX and the RESEARCH checkpoint at09:21:41.
+  The first delegated task follows at09:21:46, the first exact Jacobian
+  operation at09:22:14, and its saved result at09:22:34. The selected
+  mathematical work therefore follows the phase change, unlike r23.
+- The external phase-observation.json records these public task/operation
+  blocks, checkpoint events and artifact times. A failed invocation of
+  python is corrected to python3 before the successful checkpoint; this
+  does not produce premature mathematical results.
+- Subsequent work remains ordinary autonomous research: primary-source
+  scope checks, a bounded-coloring encoding, bounded exact searches, and
+  aggregate pencil constraints. The q7/q11 search produces cap-four
+  examples, with the q11 size21 case taking about43 seconds under60 seconds.
+  These are known finite controls, not evidence of a new original result.
+
+Final fresh-path evaluation:
+
+- The aggregate-pencil work yields explicit feasible data for every integer
+  q>=3, with polynomial-identity and nonnegativity arguments. This rules out
+  that relaxation as an obstruction, not cap-four blocking sets. The agent
+  records the route limitation and returns to PLAN at09:28:27.
+- Three q13 searches, unrestricted, size26 and four-secant normalized,
+  each return UNKNOWN at60 seconds. None is converted to an infeasibility
+  claim. The saved continuation proposes a complete cross-ratio split and
+  a known-witness normalization check before further search.
+- The run ends normally after524.9 seconds. After the wrap instruction, an
+  automatic continuation only reads the handoff and refreshes it; no new
+  computation or review begins. PROBLEM/AGENTS are unchanged, the sole
+  initial checkpoint snapshot is exact, all nine checkpoint/evidence paths
+  exist, and no research process remains.
+- INDEX/PLAN/SUMMARY contain12/2/10 local link occurrences. All35 recursively
+  reached paths exist. The observer audit now includes the observed
+  evidence-array checkpoint field, rather than silently omitting its paths.
+
+The initial ordering is correct in this trial, but the original failure
+occurred on continuation. Since this item naturally ends in PLAN, continue
+the same thread for another ten minutes with the guide unchanged. Observe
+whether it records RESEARCH before implementing or delegating its own saved
+cross-ratio check. This closes a coverage gap in the regression, without
+editing its plan or inserting a preferred mathematical step.
+
+The long-running experimental item erdos-1159-r10 also receives revision10
+in AGENTS.md after its r23 run has ended and been audited. An external
+guide-revision10.json records the timestamp and old/new hashes; its problem,
+plan, status, index and mathematical artifacts are not edited by the observer.
+
+Continuation timing evidence:
+
+- The second trial resumes the identical thread
+  01a1d95b-c39d-7ca2-be33-2b156751db00 from its naturally saved PLAN.
+  At09:31:50 UTC it saves the updated plan/status and RESEARCH checkpoint;
+  the first delegated check follows at09:31:56. Implementation, normalization
+  checks and solver calls occur afterward. Thus both the first-run and
+  continuation observations satisfy the revised ordering.
+- Known q7 instances pass the normalized t=2,3 branch controls. The q13
+  representatives2,3,4 cover its cross-ratio orbits. Three-second standard
+  and finite-domain trials, and ten-second trials with minimality constraints,
+  remain UNKNOWN at q13. They are not reported as exclusion proofs.
+  Structural and related-literature work proceeds alongside the trials.
+- The observer does not inject a phase command, edit the mathematical plan,
+  or supply the branch decomposition. These are executions of the agent's
+  own checkpoint. The two successful observations support keeping the
+  clarification but do not establish a deterministic guarantee or isolate
+  its effect from sampling and context differences.
+
+Final continuation evaluation:
+
+- The run ends normally after563.2 seconds, with a PLAN checkpoint and no
+  original candidate or DONE claim. The agent implements the normalized
+  branches, checks their coverage on saved witnesses, and stops the q13
+  search after the bounded variants remain UNKNOWN. It does not inflate
+  the same budgets merely because the smaller controls are easy.
+- The structural note derives an exact weighted-residue identity for every
+  cap from the incidence moments. It distinguishes an equivalent encoding
+  from an existence theorem: the sparse-residue feature is specific to
+  cap four, while larger fixed caps permit quadratic cost. An alternative
+  integer encoding times out even on a known q7 example; pinning its saved
+  witness establishes consistency, not a performance improvement. The next
+  saved trial is a Boolean encoding on that small control before any larger
+  allocation.
+- The related-field search reads Alon's partial-design construction and
+  the original Erdős–Silverman–Stein paper. It explains why independently
+  thinned incidences do not transfer a blocking obstruction to complete
+  plane lines. Its elementary sampling argument excludes high-probability
+  independent sampling at a fixed cap, without excluding rare sets or
+  correlated constructions. These scoped barriers influence the route;
+  no novelty or original-problem resolution is claimed.
+- One Jacobian q13 request loses its decision envelope during persistence.
+  The agent records the failure and excludes the result from mathematical
+  evidence. Its operational UNKNOWN is explicitly distinguished from a
+  documented solver timeout. This is a result-retention defect, not evidence
+  against the solver or a reason to require independent certificates for
+  all mature-tool results.
+- After the wrap instruction, the remaining public action saves the handoff;
+  no new computation or review begins. All four automatic before-run copies
+  match the external snapshots. PROBLEM/AGENTS remain unchanged; all eight
+  checkpoint paths and59 recursively reached artifact paths exist, with
+  no missing link, removed earlier index target or remaining research process.
+  INDEX/PLAN/SUMMARY contain17/3/10 local link occurrences.
+
+The phase-ordering regression now has both fresh and continued observations.
+Further testing should return to research value: whether the next small
+encoding trial changes a useful decision, and whether the agent pursues a
+route relevant to arbitrary caps and planes instead of indefinitely optimizing
+one finite cap-four instance. The observer has not changed the mathematical
+plan or supplied a preferred route.

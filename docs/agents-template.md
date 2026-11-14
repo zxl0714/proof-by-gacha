@@ -73,8 +73,10 @@ or its verification status changed. Then atomically replace `state.json`
 with the new phase, relevant paths, and `updatedAt`. Keep `runId` and
 `problemSha256`.
 
-- **PLAN → RESEARCH.** Save `PLAN.md` with the key lemma, how it advances
-  the original claim, and the next concrete check. Start that check immediately.
+- **PLAN → RESEARCH.** Once you choose a concrete check, save `PLAN.md`
+  with the key lemma and how it advances the original claim. Record
+  `RESEARCH` in `state.json` before running or delegating that check,
+  then start it immediately.
 - **RESEARCH → VERIFY.** Enter only for a complete candidate that would
   resolve `PROBLEM.md` if correct. Save the proof or counterexample as a
   separate file, record its relative path as `candidate`, and mark it pending
