@@ -62,6 +62,7 @@ establish an improvement.
 | erdos-1159-r09 | Revision 7; same r07 checkpoint, new thread | 2026-11-14T04-49-41-737Z-436ee096 | needs input; 93.3s; no current-run summary |
 | erdos-1159-r10-control | Revision 6 guidance; repaired environment; r07 checkpoint | 2026-11-14T05-21-19-807Z-a4749fba | quota; RESEARCH; 527.5s; no approval requests |
 | erdos-1159-r10 | Revision 7 guidance; repaired environment; r07 checkpoint | 2026-11-14T05-21-19-821Z-01dec749 | quota; RESEARCH; 530.4s; no approval requests |
+| erdos-1159-r10 (continue) | Revision 7 guidance; runtime revision 8; same thread; 20m | 2026-11-14T05-33-34-014Z-0539fc66 | quota; 1061.0s; autonomous SAT backend change, scoped route barriers and non-Desarguesian controls; unresolved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -573,3 +574,78 @@ the alternative gives no structural progress. Next, continue that item
 without adding a new instruction: test whether the agent actually carries
 out its own tool-change plan. A longer continuation can also check whether
 useful research continues after the initial setup and calibration.
+
+
+## Revision-8 continuation — test an agent-proposed tool change
+
+Continue erdos-1159-r10 in its existing Codex thread for twenty minutes,
+using the same instructions, runtime, and installed baseline tools. The
+checkpoint itself proposes a distinct SAT backend/cardinality-CNF encoding
+and a small known-instance check before more q13 search. No observer supplies
+a package name, an encoding, or a mathematical repair.
+
+Observe whether that plan is executed, whether setup failures can be
+recovered from without human intervention, and how the agent compares the
+alternative against its previous Z3 trials. Then assess whether the longer
+run changes route when evidence warrants it, rather than only increasing
+search time. The longer quota and evolving checkpoint are observational;
+this is not a paired causal test of a new instruction.
+
+The live run reuses the expected thread and records the current never
+approval policy and network-enabled workspace sandbox. No source or guide
+changed, so the already-passing integration suite is not rerun for this
+continuation alone.
+
+
+Observed continuation outcome:
+
+- The run ended normally after 1061.0 seconds, within its twenty-minute
+  target, and remained in RESEARCH. The summary has 10 valid local links,
+  the index has 43, and the plan has one. Every checkpoint artifact path
+  exists, the original problem digest is unchanged, and no matching solver
+  process remains. After the wrap signal, the public trace contains only
+  checkpoint/handoff updates and the final response.
+- The agent independently discovered PySAT, read its official cardinality
+  and solver documentation, and installed python-sat 1.9.dev22 into its
+  writable cache. This installation was autonomous, unlike the observer's
+  earlier Z3 preparation. It implemented a separate cardinality-CNF model
+  with CaDiCaL 1.9.5. A malformed DIMACS-comment serializer was rejected
+  before solving; the agent repaired it and reran the controls.
+- Both known q7 controls returned SAT in about 0.04 seconds and passed
+  checks against the incidence data. All three q13 branches returned
+  UNKNOWN after 20-second trials and again after individually bounded
+  180-second background trials. The runner terminated the child processes
+  at their deadlines and saved the outcomes. This establishes execution
+  of the proposed alternative, not a speed advantage on the hard instance.
+- While the bounded searches ran, the agent continued mathematical and
+  literature work. It used shallow-hitting-set terminology and primary
+  sources to distinguish the available regular-hypergraph results from
+  projective planes. An auxiliary random-configuration argument excludes
+  a constant bound based only on regularity, equal degree/edge size, and
+  linearity. The note and its review explicitly retain the missing plane
+  saturation condition; no counterexample to the original problem is claimed.
+- Additional scoped work rules out a bounded-exchange shortcut and overly
+  balanced orthogonal-array constructions. A pencil-count argument removes
+  sizes 36 and 37 from this branch's q13 search, leaving 22-35. This is a
+  necessary-condition refinement within the branch, not an established
+  improvement over the literature or the earlier research directories.
+- The agent constructed and checked an order-nine non-Desarguesian plane,
+  found finite maximum-four examples, and compared a cubic-graph rule
+  between field and nearfield planes. The same rule has maximum secant
+  four in one and nine in the other. These are known-type finite controls
+  and a concrete failure of a proposed transfer, not an all-plane theorem.
+- The final plan deprioritizes repeating q13 timeouts. Its next check is
+  an algebraic description and possible extension of the nearfield
+  example, tested against every slope and the saved transfer obstruction.
+  It explicitly says that success in that subclass would still leave the
+  arbitrary-plane requirement unresolved.
+
+This unchanged-guidance continuation demonstrates an autonomous tool change,
+bounded background work, source-informed scope checks, and a subsequent route
+decision without an observer supplying the package, encoding, or mathematical
+repair. It does not establish statistical improvement, mathematical novelty,
+or a resolution of Erdős #1159. No new global research rule is justified by
+this run alone. Evaluation of generality should also use other problem types,
+so the workflow does not become a collection of instructions tailored to this
+one finite-geometry case. Only this development record changed; the passing
+runtime tests are not repeated for a documentation-only update.
