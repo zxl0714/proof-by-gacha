@@ -97,6 +97,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; finite-field inverse theorem scope; 15m | 2026-11-14T14-15-38-549Z-4b11f5d8 | quota; scoped theorem barriers, exact cubic control and conditional full-graph reduction; PLAN |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; full-graph inverse hypothesis check; 15m | 2026-11-14T14-35-19-185Z-781935f5 | quota; 784.2s; uniform counterexample refutes exact and fixed-exception inverse; robust sublinear-exception repair remains unproved; PLAN |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; approximate inverse and related-field scope; 10m | 2026-11-14T14-53-15-328Z-02cf614d | quota; 525.0s; identifies known Green conjectural route and exact-r length obstruction; PLAN |
+| erdos-1159-r43-fresh (fresh) | Revision14; known open formulations and discussion sources; 10m | 2026-11-14T15-09-25-949Z-1b277982 | quota / PLAN; known inverse conjecture found in the first run; cap-four relaxation limits recorded; original problem unresolved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3636,3 +3637,112 @@ supplying Green or altering a research-owned plan. This is a prospective
 experiment, not a claim that a wording change has already improved results.
 Revision13 remains unchanged during r42. Only this observation log changes,
 so product tests are not repeated.
+
+## Revision 14 — known open formulations and discussion sources
+
+The preceding goal turn made progress: r42 identified Green's already
+conjectural approximation route, checked code/arc scope, and ruled out a
+length-only comparison using actual nonblocking examples. Its observation
+was pushed in d3b0e43. The checkout was clean, r42 was terminal in PLAN,
+and no process remained in its item.
+
+Clarify the existing literature paragraph with open conjectures, surveys
+and problem discussions. Preserve its related-field tools, equivalent
+formulations, current-version checks, and permission to combine search with
+small trials. Add no mandatory phase, quota or problem-specific reference.
+The build and all seven existing CLI tests pass (about17.1seconds); no test
+is added merely to mirror the wording.
+
+Create erdos-1159-r43-fresh using gacha add with the unchanged PROBLEM.md
+from the earlier experimental item. Verify byte equality of the statement
+and equality of the generated AGENTS.md to revision14. The new directory
+contains no previous plan, status, index or run. Save its initial files and
+the absent-file inventory outside the item in
+_review/erdos-1159-r43-fresh/known-open-r43. Leave the older item's research
+and guide untouched.
+
+Run this fresh context for ten minutes with the same model and effort.
+Observe how early it distinguishes established results, existing open
+formulations and a concrete research gap, whether it uses the newly named
+source types, and whether it starts useful work without becoming stuck in
+an exhaustive survey. Do not name Green or provide a mathematical hint.
+One fresh run can show behavior, not establish a causal improvement over
+the earlier continued thread.
+
+Observed execution:
+
+- The actual ten-minute run starts at 15:09:25.949 on a new thread,
+  01a1da9b-3133-7fb2-8de9-c345f1e3c3f5. Initial literature work examines
+  the original problem, the current AGY version, older blocking-set results,
+  and related problem discussions. No old experimental-item path appears
+  in the inspected public trace.
+- Literature corrects an initial cap-three check: Bruen--Fisher already
+  establish the lower bound of four for orders at least five. The saved
+  research route acknowledges this and investigates cap-four defects.
+  The first attempted checkpoint write uses unavailable python and fails;
+  python3 recovers it at 15:11:51.548193. RESEARCH is persisted before
+  concrete cap-four delegation and solver calls. The earlier literature
+  delegation belongs to initial planning, before a concrete check is chosen.
+- The source audit distinguishes Alon's independent incidence deletions
+  for partial designs from projective planes and from the correlated
+  point-restriction conjecture. The observer checks the author-hosted
+  paper's Theorem2.1 and Conjecture3.2. No partial-design obstruction is
+  imported as an obstruction for planes.
+- At 15:15:18 the literature trace checks Green's current problem
+  collection for its blocking-set passage. The saved audit and conditional
+  route identify the bounded-degree, o(p)-exception inverse as conjectural,
+  not as an available theorem or a newly invented general direction. The
+  source is found in this fresh run without an observer hint. The observer
+  checks printed page33 and AGY Section3's positive density of skew lines.
+- The conditional bridge retains uniformity of the inverse assertion and
+  handles rational line components, geometrically reducible components,
+  and exceptional points. An o(p)-sized exceptional set covers only o(p^2)
+  lines, while the retained nonlinear curve has a positive fraction of
+  skew lines. This would settle the negative direction along primes if
+  the stated inverse assertion were proved; that assertion remains open.
+- Cap-four counting yields size 2q+O(sqrt(q)) and at most 3q+1 defect
+  lines. An explicit integer family passes global and first pencil moments
+  for every q>=5 with q=2 modulo3. Jacobian returns SAT for its q101 degree
+  balances. Both researcher and reviewer keep this a relaxation result.
+- The profiles fail necessary second pencil moments: at q101 their sum
+  of t2 squared is 81102 instead of 60702, and their mixed t2*t3 sum is
+  288 instead of 20100. This proves those profiles unrealizable, not that
+  every cap-four set is impossible. The failure and missing constraints
+  are incorporated into the family note, status and handoff.
+- Full-incidence Jacobian trials find cap-four witnesses in PG(2,5) and
+  PG(2,7), with sizes15 and17. The saved exports and incidence checks
+  validate these finite examples. At q11, Jacobian exhausts its work
+  allowance and a local Boolean Z3 formulation times out after ten seconds.
+  Both remain UNKNOWN; q13 is not started. No long background job remains.
+
+Final handoff and evaluation:
+
+- PLAN is saved at 15:17:27.793289 after the first-moment route's limitation
+  is established. The next check adds pair-of-line constraints, first
+  validating on the saved q5 witness, then trying q11. It explicitly says
+  even a fixed-cap/order obstruction would still require an argument for
+  arbitrarily large required caps. The known conjectural inverse is retained
+  as a secondary route, with no claim to have proved it.
+- Wrap-up arrives at 15:18:07.574. Subsequent work only updates the
+  checkpoint, summary, plan and index. No new computation or review is
+  started. The run ends at 15:18:44.188, endReason quota, elapsedMs546067,
+  in PLAN, with no VERIFY or DONE claim.
+- PROBLEM, AGENTS and item settings match their initial copies; the guide
+  matches revision14. The sole automatic checkpoint-before copy is the
+  initial state.json and matches the external snapshot. PLAN, STATUS and
+  INDEX did not exist before this fresh run. The older item retains guide13.
+- INDEX/PLAN/SUMMARY have 9/4/7 local links; all31 recursively reached
+  paths and eight checkpoint paths exist. No item process remains. The
+  public trace, artifact audit and final observation are outside the item.
+
+This fresh trial demonstrates timely recognition of a known open route,
+source-sensitive use of related results, bounded computational trials and
+honest separation of relaxations from actual constructions. It establishes
+no new bound for Problem1159 and no novelty claim. The single sample cannot
+attribute improvement to revision14 or establish adequate literature
+coverage in general. Keep the small wording change; do not add a search
+quota or another phase. A useful next continuation would test whether the
+stronger counting formulation produces a decision relevant to the original
+problem, rather than an indefinite sequence of stronger relaxations. The
+guide already asks for that connection; observe the behavior before adding
+more instructions. Build and all seven CLI tests passed before launch.
