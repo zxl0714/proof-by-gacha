@@ -220,6 +220,8 @@ Quota means elapsed time. It is separate from token limits, spending limits, and
 - `INDEX.md` points to reusable artifacts. Create it when the first such artifact exists. Each entry records a relative path, purpose, and verification status. Use links relative to the containing Markdown file; a run summary links to item artifacts via ../../notes/ or ../../experiments/. Paths stored in state.json are item-relative. Link a manifest for grouped results. At wrap-up, check that new research notes and experiments are reachable from the index, and refresh their verification statuses.
 - `runs/<run-id>/SUMMARY.md` records the outcome of one Goal run. Summarize the approaches tried, what the run established, evidence locations, and remaining gaps. Link to the underlying notes or experiments so the evidence can be maintained in one place.
 
+For computations, preserve the inputs, tool version, commands, and results needed for reproduction. Check a new export method on a small example to ensure it preserves the intended data.
+
 Gacha owns `run.json`, `prompt.md`, and `events.jsonl`. Codex writes the research files and per-run summary under the working conventions in `AGENTS.md`. Append observed research checkpoints, Goal and turn transitions, continuations, wrap-up events, and relevant diagnostics to `events.jsonl` with timestamps and thread or turn IDs where available.
 
 Record the execution outcome separately from the mathematical claims. A run can end with a candidate proof, a reproducible counterexample, a conditional result, or useful partial progress. State the evidence and its scope. If the run ends without a summary, retain the latest saved research records and report the missing summary.

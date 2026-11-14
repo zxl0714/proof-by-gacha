@@ -57,7 +57,8 @@ guarantees. Check a result independently when there is a concrete reason
 to doubt it or when `PROBLEM.md` requires it.
 
 Save the inputs, tool version, commands, and results needed to reproduce
-computations. Record timeouts and exhausted budgets as `UNKNOWN`.
+computations. Check a new export method on a small example to ensure it
+preserves the intended data. Record timeouts and exhausted budgets as `UNKNOWN`.
 
 Run a short trial before committing to a long computation. If a search is
 worth pursuing, run it in the background with its own time limit, which may

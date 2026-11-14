@@ -83,6 +83,8 @@ establish an improvement.
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; encoding-value checkpoint; same thread; 10m | 2026-11-14T09-45-17-032Z-632ba054 | quota; 529.8s; failed encoding not escalated; literature-informed route barriers and neutral-move repair; PLAN -> RESEARCH -> PLAN |
 | erdos-1159-r24-phase (continue) | Revision10 unchanged; neutral-repair checkpoint; same thread; 20m | 2026-11-14T09-57-17-614Z-2c84f803 | quota; 1070.5s; literature-derived repair trap, checked escape and all-plane sampler barrier; transient PLAN absent from sampled events |
 | erdos-1159-r24-phase (continue) | Revision11; separate phase operations; same thread and mathematical checkpoint; 20m | 2026-11-14T10-28-07-221Z-16b2d54d | quota; conditional repair and cover-objective limits; PLAN/RESEARCH/PLAN observed |
+| erdos-1159-r24-phase (continue) | Revision11 unchanged; near-minimum external-conic covers; 25m | 2026-11-14T10-52-38-254Z-114aa506 | quota; literature changes the route; finite exclusions; incomplete SMT exports detected by observer |
+| erdos-1159-r30-fresh | Revision12; fresh statement-only control; 10m | 2026-11-14T11-19-55-524Z-3d69fc9d | quota; 553.8s; RESEARCH; saved JSON readbacks pass, formal profiles remain feasible, fixed q13 diagnostic UNKNOWN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2216,3 +2218,186 @@ None establishes novelty or an original-scope advance. The parent handoff
 also joins some English words together, reducing readability despite complete
 links; the observer leaves the agent-owned files intact and records this
 for further observation rather than adding another instruction from this case.
+
+## Revision 11 continued — knowledge at a new subproblem
+
+The previous goal turn made concrete progress: revision11 was tested,
+evaluated and pushed as 9370a91. Its run is terminal. Continue the same
+agent-authored checkpoint without changing the guide or supplying a
+mathematical lead. External before-run copies of all six input/handoff files
+are under _review/erdos-1159-r24-phase/near-minimum-conic-r29. The unchanged
+guide hash is 8af6685c5a83a41e2101bc2a70e34ed3989b48db47bec5a6be780a5d5bb333a9.
+
+Allow twenty-five minutes for the saved proof/literature investigation and
+any check it motivates. Assess whether the researcher reads the known
+minimum-cover result at the needed scope, searches related terminology
+before developing a new subproblem, and lets those findings change its
+mathematical decision. A finite SAT/UNSAT result must keep its finite scope;
+a timeout must not become a theorem or an automatic demand for a larger
+budget. Observe natural phase boundaries and handoff quality as well.
+
+This continuation can supply evidence about recurrence and transfer within
+the problem. It is not an instruction to manufacture a new route, a phase
+cycle, or a potentially publishable claim within one short run. The remaining
+rapid-transition coverage from r28 stays open unless it occurs naturally.
+
+Observed outcome:
+
+- The agent reads the original author-uploaded Aguglia–Korchmaros proof,
+  identifying the exact incidence, constant-coefficient and group-invariance
+  uses of equality. It derives a coefficient extension for additive slack
+  and a unique degree-q normal form with 2q+1 parameters. Exact Jacobian
+  ranks at q=7/11 are 15/23. It distinguishes this ideal representation from
+  the unproved classification of totally split products; no novelty claim
+  or congestion theorem is inferred from the rank checks.
+- A primary-source search finds
+  [Giulietti's perfect-cover classification](https://arxiv.org/html/math/0607118).
+  It settles the zero-internal-point size-11/cap-3 subcase in PG(2,11), which
+  had timed out in an unassisted solver trial. Its known Baer constructions
+  also defeat an almost-full-line extrapolation just one point above the
+  minimum: size-q examples can have cap sqrt(q)+1. A purposeful GF(9)
+  reproduction checks all 91 lines, including all 36 external lines hit
+  exactly once. The cap still grows, so this is not a bounded-cap family
+  resolving the original question.
+- The excess identity for a size-s cover with r internal points is
+  Delta=(q-1)(s-q)/2+r. At s=q, r=1 forces a unique doubled external line.
+  Justified conic-group symmetry and redundant counting constraints let
+  native Z3 finish that q=11/cap=3 subcase as UNSAT in 0.116 seconds. The
+  wider five-second trials remain UNKNOWN. This is a decision for a smaller
+  specified subcase, not a speedup or solution of the original full search.
+  A typed Jacobian alternative hits its operation timeout and is recorded
+  as operational UNKNOWN; the completed native decision is still used.
+- Keeping the overlap terms in the published proof gives exact character
+  equations. The agent saves 112 rational systems and checks their outputs.
+  Their coordinate differences/signs exclude size-q, r=1 covers at q=19/23
+  for any cap. Simultaneous q=11 necessary conditions still leave six dual
+  locations; these are not geometric covers. A separate full-row-rank
+  observation limits unrestricted syndrome arguments outside the defining
+  characteristic. All these conclusions keep their stated scope.
+- Literature search expands to internal-point partitions, restricted codes,
+  exterior sets and integral-distance graphs. The agent catches opposite
+  pair conditions and the mismatch between regular graphs and the two
+  degrees of the full conic graph. It records a bounded search that found
+  no applicable stability theorem, rather than declaring the topic absent
+  from the literature.
+- The parent explicitly recognizes that cap K permits the full O(Kq)
+  cardinality range. Near-minimum classification alone cannot handle it.
+  It returns to PLAN to assess a justified bridge to the restrictive error
+  regime before escalating finite searches. This is an actual change to
+  its own checkpoint, not a mathematical instruction supplied by the observer.
+- RESEARCH is observed at 10:53:14.177 UTC before the first delegation at
+  10:53:21.756; PLAN is observed at 11:13:23.204. Both changes use separate
+  state-writing calls. There is again no intermediate PLAN-to-RESEARCH
+  return. Gacha reports 1288.6 seconds and ends normally at 11:14:27.958
+  with endReason quota. Automatic continuation only refreshes the handoff;
+  no computation or new review starts after the explicit wrap-up.
+- PROBLEM/AGENTS are unchanged, all four automatic before-run copies match,
+  and all eight checkpoint paths and 177 recursively reached artifact paths
+  exist. Earlier index targets remain. INDEX/PLAN/SUMMARY contain 42/0/4
+  local links; no research process remains. The new plan and summary are
+  readable prose, so the earlier joined-word issue does not justify another
+  style instruction from this evaluation.
+
+The content audit finds a concrete reproduction defect despite those passing
+path checks. Seven QF_FD SMT exports are identical 77-byte files containing
+only a status header and check-sat, with no constraints. The default-engine
+export contains 189 assertions. The note nevertheless calls every export
+an exact assertion file, and the final summary reports no cleanup needed.
+The observer preserves early copies and the final comparison outside the
+item in near-minimum-conic-r29; it does not repair the agent-owned evidence.
+The agent never identifies or qualifies the export defect during this run.
+
+This does not show that the native Z3 computation was wrong. Its generator,
+command, settings and result are saved; the generator hash matches the
+completed UNSAT record, so that Python command remains the reproduction
+entry point. The purported standalone SMT files are unusable for that
+purpose. Together with the earlier r25 failed raw-result save, this supports
+a focused improvement to saving new formats, while retaining trust in tools
+within their documented guarantees.
+
+## Revision 12 — check a new export method
+
+Extend the existing reproduction instruction by one sentence: check a new
+export method on a small example to ensure it preserves the intended data.
+The subject is the saved input/result, not re-proving the solver or requiring
+independent UNSAT certificates. The runtime, phase model and mathematical
+acceptance criteria remain unchanged. A file's existence or checksum cannot
+by itself show that an export contains the promised data.
+
+Use a new experimental item with the same unmodified problem statement and
+the revised guide for a ten-minute fresh run. This also checks behavior
+outside the long external-conic continuation. Supply no old mathematical
+plan, solver-specific hint or forced phase change. Observe whichever export
+or result-saving method it actually uses. If the problematic export method
+does not occur, distinguish a useful fresh-run check from coverage of the
+specific QF_FD serialization failure. Preserve the r29 artifacts as evidence.
+
+The TypeScript build and all seven existing integration tests pass after
+the guide change. Gacha add creates erdos-1159-r30-fresh with a byte-identical
+PROBLEM.md (be1ab2f64347f22bd30aa220ebce8fe748355be25b69ffe228c911e37a0639a1).
+The revision12 guide hash is
+26f80bbb5220ca6e2a61a5bffb3177f0a84f4476a62299d82a6483258e218e14.
+The four initial files are copied under _review/erdos-1159-r30-fresh/export-r30.
+No old plan, status, index, notes or scripts are imported; the earlier
+experimental item remains at its saved revision11 checkpoint.
+
+Observed outcome:
+
+- The researcher reads the latest supplied AGY version and the primary
+  Bruen–Fisher and Erdős–Silverman–Stein results at their stated scope.
+  It labels the low-cap obstruction and small-plane optima as known
+  reproductions. The characteristic-three construction supplies a test
+  case for proposed universal obstructions; its shared-origin spectrum
+  correction does not become a claim of a new construction.
+- It derives integral formal cap-four point profiles for every q congruent
+  to 1 modulo 3 with q at least 13. They satisfy the listed global and
+  pencil moments, private tangents and pair-line identities. Exact samples
+  support the algebraic derivation; neither the samples nor the formal
+  profiles supply an incidence structure. There is no novelty claim.
+- A stronger q13 integer test admits line-composition counts satisfying
+  all line-neighbor sums and all 15 colored-point pair totals. The two
+  explicit witnesses survive review by reading their saved JSON and
+  checking the equations with integers. The agent searches the related
+  tactical-decomposition literature, recognizing that formal schemes
+  and realizability differ, before moving to actual incidence constraints.
+- The small-plane JSON retains SAT point coordinates, indices and all
+  line counts, together with commands and versions. A separate script
+  reads that saved file and reports PASS for all six cases. No SMT export
+  occurs. Thus this run supplies positive evidence for saved-data
+  usability, but does not exercise the particular QF_FD export method that
+  failed in r29. It is not a controlled comparison establishing that the
+  new sentence caused the observed behavior.
+- After the aggregate repairs remain feasible, the researcher returns to
+  PLAN and then RESEARCH. Its actual-plane encoding accepts the pinned
+  known q9 witness, with 18 points and all 91 line counts saved. A five-second
+  all-placement q13 test for precisely the five-type profile returns
+  UNKNOWN. The final handoff records the encoding review as pending and
+  proposes diagnosing the bottleneck before increasing effort. It makes
+  no infeasibility claim and does not generalize this profile to all
+  cap-four sets. Whether this finite diagnostic yields a useful general
+  argument remains an open evaluation question.
+- Gacha observes PLAN at 11:19:56.212 UTC, RESEARCH at 11:21:09.293,
+  PLAN at 11:26:52.314 and RESEARCH at 11:27:56.949. The three phase
+  changes have separate state-writing calls before work in the new phase.
+  This naturally exercises a return to RESEARCH, though the transitions
+  are minutes apart and do not establish lossless rapid-change logging.
+- The fixed-incidence command starts at 11:28:29.750, before wrap-up at
+  11:28:33.581, and finishes seconds afterwards. Only handoff updates follow;
+  no new computation or review starts after wrap-up. The run ends normally
+  at 11:29:18.670 with endReason quota and 553.8 seconds of recorded runtime.
+- PROBLEM/AGENTS are unchanged and the fresh guide matches the template.
+  The sole automatic before-run copy, state.json, matches the observer's
+  initial copy. All ten checkpoint paths and 30 recursively reached
+  artifact paths exist; INDEX/PLAN/SUMMARY have 10/1/14 local links. No
+  item process remains. The experiment manifest retains its earlier
+  no-timeout statement and omits the late fixed-profile trial, but INDEX,
+  state and the final summary directly link and accurately qualify that
+  UNKNOWN result. Record the stale manifest without rewriting the
+  agent-owned artifacts or adding another rule from this single case.
+
+The original problem remains unresolved. The useful behavioral evidence is
+that literature changes the interpretation, aggregate feasibility changes
+the route, and a bounded timeout remains a bounded timeout. File counts or
+the quantity of finite calculations are not evidence of original-problem
+progress. The external content observation and artifact audit remain under
+_review/erdos-1159-r30-fresh, separate from the researcher's checkpoint.
