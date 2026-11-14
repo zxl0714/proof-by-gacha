@@ -63,6 +63,8 @@ establish an improvement.
 | erdos-1159-r10-control | Revision 6 guidance; repaired environment; r07 checkpoint | 2026-11-14T05-21-19-807Z-a4749fba | quota; RESEARCH; 527.5s; no approval requests |
 | erdos-1159-r10 | Revision 7 guidance; repaired environment; r07 checkpoint | 2026-11-14T05-21-19-821Z-01dec749 | quota; RESEARCH; 530.4s; no approval requests |
 | erdos-1159-r10 (continue) | Revision 7 guidance; runtime revision 8; same thread; 20m | 2026-11-14T05-33-34-014Z-0539fc66 | quota; 1061.0s; autonomous SAT backend change, scoped route barriers and non-Desarguesian controls; unresolved |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; same thread; nearfield checkpoint; 10m | 2026-11-14T05-57-17-566Z-b4899381 | quota; 561.6s; scoped infinite-family construction and failed direct extension; unresolved |
+| graph-product-control-r11 | Unchanged guidance/runtime; new problem; 10m | 2026-11-14T05-57-17-541Z-a3a78a12 | done; 325.6s; published counterexample applied; full phase sequence |
 
 ## Revision 1 — literature-informed decisions
 
@@ -649,3 +651,95 @@ this run alone. Evaluation of generality should also use other problem types,
 so the workflow does not become a collection of instructions tailored to this
 one finite-geometry case. Only this development record changed; the passing
 runtime tests are not repeated for a documentation-only update.
+
+
+## Cross-problem evaluation — continuation and a known literature resolution
+
+The previous twenty-minute run supports autonomous tool adaptation, but does
+not by itself establish a general research workflow. Keep its instructions
+and runtime unchanged for a ten-minute warm continuation of erdos-1159-r10.
+Observe whether the proposed nearfield-extension check uses existing sources
+and yields a concrete decision about the larger all-plane route. An observer
+scope search did not establish that this exact subclass target is already
+settled; do not pre-label it as redundant or inject a mathematical repair.
+
+In parallel, create graph-product-control-r11 from
+[the categorical-product statement](research-cases/graph-product.md), with the
+same guide, model, effort and ten-minute quota. The statement contains only
+the mathematical question; no answer, named conjecture, or added acceptance
+condition is supplied. This is a known-answer process control, not a test of
+novel theorem discovery.
+
+Observer reference: Shitov,
+[Counterexamples to Hedetniemi's conjecture, arXiv:1905.02167v2](https://arxiv.org/abs/1905.02167v2).
+Its abstract explicitly establishes strict inequality for finite simple
+graphs, so the universal equality is false. Assess whether the agent locates
+and correctly applies an established result, records a candidate at the
+original scope, and completes the existing verification/state workflow
+without trying to rediscover the large counterexample by brute force.
+Accepted mathematical literature is a legitimate input to a proof; the
+original question does not require a fresh proof of every cited theorem.
+
+The two runs address different evaluation questions and are not a causal
+comparison. They share machine/service load. Do not treat solving this
+known question as evidence of new mathematics or infer broad reliability
+from one control.
+
+
+Observed results:
+
+- The graph-product control finished DONE after 325.6 seconds. The agent
+  recognized the conjecture, retrieved the publisher PDF and author HTML,
+  checked that the graph/product definitions match, and saved a theorem-based
+  counterexample argument. It explicitly relied on Shitov's established
+  existence result and checked the evaluation-colouring deduction. It did
+  not attempt to enumerate the large counterexample or claim a new theorem.
+- The observer read the candidate against the primary paper. Its finite,
+  simple and undirected hypotheses, two-orientation adjacency condition,
+  and strict inequality match. Events record PLAN, RESEARCH, VERIFY and DONE
+  in order. The candidate existed before VERIFY; the final checkpoint's
+  candidate, verification, conclusion and summary paths all exist.
+- The control's summary/index/plan have 13/17/2 valid local links. The
+  original statement digest is unchanged. Jacobian discovery found a
+  bounded exact colouring operation, but no mathematical solver was run:
+  the published theorem and direct deductions already resolve the question.
+  Failed python/pdftotext availability checks were handled with Python 3
+  and readable primary-source HTML/PDF extraction.
+- Erdős #1159 finished at quota after 561.6 seconds, remaining in RESEARCH.
+  The proposed nineteen-point pattern was classified as two affine Baer
+  subplanes with an ideal point. Its direct extension has a maximum secant
+  growing with the base order, so that specific constant-bound route fails.
+  The agent did not repeat the previous q13 SAT searches.
+- A repaired cubic construction gives maximum ten for specified quadratic
+  André planes in characteristic three, and maximum four for the even
+  exponent subfamily. Every line was counted at nearfield orders 9, 81 and
+  729 as finite controls; the infinite assertion has a separate algebraic
+  proof and scoped review. The more general semilinear criterion makes the
+  dependence on characteristic and extension degree explicit and leaves a
+  higher-degree symbolic obstruction check pending. It is not an all-plane
+  resolution or a family of counterexample planes.
+- Crucially, the core quadratic Dickson construction and its ten/four bounds
+  already appear in the earlier independent r01 branch's
+  notes/andre-candidate-v1.md. The current branch had not been given that
+  separate item's work. This is repeat discovery within the evaluation,
+  not a new project-wide mathematical advance, and is not evidence that
+  continuation ignored records available in its own item. The broader
+  conditional formulation and profile checks also carry no novelty claim.
+- The #1159 summary/index/plan have 8/53/1 valid local links; all checkpoint
+  paths exist and its problem digest is unchanged. After wrap-up the
+  public trace contains only handoff updates and the final response.
+  No matching computation process remains for either run.
+
+These observations support correct use of established mathematical literature,
+appropriate separation of partial research from original-problem completion,
+and reliable continuation records in these two cases. They do not warrant
+another guide change or prove broad research ability. Runtime and guide were
+unchanged; only the reusable control statement and development record were
+added, and git diff --check passes. No runtime tests are repeated solely for
+these documentation changes.
+
+Next, test fresh exploration in the same populated #1159 item. Its existing
+instructions ask the agent to form an independent route before comparing with
+prior local work. That can directly assess whether diversity and accumulated
+knowledge are reconciled without an observer editing the research notes or
+supplying a preferred mathematical direction.
