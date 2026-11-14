@@ -75,6 +75,7 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; critical global-system control; same thread; 10m | 2026-11-14T07-39-45-207Z-3912e047 | quota; 560.6s; known-witness control, scoped algebraic reformulation and construction-class barrier; RESEARCH |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; marked-value lifting gap; same thread; 20m | 2026-11-14T07-53-20-201Z-b15e27e8 | quota; 1040.9s; literature-based counterfamily to auxiliary sufficiency; mixed-jet repair; INDEX accidentally overwritten |
 | erdos-1159-r10 (continue) | Revision 9; handoff recovery and current pending checks; same thread; 10m | 2026-11-14T08-22-50-434Z-00c0447b | quota; 542.5s; index recovered with earlier entries retained; all-pair refinement, finite controls and a literature-dependent next gap; RESEARCH |
+| erdos-1159-r10 (continue) | Unchanged revision9; product-span applicability gap; same thread; 20m | 2026-11-14T08-37-11-154Z-0c15b146 | quota; 1061.6s; applicable literature closes critical criterion, published larger minimal blocker refutes deletion reduction; RESEARCH |
 
 ## Revision 1 — literature-informed decisions
 
@@ -1526,3 +1527,109 @@ literature-dependent step for twenty minutes: does it locate an applicable
 result or expose a precise remaining obstruction, and does that change the
 value of the proposed formulation? No original-problem improvement or public
 novelty claim is established by this run.
+
+## Product-span continuation — search beyond the first theorem's scope
+
+The preceding goal turn made progress by implementing and testing handoff
+snapshots, recovering an actual index overwrite through Gacha, completing a
+research continuation and pushing revision9. Its mathematical checkpoint
+now depends on a characteristic-p product-span question and incomplete
+fourfold-flat moment coverage. The original conjecture remains open.
+
+Continue the same research thread for twenty minutes with unchanged guide,
+runtime, model and effort. Observe whether the agent checks published
+versions, later work and equivalent formulations before attempting a theorem
+whose exact applicability is uncertain. A limitation of one source does not
+establish that the needed result is absent from the literature. Also inspect
+whether any derived criterion genuinely advances the chosen route, or only
+restates the original finite-instance check with more machinery.
+
+The observer's subsequent bibliography leads from r20 remain outside the
+item and are not supplied to the research thread. No preferred proof route,
+paper, equation or object is injected. Before-run copies of the six inputs
+and handoff files are at _review/erdos-1159-r10/product-span-r21. The
+PROBLEM and AGENTS hashes remain be1ab2f64347f22bd30aa220ebce8fe748355be25b69ffe228c911e37a0639a1
+and c1a126418fd7e0cf7658bad689c37024c35c27ce8d9e98e5b260532edbdb770d.
+
+This is a longer continuity and research-decision evaluation, not a causal
+test of another instruction. No new instruction is justified merely by the
+existence of a mathematical gap.
+
+Observed research:
+
+- The agent checks versions and related literature rather than treating an
+  older paper's characteristic-zero hypothesis as evidence that the needed
+  result is unknown. It attempts the published source, encounters an access
+  challenge, and finds [Berget's product-space theorem](https://arxiv.org/html/0906.4774v2),
+  whose field characteristic is explicitly unrestricted. Its direct-sum and
+  Hilbert-series statements give the specific product span needed here.
+  The agent also saves an elementary, scoped adaptation of a deletion/colon
+  argument; this is not presented as a new general product-ideal theorem.
+- Eight saved PG(2,7) configurations distinguish the full omit-three product
+  space from the smaller space omitting independent triples and exact triple
+  flats. The latter imposes double vanishing at quadruple points. Equal
+  rational evaluation ranks in the controls are not promoted to a universal
+  interpolation theorem. The latest complete batch takes about2.82 seconds.
+- The agent subsequently removes that interpolation detour: the mixed first
+  tangential identity extends to selected triples inside quadruple flats and
+  supplies the missing moments. It records the common ambient-volume factor,
+  checks all dependent triples on the eight saved configurations in about
+  0.09 seconds, and reviews the analytic derivation and encoding. These are
+  bounded identity controls, not larger blocking-set searches.
+- An assembled proof and review establish the agent's intermediate criterion
+  for specified size-(2p+1), maximum-four configurations in PG(2,p), p>=5.
+  All-pair radial/normal compatibility and all dependent mixed rows force
+  the uncovered-point moments to vanish. The characteristic-free span and
+  an explicit two-point separator imply that no point is uncovered. The
+  observer reads the derivation, scope, normalization and primary span
+  source; no original-problem candidate or novelty claim follows.
+- Crucially, the agent revisits the missing cardinality reduction. A primary
+  [Singer-orbit construction](https://www.mdpi.com/2073-8994/17/2/179)
+  gives a minimal maximum-four blocker with19 points in PG(2,7), larger
+  than the critical15. Its nineteen tangent lines make each selected point
+  essential. This rules out shrinking every such blocker to the critical
+  size. It does not rule out a different existential replacement theorem,
+  nor settle any original all-plane or all-constant quantifier.
+- A purposeful reproduction of that published example takes about0.06
+  seconds under a45-second limit. Its global degree11 module has dimension82
+  and its19 local targets each have dimension6; Jacobian confirms the global
+  rank152. Polynomial Frobenius corrections replace the critical scalar
+  corrections. This prepares a concrete next input and checks the claimed
+  change in degrees; it is not a new construction or a general extension.
+
+The favorable behavior is the sequence of research decisions: look beyond
+one source's scope, use an applicable theorem, replace an unnecessary
+interpolation problem, and find a known counterexample to an overbroad
+reduction. The unresolved concern is the value of continuing the algebraic
+reformulation. Direct incidence checks already decide whether a specified
+finite set is blocking. No speed advantage, new existence theorem, stronger
+bound, or obstruction covering all cardinalities is established here.
+
+The agent's current plan acknowledges this distinction and proposes testing
+whether the abovecritical formulation yields an all-cardinality obstruction,
+then returning to structural reductions or constructions if it does not.
+That is a useful decision to observe next, rather than preselecting a
+mathematical route for it. Keep revision9: this run gives no evidence that
+another instruction or a more elaborate scheduler would improve the choice.
+
+Final operational audit:
+
+- The run ends normally at quota after1061.6 seconds. All four recorded
+  checkpoints remain RESEARCH, appropriate for an intermediate result;
+  no full candidate, VERIFY or DONE claim appears.
+- The final plan and checkpoint remove the completed product-span, moment
+  and Singer-control checks. They retain the actual next coefficient
+  comparison and original quantifier gaps. Post-wrap activity only saves
+  this handoff and summary; it starts no computation or review.
+- PROBLEM.md and AGENTS.md are unchanged and the guide still matches the
+  template. All four automatic pre-run handoff copies equal the independently
+  saved before-run bytes. All nine checkpoint paths exist, all prior index
+  destinations remain, and no research process remains.
+- INDEX and SUMMARY contain150 and6 local link occurrences. Recursive
+  traversal reaches275 existing paths plus the already-recorded notes/v
+  formatting defect in an older mathematical note; no new missing
+  destination appears. The observer leaves agent-authored research intact.
+
+Only this evaluation log changes in the repository. The documentation diff
+passes git diff --check; runtime and guidance retain the previously tested
+revision9 implementation.
