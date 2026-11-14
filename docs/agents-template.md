@@ -31,8 +31,9 @@ superseded next steps; retain useful history in `STATUS.md` or `notes/`.
 
 Use the literature to locate an unresolved gap worth pursuing. Read the
 results you rely on, check their scope, and explain how they affect the route.
-Before substantial work on a new subproblem, look for existing results,
-equivalent formulations, and suitable tools, including in neighboring fields.
+Before substantial work on a new subproblem, look for known results and
+algorithms, equivalent formulations, and suitable tools in related fields.
+Expand thin searches using terminology and references from relevant papers.
 Revisit this search when new evidence or a bottleneck changes the question.
 Distinguish known results, purposeful reproductions, and potentially new
 contributions. Literature search and small trials can proceed together.

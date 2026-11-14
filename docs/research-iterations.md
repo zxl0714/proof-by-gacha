@@ -58,6 +58,8 @@ establish an improvement.
 | erdos-1159-r06 | Revision 5; r05 checkpoint, new thread | 2026-11-14T04-12-04-223Z-28b27351 | quota; RESEARCH; 552.3s; summary saved |
 | erdos-1159-r07 | Revision 5; fresh trial | 2026-11-14T04-12-04-212Z-e2062565 | quota; RESEARCH; 591.9s; summary saved |
 | erdos-1159-r08 | Revision 6; r06 checkpoint, new thread; 20m | 2026-11-14T04-24-06-554Z-99611d52 | quota; RESEARCH; 1036.1s; summary/index links valid |
+| erdos-1159-r09-control | Revision 6; r07 checkpoint, new thread | 2026-11-14T04-49-41-725Z-20f6abc5 | quota; RESEARCH; 526.8s; summary/index links valid |
+| erdos-1159-r09 | Revision 7; same r07 checkpoint, new thread | 2026-11-14T04-49-41-737Z-436ee096 | needs input; 93.3s; no current-run summary |
 
 ## Revision 1 — literature-informed decisions
 
@@ -391,3 +393,76 @@ coverage, when a sharper working target is worth its cost, and whether
 longer continuation keeps producing useful general statements. Keep changes
 small and evaluate those decisions directly rather than adding a fixed
 role hierarchy, route count, or mandatory certificate pipeline.
+
+
+## Revision 7 — search for algorithms and follow the literature
+
+The preceding runs show useful theorem retrieval, but the observer also
+located a directly relevant older computational baseline absent from the
+inspected search-engineering notes. Make the generic literature instruction
+explicit about algorithms and expanding thin searches through terminology
+and references. No named paper, algorithm, solver, or mathematical answer is
+added to the agent's instructions.
+
+Use a paired cold continuation from r07's completed checkpoint
+(2026-11-14T04-12-04-212Z-e2062565). Its next step is a finite q13 size-27
+feasibility question whose two encodings exhausted the available tool budget.
+This makes search-method discovery directly relevant. Both items receive the
+same unedited mathematical files and historical summaries; only imported
+thread metadata is changed to require a new conversation. The control uses
+revision 6 (8b63f23); the other item uses revision 7. Both run for ten minutes
+with the same model and effort, concurrently.
+
+Review whether the agent expands terminology/citation search, finds relevant
+results or algorithms, checks their scope, and changes an actual research
+decision. Finding one observer-known paper is not the success criterion.
+Also check whether tool changes distinguish a better formulation from simply
+increasing effort, and whether the finite target remains tied to the original
+problem. Sampling and shared service load remain uncontrolled.
+
+Only guidance and this development record change. The generated instructions
+are compared with the template when creating the items; live Gacha runs
+exercise the change. The unchanged runtime integration suite is not rerun
+solely to test wording.
+
+
+The revised trial did not reach its research deadline. At 04:51:02 UTC it
+requested approval to install Z3 after a read-only uv cache error and a
+network/DNS failure. Gacha declined the unattended command approval and
+recorded `needs input` at 93.3 seconds. No current-run summary was saved.
+The local WSL Codex config had no explicit sandbox, network, or approval
+settings, so Gacha's fallback workspace-write policy applied. This is an
+execution-environment failure, not a mathematical negative result.
+
+The revised agent did attempt tool adaptation and its literature worker
+expanded into shallow-hitting-set terminology. The run ended before those
+actions could be assessed as an integrated research decision. The paired
+comparison is therefore incomplete; it cannot support a claim that revision
+7 improved research selection. Keep this failure visible rather than silently
+replacing it with a successful rerun. Check the already-authorized unattended
+environment before the next method comparison.
+
+
+The control finished normally at 526.8 seconds. It stayed in RESEARCH,
+saved a current plan and checkpoint, and produced a compact summary with
+9 valid local links; the index's 30 local links also resolve. The observer
+found no post-wrap research computation. Both trials retained the original
+problem digest.
+
+Its existing literature guidance already supported meaningful route checks:
+Alon's partial-design result led to a scoped near-plane obstruction, while
+an independent uniform-pencil sampling argument was extended to unequal
+and random bounded branch counts. The agent kept those method limitations
+separate from nonexistence in actual planes. It also completed a restricted
+symmetry exclusion and replaced the arbitrary size-27 target with a lossless
+frame-normalized all-size input. That unrestricted finite test still exhausted
+Jacobian's work allowance. No original resolution or established novelty
+resulted, and the next finite step still depends on a usable alternative
+solver.
+
+Revision 7 remains a small, plausible clarification, not a demonstrated
+performance gain. The generated control instructions match revision 6,
+the revised instructions match the new template, and the diff is clean.
+No runtime code changed. The next iteration should resolve the unattended
+environment/recovery failure before drawing conclusions from a new paired
+research test.
