@@ -62,7 +62,7 @@ export interface Outcome {
   failed?: boolean;
 }
 
-const objective = 'Resolve the problem in PROBLEM.md under its stated assumptions and acceptance criteria. Follow AGENTS.md and start from the phase in state.json. Save evidence and checkpoints as you work. Set DONE and complete the Goal only after independently verifying a saved proof or counterexample against the original statement and recording the conclusion, verification report, and evidence links. If a route stalls, test a repair or return to PLAN and start a different route. Keep working until the result is verified or Gacha asks you to wrap up. At wrap-up, save the checkpoint and write the remaining gap and next concrete step in the run summary.';
+const objective = 'Resolve the problem in PROBLEM.md under its stated assumptions and acceptance criteria. Follow AGENTS.md and continue from state.json. Save evidence and checkpoints as you work. Check the saved candidate against the original statement and record the conclusion, verification report, and evidence links before setting DONE and completing the Goal. If a route stalls, test a repair or start a different route. At wrap-up, save the checkpoint, remaining gap, and next concrete step.';
 const endOfGoal = new Set(['complete', 'paused', 'blocked', 'usageLimited', 'budgetLimited']);
 
 export function settingsFor(ws: Workspace, problem: Item, overrides: Settings): Settings {
@@ -266,7 +266,7 @@ export async function runItem(
       settings.effort = effort;
       const provider = config.model_provider ?? 'openai';
       const old = pastRuns.find(entry => entry.threadId && entry.modelProvider === provider &&
-        entry.settings?.model === model.model && entry.problemSha256 === problemSha256 && entry.objective === objective);
+        entry.settings?.model === model.model && entry.problemSha256 === problemSha256);
       const threadParams = {
         cwd: problem.dir, model: model.model,
         ...(!config.sandbox_mode && !config.default_permissions && !config.permissions ? { sandbox: 'workspace-write' } : {}),

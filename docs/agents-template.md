@@ -28,16 +28,14 @@ statement and Gacha's settings, metadata, and logs to their owners.
 When Jacobian is available, use `math.find` to discover relevant operations.
 Prefer `math.run` when the operation fits the problem, guarantees, and scale.
 
-If a tool hits a fixed resource limit, repeatedly returns `UNKNOWN`, or
-lacks a required capability, record the obstacle and look for a better tool. Check what is
-installed and consult official documentation or research papers. For a long
-exact search, consider a local solver that can save proof certificates. Test
-the alternative on a small known case before scaling. Use custom code for
-unsupported methods or independent checks.
+If a tool hits a resource limit, repeatedly returns `UNKNOWN`, or lacks a
+needed capability, look for an alternative and test it on a small case.
 
-Save the tool version, inputs, commands, results, and witness or certificate
-when available. Explain what the evidence establishes and how to verify it
-independently. Record timeouts and exhausted budgets as `UNKNOWN`.
+Use results from established exact tools within their documented
+guarantees, including solver `UNSAT` results. Save the inputs, tool version,
+commands, and results. Add checks when there is a concrete reason to doubt
+a result or when the problem requires them. Record timeouts and exhausted
+budgets as `UNKNOWN`.
 
 Run a short trial before committing to a long computation. If a search is
 worth pursuing, run it in the background with its own time limit, which may
@@ -62,12 +60,12 @@ with the new phase, relevant paths, and `updatedAt`. Keep `runId` and
 - **RESEARCH or VERIFY → PLAN.** Save what ruled out the current route.
   Update `PLAN.md` with the alternative and its first check as soon as
   you choose it.
-- **VERIFY → DONE.** Check the saved candidate independently against the
-  original quantifiers, assumptions, and acceptance criteria. Check key
-  deductions, cited hypotheses, and computational certificates. Save the
-  conclusion, verification report, and `runs/<run-id>/SUMMARY.md` before
-  setting `DONE`. Include the `candidate`, `verification`, and `conclusion`
-  paths in `state.json`, then finish the Goal.
+- **VERIFY → DONE.** Check the saved candidate against the original
+  quantifiers, assumptions, and acceptance criteria. Check key deductions,
+  cited hypotheses, and whether computational inputs cover the cases
+  claimed. Save the conclusion, verification report, and
+  `runs/<run-id>/SUMMARY.md` before setting `DONE`. Include the `candidate`,
+  `verification`, and `conclusion` paths in `state.json`, then finish the Goal.
 
 While staying in `RESEARCH`, save each substantive result or failed check.
 Refresh `STATUS.md` when evidence changes. In `INDEX.md`, link each reusable

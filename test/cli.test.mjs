@@ -50,6 +50,7 @@ const checkpoint = (patch) => {
 };
 let turn = { id: 'test-turn', status: 'inProgress' };
 let goal;
+let resumed = false;
 let starts = 0;
 function complete(status) {
   notice('turn/completed', { turn: { ...turn, status } });
@@ -64,7 +65,12 @@ rl.on('line', line => {
     model: 'mock', id: 'mock', isDefault: true, defaultReasoningEffort: 'high',
     supportedReasoningEfforts: [{ reasoningEffort: 'high' }],
   }] });
-  else if (method === 'thread/start') reply({ thread: { id: threadId }, model: 'mock', modelProvider: 'openai' });
+  else if (method === 'thread/start' || method === 'thread/resume') {
+    resumed = method === 'thread/resume';
+    reply({ thread: { id: threadId }, model: 'mock', modelProvider: 'openai' });
+  } else if (method === 'thread/read') reply({ thread: { id: threadId } });
+  else if (method === 'thread/goal/get') reply({ goal: goal ?? { status: 'paused', objective: 'Previous objective' } });
+  else if (method === 'thread/goal/clear') reply({});
   else if (method === 'thread/goal/set') {
     goal = { ...goal, objective: params.objective ?? goal?.objective, status: params.status };
     if (goal.status === 'active' && starts !== 1) throw new Error('Goal activated before the first turn');
@@ -98,7 +104,7 @@ rl.on('line', line => {
   } else if (method === 'turn/steer') {
     if (goal.status !== 'paused') throw new Error('Continuation was not paused');
     reply({ turnId: turn.id });
-    fs.writeFileSync('runs/' + state().runId + '/SUMMARY.md', 'Saved progress');
+    fs.writeFileSync('runs/' + state().runId + '/SUMMARY.md', resumed ? 'Resumed and saved progress' : 'Saved progress');
     complete('completed');
   } else if (method === 'turn/interrupt') {
     reply({});
@@ -166,6 +172,15 @@ test('wrap-up saves a resumable checkpoint and excludes concurrent writers', asy
   assert.equal(record.endingCheckpoint.phase, 'RESEARCH');
   assert.equal(record.goalStatus, 'paused');
   assert.ok(record.summary && events.some(event => event.type === 'run.wrap_up'));
+
+  const runs = join(dir, 'slow/runs');
+  await writeFile(join(runs, record.id, 'run.json'), JSON.stringify({ ...record, objective: 'Previous objective' }));
+  await gacha(dir, 'run', 'slow', '--executable', executable, '--quota', '2s');
+  const [continuedId] = (await readdir(runs)).filter(id => id !== record.id);
+  const continued = await json(join(runs, continuedId, 'run.json'));
+  assert.notEqual(continued.objective, 'Previous objective');
+  assert.equal(continued.startingCheckpoint.phase, 'RESEARCH');
+  assert.equal(await readFile(join(dir, 'slow', continued.summary), 'utf8'), 'Resumed and saved progress');
 });
 
 test('batch isolates a failed item and skips archived items', async t => {
