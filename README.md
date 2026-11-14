@@ -143,4 +143,6 @@ prompt points the agent to an earlier copy for recovery. Gacha preserves the
 files as found and reports any remaining damage; the agent reconciles the
 recovery with later research.
 
-Curious about how it will work? See the [design notes](docs/design.md).
+See the [design notes](docs/design.md) for the architecture and the
+[workflow evaluation](docs/research-evaluation.md) for the current research
+process, observed behavior, and limitations of the trials.

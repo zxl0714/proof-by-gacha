@@ -106,6 +106,8 @@ establish an improvement.
 | erdos-1159-r43-fresh (controlled interruption r48) | Revision15 unchanged; planned ordinary SIGINT after about 4m | 2026-11-14T16-30-01-340Z-b36cac36 | cancelled intentionally; exit130, lock released, 31 newer artifacts retained, central next action stale and no current summary |
 | erdos-1159-r43-fresh (r48 recovery) | Revision15 unchanged; ordinary continue after verified SIGINT exit; 10m | 2026-11-14T16-35-36-494Z-0ada9fab | quota; recovered 31 unchanged artifacts without replay, stale plan corrected; old branch rejected and replacement refined; conditional signed-weight progress, original unresolved |
 | erdos-1159-r43-fresh (continue r49) | Revision15 unchanged; surviving refinement and route value; 10m | 2026-11-14T16-54-09-996Z-8e073eb6 | quota; five-class rational flags survive after batch-pricing repair, finer pairs remain open; conditional cap-five theorem and two-pencil obstruction; useful signed-weight literature lead |
+| erdos-1159-r43-fresh (continue r50) | Revision15 unchanged; stronger pair constraints; 10m | 2026-11-14T17-08-08-637Z-3f8b05e3 | quota; full pair trial UNKNOWN, distinct local-pencil integer check passes; structural route restrictions and bounded-product pricing repair selected |
+| matrix-power-regression-r50 | Revision15 unchanged; fresh current-guide cross-problem control; 10m | 2026-11-14T17-10-55-165Z-d387c6d0 | done; 364.2s; correct complete ranges, self-contained proof and uniform counterexample, ordered PLAN/RESEARCH/VERIFY/DONE |
 
 ## Revision 1 — literature-informed decisions
 
@@ -4414,3 +4416,143 @@ successful behavior or late checkpoint into another instruction. The next
 continuation can test whether the finer pair system produces a useful
 decision; assess route value again before substantially increasing its
 computational effort, and preserve the structural/literature alternatives.
+
+## Revision 15 continuation — stronger pair constraints and route response
+
+The previous goal turn made progress and its observations were pushed in
+6ce0268. Reinspection finds a clean checkout, matching revision15 guide,
+unchanged statement/settings, terminal quota-ended metadata and no process
+in the item. The research-owned next action adds all 120 refined joining-
+pair balances to the five-line-class model. Its existing first-flag witness
+fails 119 of them; that does not yet reject the model itself.
+
+Continue normally for ten minutes with unchanged guide, model and effort.
+Save seven-file and artifact inventories outside the item in
+_review/erdos-1159-r43-fresh/continue-r50. Observe whether the stronger test
+produces a useful decision and whether a scale or formulation bottleneck
+changes the approach instead of merely extending effort. Preserve parallel
+structural/literature work and the distinction between finite model results
+and the original problem. Sample checkpoint references and audit wrap-up.
+Do not edit research-owned files or supply mathematical hints. No product
+tests are repeated without a product change.
+
+A broader review finds that the prior graph-product and matrix-power
+controls used older guidance. Add a current-guide regression on the
+unchanged matrix-power fixture in a new item, matrix-power-regression-r50.
+Use a fresh thread and ten-minute quota, without supplying the earlier
+solution or copying research files. This checks whether the present workflow
+can still recognize a complete answer and execute VERIFY/DONE outside the
+finite-geometry problem. It overlaps the Erdős continuation, so shared
+service load and sampling remain uncontrolled; it is a behavior regression,
+not a causal performance comparison or a broad capability benchmark.
+
+Observed Erdős continuation:
+
+- The same parent thread continues, with public actions from three new
+  descendants. It pursues the saved pair model and related structural and
+  literature routes. No observer hint or research-file edit is supplied.
+- The refined pair export passes all 136 pair equations on the actual
+  q5 control. A rank-five reduction leaves ten free composition coordinates
+  and 110 search rows, with prospective witnesses required to satisfy the
+  full 120 pair equations. The trial generates 342 columns over six
+  iterations and ends UNKNOWN after 79.73 seconds. Its 65-second wall
+  check occurs between iterations; bounded work within an iteration
+  accounts for the overrun. This is not a strict 65-second process deadline.
+- Exact separators apply only to the restricted generated columns.
+  Nonlinear integer pricing for original classes0/1/2 repeatedly reaches
+  its 1.5-second limits, so the researcher does not promote a restricted
+  separator to full infeasibility. It tries different linear random
+  objective sampling, adding columns without settling the full problem.
+  The saved next action changes to bounded-product Boolean/QF_LIA pricing;
+  that new export is explicitly unrun at the handoff.
+- A distinct smaller test asks whether the singleton point's pencil can
+  cover the remaining classes. Linear integer pricing gives a fourteen-
+  column exact rational witness in 0.61 seconds; Jacobian checks its
+  twenty equations in 62 ms. One local three-second Z3 query over the
+  generated 72 columns gives an integer witness in 22 ms. The researcher
+  keeps this local consistency separate from global pair feasibility,
+  integer global histograms and actual incidence.
+- Structural notes narrow signed-weight cases at orders divisible by
+  three and exclude an affine construction shortcut. Their implications
+  retain their hypotheses and do not prove universal signed feasibility
+  or the original all-k alternative. The Radon literature search follows
+  the author page and references; a ten-second PostScript download fails
+  to complete. The full Bierbrauer paper is not recovered, and no detailed
+  theorem is imported from an abstract or incomplete file.
+- Three checkpoint versions are sampled, all RESEARCH and all references
+  present. The central refresh occurs at 17:16:39.941375, about 511 seconds
+  after launch. Earlier evidence files are already saved. No read error
+  occurs; the one-second observer starts about fifteen seconds after
+  launch. Late refresh is retained as an observation, not repaired by
+  adding an arbitrary frequency rule.
+- A new automatic turn checks the clock and checkpoint just before
+  wrap-up at 17:16:54.668; it launches no new research. Only the existing-
+  evidence handoff is updated afterward. Gacha ends at 17:17:12.965,
+  elapsedMs527077, endReason quota, exit0, no error, child Goal paused.
+  Original research remains open and no item process survives.
+- The statement, guide and settings are unchanged, and all four pre-run
+  copies match the external snapshot. INDEX/PLAN/SUMMARY have77/3/6 direct
+  links; all327 reachable paths and thirteen checkpoint paths exist.
+  No previous index target is removed. All493 earlier notes/experiment
+  files retain their contents; all sixteen new JSON artifacts parse.
+
+Observed current-guide matrix regression:
+
+- A new item receives the exact existing matrix-power fixture through
+  gacha add. Its statement and revision15 guide remain byte-identical.
+  No previous candidate, notes or thread are copied. The parent and two
+  descendants produce a complete analytic answer.
+- The trace range is exactly0<r<=1; the matrix-order range is exactlyr=1.
+  The candidate proves trace sufficiency with a convergent fractional-
+  power integral and inverse order inside traces. It handles complex
+  Hermitian inputs in every finite dimension, including singular and
+  zero matrices, without commuting A and B. A=B=[1] excludes r>1; a
+  fixed pair of nonorthogonal projections excludes every0<r<1 for matrix
+  order. The observer reads this complete proof and its actual independent
+  review, not just a PASS label or a numerical example.
+- The literature is used as known context and explicitly attributed.
+  Jacobian computes the exact two-dimensional spectrum; the analytic
+  argument covers all exponents. A missing python alias is repaired with
+  python3 before substantive research starts. No observer intervention
+  or additional mathematical acceptance criterion is needed.
+- RESEARCH is saved at17:11:54.544682 before delegation at17:12:00.934.
+  The candidate is saved and marked pending. VERIFY is saved in its own
+  operation at17:14:29.787547 before the separate candidate reviewer is
+  dispatched at17:14:35.571 and reads the saved version at17:14:38.395.
+  After both audits, verification/conclusion/summary exist at17:16:19.
+  DONE is saved at17:16:44.846069; Goal completion follows at17:16:47.
+  This is the intended distinction between intermediate review during
+  research and verification of a complete candidate.
+- Gacha records done at17:17:11.592, elapsedMs364179, exit0, Goal complete,
+  no error and no wrap-up needed. Five observed checkpoints have phases
+  PLAN, RESEARCH, VERIFY, VERIFY, DONE, with no missing reference or read
+  error. All fourteen reachable paths and four checkpoint evidence paths
+  exist; the verification identifies the unchanged saved candidate. All
+  expected pre-run copies match, including absence of files not yet
+  created. No process remains. This is a known-result control, not a
+  novel mathematical contribution.
+
+Retain revision15. The stronger finite trial tests the intended response to
+a real pricing bottleneck, while the fresh matrix control checks complete
+resolution under the current guide. Neither calls for a new instruction.
+Reinspect the historical graph-product, matrix-power, stick-allocation and
+Erdős81 run metadata: all retain DONE, the recorded full phase sequence and
+their candidate/review/conclusion files. That is a persistence audit only;
+it does not reverify every historical proof or turn the existing proposed
+Erdős81 proof into an independently established new theorem.
+
+The build, CLI tests and guide are unchanged from the tested revision15
+commit ccded3b; an explicit Git diff confirms this. The seven passing CLI
+checks from that revision remain applicable. Consolidate the fifteen
+revisions and sixty-two recorded runs in [the workflow evaluation](research-evaluation.md),
+including the scope and limitations of the evidence. No extra run is
+required for this documentation-only consolidation.
+
+Consolidation audit: all sixty-two table entries resolve to their actual
+item/run records, and all fifteen revision sections are present. The one
+historical record without endedAt is the already documented r45 host
+disconnection; subsequent recovery and terminal runs are preserved without
+rewriting that record. Current Erdős and matrix runs are terminal, their
+observer sessions have exited, and their item processes are absent. The
+new evaluation/README local links and Git whitespace checks pass. Save the
+aggregate audit outside the items in _review/campaign-audit-r50.json.
