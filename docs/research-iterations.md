@@ -99,6 +99,9 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; approximate inverse and related-field scope; 10m | 2026-11-14T14-53-15-328Z-02cf614d | quota; 525.0s; identifies known Green conjectural route and exact-r length obstruction; PLAN |
 | erdos-1159-r43-fresh (fresh) | Revision14; known open formulations and discussion sources; 10m | 2026-11-14T15-09-25-949Z-1b277982 | quota / PLAN; known inverse conjecture found in the first run; cap-four relaxation limits recorded; original problem unresolved |
 | erdos-1159-r43-fresh (continue r44) | Revision14 unchanged; second-moment route decision; 10m | 2026-11-14T15-23-30-820Z-a45429bd | quota / RESEARCH; known q11 witness recovered; infinite second-moment family and individual-line feasibility; global compatibility still open |
+| erdos-1159-r43-fresh (continue r45) | Revision14 unchanged; global composition compatibility; 15m | 2026-11-14T15-38-22-630Z-3a69709c | interrupted; process and session missing, unlocked, run metadata unfinished; resumed normally |
+| erdos-1159-r43-fresh (r45 recovery) | Revision14 unchanged; resumed compatibility experiment; 15m | 2026-11-14T15-42-40-388Z-8cfdb744 | quota; old infinite family excluded, targeted repair passes moments and q47 rational flags; stronger pair system UNKNOWN; two transient missing evidence references |
+| erdos-1159-r43-fresh (continue r46) | Revision15 saved evidence references; 10m | 2026-11-14T16-02-03-050Z-209f53a2 | quota; known Johnson bound rejects W20/W30, W40 has an exact rational pair witness; all-cap lattice formulation; no missing references in seven observed checkpoints |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3855,3 +3858,198 @@ change. Retain revision14 for now; observe whether the premature evidence
 reference recurs rather than adding a duplicate instruction to the existing
 save-evidence-first rule. This turn changes only the observation journal;
 product tests are not repeated.
+
+## Revision 14 continuation — global composition compatibility
+
+The preceding goal turn made progress: r44 recovered a missed known
+construction, established an infinite family of feasible second-moment
+parameters, and tested individual line compositions. Its observations were
+pushed in 48895d5. Reinspection finds a clean checkout, matching revision14
+guides, a terminal quota-ended run in RESEARCH, and no process in the item.
+
+Retain the guide and research-owned files. Snapshot the seven inputs and
+handoff files in _review/erdos-1159-r43-fresh/tactical-global-r45, then
+continue normally with the same model and effort. Give this run fifteen
+minutes so it can complete the global compatibility check and act on its
+outcome. No mathematical hints or extra workflow rules are supplied.
+
+Observe whether the check produces a useful construction or a precisely
+scoped barrier, how the next route is selected, and whether literature and
+tool discovery continue to inform that decision. A fixed-family failure
+must not become a universal nonexistence claim. Also inspect whether new
+evidence paths are saved before a checkpoint references them; the previous
+run's final complete handoff did not remove its transient missing-note
+reference. Product tests are not repeated for this observation-only turn.
+
+The tool host connection closes while starting a read-only checkpoint
+observer. Revalidation at 15:40:28 finds the execution session missing,
+no item or Gacha process, no observer process, and an unlocked item reported
+as unfinished by gacha status. The run record has no endedAt; its last
+logged event is 15:39:55.121 and the last public tool call is 15:39:56.930.
+The exact process-termination cause is not established. Preserve the
+unfinished record instead of inventing an end time or treating the requested
+quota as completed.
+
+Save interruption evidence in the first external snapshot directory and a
+new seven-file snapshot in tactical-global-r45-recovery. Resume through the
+normal gacha run command at 15:42:40.388, with a new run ID and the same
+fifteen-minute quota. This is justified by the missing session, missing
+processes and released lock, not by an observation timeout. Keep the guide
+unchanged and preserve research artifacts written before interruption.
+Start a new read-only observer that samples checkpoint paths once per
+second and records state or path-availability changes outside the item.
+Its sampling can reveal missing references but cannot prove atomic timing
+more finely than the sampling interval.
+
+Observed recovery:
+
+- Gacha skips resuming the interrupted thread because of an existing active
+  or unrelated Goal. Recovery uses new thread
+  01a1dab9-a0dd-7562-96ad-1df2e5d3116f and the preserved files. This is not
+  uninterrupted same-thread continuation. The observer supplies no
+  mathematical hints and changes no research-owned file.
+- The original nine-class family is excluded for every q=45h+2, h>=1.
+  The 3-secant composition equation forces exactly one selected B-class
+  point per 3-secant, yielding q-1 flags where 2(q+1) are required. Complete
+  q47 composition enumeration and a separate structural review agree.
+  This excludes that family, not every cap-four blocking set.
+- Research responds with a targeted support repair: add outside defect
+  pair (1,3), adjust the original six outside multiplicities by a
+  moment-preserving relation, and choose multiplicity W=20h. All first and
+  second pencil moments and explicit integral global 3-secant assignments
+  then hold for every h>=1. At q47,W20, all four secant types have checked
+  exact rational global flag assignments. These are parameter witnesses;
+  full incidence realization remains open.
+- A stronger point-pair system on 251 saved compositions adds 21 reduced
+  class-pair Gram equations. Bounded Jacobian and local Z3 trials return
+  UNKNOWN. An optional HiGHS download is stopped without an installed
+  solver or numerical result. The next action is a numerical LP support
+  followed by exact rational reconstruction, with remaining-column pricing
+  required before treating restricted-support infeasibility as family-wide.
+- A parallel review sharpens the conditional all-cap route: a bounded-degree
+  algebraic approximation with fixed error eta*p, eta < 3^(-D/3), would
+  suffice along primes. The needed inverse assertion remains unproved.
+  Neither route improves the original bound or establishes novelty.
+- The checkpoint observer directly records two premature evidence links.
+  The obstruction note is absent at 15:45:41.794 and present by
+  15:46:04.858, an observed interval of about 23 seconds. The repair manifest
+  is absent at 15:50:31.997 and present by 15:51:41.078, about 69 seconds.
+  The latter occurs while staying in RESEARCH. Final complete links do not
+  remove this interruption risk, now repeated after r44.
+- Wrap-up arrives at 15:55:50.416. Only the checkpoint and compact summary
+  are saved afterward; no new computation or review is started. The run
+  ends at 15:56:14.910, endReason quota, elapsedMs 788690, in RESEARCH.
+  The observer also terminates normally. No item process remains.
+- PROBLEM, AGENTS and item settings remain unchanged. All four automatic
+  checkpoint-before files match the external snapshot. INDEX/PLAN/SUMMARY
+  contain 27/4/10 local links; all 118 recursively reached paths and 18
+  checkpoint paths exist. No old index target is removed. The final audit,
+  public trace and timing observations are saved outside the research item.
+
+The run demonstrates a scoped rejection followed by a useful repair and a
+bounded tool switch. It also supplies repeated direct evidence for a small
+checkpoint clarification: evidence references should name files already
+saved, including raw results while a write-up is pending. Keep this rule
+in the general checkpoint paragraph because it applies within a phase too.
+It must not require waiting for a delegated note or add a mathematical gate.
+
+## Revision 15 — saved evidence references
+
+Add two short sentences to the existing checkpoint paragraph: evidence links
+must point to saved files, and existing results can be cited while write-ups
+are pending. Preserve the research states, search guidance, tool trust,
+computational budgets and all other workflow instructions.
+
+Test this small change in an actual continuation of the same experimental
+item after its previous run is terminal. Update only its AGENTS.md, take
+an external seven-file snapshot, and observe checkpoints once per second.
+The main behavioral question is whether saved state remains usable while
+notes and manifests are being prepared. Also observe whether the planned
+LP tool change produces a useful next decision. Supply no mathematical
+hint and leave the statement, plan, status, index and experiments to the
+research agent. A single clean run would be supporting evidence, not proof
+that the timing issue is eliminated.
+
+The build and all seven existing CLI tests pass (about 17.1 seconds). No
+test is added to mirror prose. Confirm the prior run is terminal and no
+item process remains, copy the revised template only to AGENTS.md, and
+snapshot all seven files in _review/erdos-1159-r43-fresh/saved-evidence-r46.
+The statement remains byte-identical. The guide hash is
+a465b35c0ee3de6dd339d4275e3c9ecaaa7d46413d792f3887ea0163ed1e2c57.
+The actual ten-minute continuation starts at 16:02:03.050 with the same
+model and effort. Start the read-only checkpoint observer immediately
+after Gacha returns the run ID.
+
+Observed continuation:
+
+- Gacha reuses thread 01a1dab9-a0dd-7562-96ad-1df2e5d3116f. The researcher
+  explicitly reads the updated AGENTS.md. Literature searches, structural
+  checks and LP preparation proceed together. The observer supplies no
+  mathematical hints or steering and changes no research-owned file.
+- The generalized Johnson bound rejects the q47,W20 repair over every
+  possible composition support: one class needs at least 253 pairs on
+  2-secants and 452 on 3-secants, but its 38 points have only 703 pairs.
+  W30 similarly needs 667 pairs from a class with 666. The known method is
+  located in Betten--Cheon--Kim--Maruta (2011), Lemma 7. The observer checks
+  the publisher record and indexed author-manuscript passage; direct PDF
+  opening fails. No novelty is claimed for the bound.
+- The obstruction note is saved before RESEARCH moves to PLAN at
+  16:04:30.924584. The new parameter-screening plan is persisted and
+  RESEARCH resumes at 16:05:03.033822 before the substantive batch. The
+  obsolete W20 LP is not executed. Its optional HiGHS dependency download
+  stalls and is stopped; no installed HiGHS or result is claimed.
+- Exact screening checks all 1,023 nonempty class unions at each of the
+  19 legal q47 repair parameters W=0,10,...,180. W0 through W30 fail;
+  W40 through W180 pass these necessary tests. An actual q5 histogram
+  validates the screen. For the W20h family, h=2,...,10 pass the tested
+  unions, and a symbolic singleton-class calculation shows that particular
+  obstruction disappears for every h>=2. Neither statement supplies an
+  all-h realization or a universal cap bound.
+- At W40, a standard-library numerical simplex fallback supplies candidate
+  bases, followed by exact rational reconstruction and column pricing.
+  Complete composition enumeration gives 42,168 columns. The restricted
+  systems expand 251 to 323 to 395 to 446 columns; the first three
+  infeasible restrictions are not mistaken for family-wide rejection.
+  The final 42-composition positive rational witness satisfies all four
+  line totals, 40 class-flag equations and 55 class-pair equations.
+  Local Fraction checks and Jacobian's supplied-witness checker agree on
+  all 99 equations. Recorded solve/pricing time is about 1.8 seconds.
+  This is rational parameter feasibility, not an integer histogram or
+  incidence realization. No substantive custom floating verdict is used
+  without the corresponding exact witness.
+- A separate all-cap investigation derives an exact incidence-lattice
+  characterization using bounded positive line vectors, congruences modulo
+  the whole integer q, and scalar first/second moments. Reconstruction
+  energy is nonnegative and any nonzero energy is at least 2q. The saved
+  algebra, small export checks and separate review agree. The missing
+  ingredient is an existence or exclusion theorem over the admitted
+  words and sizes; no original solution or novelty is established.
+- The saved next action is a bounded integer-span compatibility check
+  against all 42,168 W40 columns, before nonnegative integer feasibility.
+  The plan explicitly distinguishes this finite cap-four diagnostic from
+  the original all-cap alternatives and calls for reassessing its value
+  before larger effort. Completed checks are removed from the next action.
+- The one-second observer records seven checkpoint versions, including
+  RESEARCH to PLAN to RESEARCH, with no missing referenced file or read
+  error. It starts at 16:02:19.097, about 16 seconds after run start.
+  This does not establish subsecond atomicity or semantic completeness of
+  every referenced file. It is one supporting observation following the
+  clarification, not a controlled causal result.
+- The researcher saves a handoff before scheduled wrap-up. Gacha sends
+  wrap-up at 16:10:47.332; only a compact final save follows. The run ends
+  at 16:11:02.463, endReason quota, elapsedMs 525366, in RESEARCH. No
+  complete candidate enters VERIFY or DONE. No computation remains.
+- PROBLEM, AGENTS and item settings are unchanged from the revised-guide
+  snapshot, and all four automatic before-run copies match it.
+  INDEX/PLAN/SUMMARY have 38/5/8 direct local links; all 154 recursively
+  reached paths and 29 checkpoint paths exist. No old index target is
+  removed. Saved JSON in all four new experiment groups parses normally.
+  Public trace, timing observations and final audit remain outside the item.
+
+Retain revision15. This run shows a useful literature-informed rejection,
+a bounded repair and tool adaptation, together with a complete sampled
+handoff. These research behaviors cannot be attributed to the two added
+sentences. The next experiment should test whether integer compatibility
+produces a route-changing decision and whether saved references remain
+complete in another continuation. Do not add further workflow instructions
+on the basis of this single clean run.

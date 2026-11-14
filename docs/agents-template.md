@@ -30,6 +30,8 @@ metadata, and logs to their owners.
 Keep `PLAN.md` and `state.json` focused on the current route, gap, and next
 action. Remove completed or superseded next steps and pending checks when
 saving a checkpoint; retain useful history in `STATUS.md` or `notes/`.
+Evidence links must point to saved files. Cite existing results while
+write-ups are pending.
 
 Use the literature to locate an unresolved gap worth pursuing. Read the
 current versions of results you rely on, check their scope and any corrections
