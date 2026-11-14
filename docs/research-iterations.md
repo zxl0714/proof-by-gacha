@@ -67,6 +67,7 @@ establish an improvement.
 | graph-product-control-r11 | Unchanged guidance/runtime; new problem; 10m | 2026-11-14T05-57-17-541Z-a3a78a12 | done; 325.6s; published counterexample applied; full phase sequence |
 | erdos-1159-r10 (fresh) | Unchanged guidance/runtime; existing research directory; new thread; 10m | 2026-11-14T06-11-24-306Z-39604a78 | quota; 521.0s; prior work consulted, new conditional route, earlier artifacts and index entries retained |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; inverse-route checkpoint; same thread; 20m | 2026-11-14T06-27-23-686Z-fec9a44b | quota; 1055.4s; free-arrangement reformulation, scoped local restrictions and Dickson construction barriers; unresolved |
+| erdos-1159-r10 (continue) | Unchanged guidance/runtime; local-restriction checkpoint; same thread; 10m | 2026-11-14T06-50-55-338Z-34e4662f | quota; 526.2s; scoped analytic generalizations, global-test limitations and revised next step; unresolved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -906,3 +907,91 @@ restrictions support a usable global argument or a deliberate route change,
 rather than treating additional excluded local models as sufficient progress
 toward the original quantifiers. Record this outcome without modifying the
 agent-owned mathematical plan or notes.
+
+## Local-to-global follow-through — usefulness beyond more local exclusions
+
+Continue the existing thread for ten minutes with the same guidance and
+runtime. The previous run proved that its restriction-exponent test is
+automatic for s>=2p and left surviving local models below that threshold.
+The saved plan proposes one bounded mixed-multiplicity p=13 trial and
+projective orbit compression before any new full-incidence search.
+
+Observe whether the agent converts those local findings into a reusable
+global constraint, a justified experiment, or a deliberate route change.
+Additional excluded local assignments alone do not establish movement on
+the original all-k/all-plane quantifiers. A short diagnostic can still be
+worthwhile if its outcome changes the next action. Preserve the observer
+boundary: save the starting checkpoint externally, but do not edit the
+research plan, provide a preferred lemma, or steer the running thread.
+
+Observed follow-through outcome:
+
+- The agent reads the current checkpoint and previous limitations before
+  investigating both the mixed-direction trial and global incidence
+  compatibility. It does not replay the earlier full-plane SAT searches.
+- Projective symmetry compresses three complete p=13 mixed-profile tests
+  into 66, 83 and 610 orbits, with 9, 4 and 61 passing orbits respectively.
+  Every tested profile retains survivors. The saved orbit representatives,
+  stabilizer weights and normalization explain coverage of 144144, 168168
+  and 1261260 assignments. The three computations each finish in under
+  0.2 seconds; these are local pencil assignments, not complete blockers.
+- Rather than merely extending the earlier p=7 enumeration, the agent
+  proves a characteristic-checked constant-double lemma for 2<=r<=p.
+  It excludes an entire pencil profile at size 2p-1 for prime p>=5. The
+  observer read the polynomial/interpolation argument and its scoped
+  review; the nonvanishing coefficient 1-r and the available rational
+  chart are retained. A related tangent-bound calculation is explicitly
+  labelled a known reproduction. No novelty is established.
+- The global literature audit proves that Abe's root-gap conditions add
+  nothing for C4 blockers at s>=2p, including non-rational test lines.
+  Extension-field complement positivity is also automatic in this range.
+  Real/complex low-multiplicity classifications are not transferred to
+  finite characteristic. The observer read Abe's arbitrary-characteristic
+  statement and the saved rational/non-rational line-count argument.
+- The alternative route leaves the previous monomial class and enumerates
+  all 59535 genuine additive binomials in the specified order-64 Dickson
+  plane. A short pilot precedes the complete run. With no compiler
+  available, the agent uses Python successfully; the full enumeration
+  takes about 0.39 seconds. The found pair gives a 128-point blocker of
+  depth five, checked on all 4161 projective lines with separate custom
+  field arithmetic and a representative Jacobian rank control. This
+  reproduces the previously attained depth, not an improved bound.
+- The same route produces an analytic lower bound of five for two full
+  additive graphs through the origin plus vertical infinity, in binary
+  translation planes of order at least eight. Its proof uses the union
+  of two proper linear images and the partition of nonzero graph points
+  by spread directions. Independent graph translations are explicitly
+  excluded; their affine images can cover when neither map is bijective.
+  The observer inspected that scoped argument. It does not concern
+  arbitrary blockers or rule out any universal bound larger than four.
+- These findings change the next step: investigate one translation offset
+  compatible with every shared singular direction. The prime-plane route
+  now requires a concrete cross-pencil gluing constraint before any
+  full-incidence restart; further isolated local exclusions are not
+  proposed as sufficient evidence. The original all-k/all-plane gaps
+  remain stated in the plan and checkpoint.
+- The run ends normally at quota after 526.2 seconds, with all four
+  checkpoint events in RESEARCH. Post-wrap public actions only refresh
+  the saved handoff and give the final response. There are no remaining
+  research processes or pending reviews. The problem and guide are
+  byte-identical to the pre-run copies.
+- SUMMARY/INDEX have 7/88 valid local links, all seven checkpoint artifact
+  paths exist, and recursive index/summary traversal reaches 160 local
+  artifacts without missing targets. No prior index target is removed.
+  PLAN is concise prose with no Markdown links and points readers to the
+  indexed scoped notes.
+
+This trial supplies two examples of extending a finite observation into a
+general scoped argument, together with a decision not to rely on global
+criteria that add no information. It also shows that a successful richer
+construction can reproduce an existing bound without improving it. Those
+distinctions matter more than raw enumeration counts. The original problem
+is unresolved and the positive observations do not prove broad frontier
+research capability or a causal benefit of a prompt revision.
+
+No guide or runtime change is warranted by this trial. Preserve the current
+short research guidance rather than add a rule already demonstrated in the
+trace. Further evaluation should test whether the revised translation or
+gluing question yields useful evidence, and whether the same behavior holds
+on a materially different problem rather than only on this accumulated
+finite-geometry context.
