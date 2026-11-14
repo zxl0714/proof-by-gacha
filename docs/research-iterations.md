@@ -86,6 +86,7 @@ establish an improvement.
 | erdos-1159-r24-phase (continue) | Revision11 unchanged; near-minimum external-conic covers; 25m | 2026-11-14T10-52-38-254Z-114aa506 | quota; literature changes the route; finite exclusions; incomplete SMT exports detected by observer |
 | erdos-1159-r30-fresh | Revision12; fresh statement-only control; 10m | 2026-11-14T11-19-55-524Z-3d69fc9d | quota; 553.8s; RESEARCH; saved JSON readbacks pass, formal profiles remain feasible, fixed q13 diagnostic UNKNOWN |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; finite-diagnostic checkpoint; 15m | 2026-11-14T11-37-07-679Z-0fa6eda4 | quota; 792.3s; autonomous export repair, bounded solver campaign stopped, all-order formal coding barrier; RESEARCH/PLAN/RESEARCH |
+| erdos-1159-r30-fresh (continue) | Revision12 unchanged; geometric-compatibility checkpoint; 20m | 2026-11-14T11-54-10-198Z-f7540afc | quota; 1079.7s; scoped structural results and finite repair traps; RESEARCH to PLAN, no full candidate |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2524,3 +2525,92 @@ so the already-passing integration suite is not repeated for this log-only
 update. A subsequent continuation should test whether the new structural
 step produces information that affects the original route, rather than
 assuming that a new representation is automatically progress.
+
+## Revision 12 continued — from reformulation to a useful constraint
+
+The previous goal turn made progress: r31 supplied natural export-failure
+coverage, an autonomous repair and a scoped route change, recorded in ea508af.
+The worktree is clean and the previous run is terminal. Continue its saved
+geometric checkpoint for twenty minutes with the same guide and thread.
+Seven before-run files are preserved outside the item under
+_review/erdos-1159-r30-fresh/geometric-compatibility-r32.
+
+The question is whether the selected polynomial formulation produces a useful
+constraint, a reusable argument or evidence to abandon a premise. Watch the
+link from a finite profile to the original quantifiers, renewed use of relevant
+literature, and whether formal finite-grid identities are confused with global
+factorization. No mathematical hint or instruction change is supplied. More
+time allows a substantive structural check and its consequences rather than
+judging the route only from the interrupted pre-wrap selection in r31.
+
+Observed outcome:
+
+- The saved coefficient step is completed. Exact reduction modulo V^q-V,
+  followed by finite-slope reduction modulo W^q-W, distinguishes vanishing
+  on the finite grid from global polynomial divisibility. The researcher
+  constructs a relaxed solution for every one of the 330 normalized q13
+  column supports, with known-positive and deliberately failing small
+  controls. It then proves that these particular relaxed polynomials cannot
+  factor into valid point products. This identifies a missing nonlinear
+  condition; it does not exclude every polynomial with those supports.
+- Related-field research checks Yoshinaga's covering/freeness equivalence
+  and arrangement methods, then proves that the proposed individual-pencil
+  exponent test is automatic under its hypotheses. Exact Jacobian nullspace
+  examples supplement the argument. The agent records the remaining common
+  arrangement-extension issue instead of presenting a reformulation as a
+  solved obstruction. The observer checks the primary theorem and the scope
+  of the saved argument without supplying a hint to the researcher.
+- An incidence-only argument proves q <= t2+t3 <= 3q+1 for cap-four blockers
+  in every plane of order q >= 13 with 3 not dividing q. The saved independent
+  review checks this lemma and the exact two-intersection benchmark. A later
+  nonzero-defect argument for orders divisible by three, together with that
+  benchmark, extends the lower bound to all prime-power orders >=13. The
+  non-prime-power exact-type exception remains explicit. This restricts the
+  scale of a possible stability argument; it does not exclude cap four or
+  settle whether a larger universal cap exists. No novelty claim is made.
+- The full-goal branch revisits current primary literature, including the
+  October 2026 Asgarli-Ghioca-Yip journal article, and checks the distinction
+  between complete cap sets and blocking sets. A uniform bounded-repair
+  lemma would imply a positive solution, so it tests concrete proposed rules
+  on actual planes before committing to a larger search. Small greedy cap4
+  sets are maximal but nonblocking. At q13, strict one-swap descent stops at
+  12 empty lines; two-swaps repair that trap and reach 10. Complete checks
+  including variable-cardinality moves then refute strict empty-line descent
+  with at most two deletions and two additions at this state.
+- A changed potential, lexicographic (empty lines, four-secants), makes five
+  improvements in 1.247 seconds and stops at 26 points, 9 empty lines and
+  35 four-secants. A separately generated homogeneous incidence carrier
+  replays the moves and checks every allowed deletion/addition size pair,
+  using necessary saturated-line filters. This is a finite failure of that
+  refined rule, not nonexistence of a blocking set. Larger batches, other
+  potentials and larger caps remain open. The researcher changes the rule
+  rather than simply extending a failed computation's budget.
+
+Final handoff and evaluation:
+
+- Wrap-up arrives at 12:11:29.577 UTC after the last computational check.
+  Only document/checkpoint writes and link/hash checks follow. At
+  12:12:26.367 the observed phase changes from RESEARCH to PLAN. The final
+  plan removes completed pending work and asks for a new invariant or a
+  globally justified repair rule before more computation. It explicitly
+  ties a positive proof to every plane and a negative proof to unbounded
+  lower bounds in actual planes. No original-problem candidate, VERIFY or
+  DONE is claimed.
+- The run ends at 12:12:30.726, endReason quota, elapsedMs 1079733. PROBLEM,
+  AGENTS and item settings remain byte-identical. All four automatic
+  pre-run copies match the observer's originals. INDEX/PLAN/SUMMARY have
+  24/1/12 local links; 96 recursively reached paths and all ten checkpoint
+  paths exist, no previous index target is removed, and no item process
+  remains. Public traces, final artifact audit and scoped content observations
+  are saved outside the item under the observer review directory.
+
+Keep revision12 unchanged. The continuation demonstrates literature-informed
+scope checks, a conditional structural lemma, cheap counterexamples to proposed
+repairs, and an explicit return to planning. It does not establish general
+performance improvement or a new mathematical result. A remaining research
+risk is spending many rounds on finite repair variants whose connection to a
+uniform theorem stays speculative. The next continuation should be judged by
+whether it develops that connection or abandons the premise, not by counting
+more scripts or configurations. Do not add a special rule for this example
+or rewrite the researcher's plan. This is a log-only update; the previously
+passing product checks are not repeated without a code or guide change.
