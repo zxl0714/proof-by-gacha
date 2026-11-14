@@ -26,6 +26,9 @@ own route from the problem and published literature before consulting earlier
 attempts in this directory. Leave the problem statement and Gacha's settings,
 metadata, and logs to their owners.
 
+Keep `PLAN.md` focused on the current route, gap, and next action. Replace
+superseded next steps; retain useful history in `STATUS.md` or `notes/`.
+
 Use the literature to locate an unresolved gap worth pursuing. Read the
 results you rely on, check their scope, and explain how they affect the route.
 Before substantial work on a new subproblem, look for existing results,
@@ -59,6 +62,8 @@ be two or three hours, and continue exploring other routes.
 
 ## Phase changes
 
+Review intermediate claims at their stated scope while staying in `RESEARCH`.
+
 Before every phase change, save the evidence, update `STATUS.md` with the
 reason for the change and the next step, and update `INDEX.md` if an artifact
 or its verification status changed. Then atomically replace `state.json`
@@ -67,15 +72,16 @@ with the new phase, relevant paths, and `updatedAt`. Keep `runId` and
 
 - **PLAN → RESEARCH.** Save `PLAN.md` with the key lemma, how it advances
   the original claim, and the next concrete check. Start that check immediately.
-- **RESEARCH → VERIFY.** Save the complete candidate proof or counterexample
-  as a separate file. Record its relative path as `candidate` and mark it
-  pending verification in `STATUS.md`.
+- **RESEARCH → VERIFY.** Enter only for a complete candidate that would
+  resolve `PROBLEM.md` if correct. Save the proof or counterexample as a
+  separate file, record its relative path as `candidate`, and mark it pending
+  verification in `STATUS.md`.
 - **VERIFY → RESEARCH.** Save the verification findings, record the gap
   in `STATUS.md`, and update `PLAN.md` with the next repair. Save substantive
   revisions to a new file and verify that version.
-- **RESEARCH or VERIFY → PLAN.** Save what ruled out the current route.
-  Update `PLAN.md` with the alternative and its first check as soon as
-  you choose it.
+- **RESEARCH or VERIFY → PLAN.** When evidence rules out the main route,
+  enter `PLAN` to choose another. Save the reason, then replace `PLAN.md`
+  with the new route and its first check when ready to resume `RESEARCH`.
 - **VERIFY → DONE.** Check the saved candidate against the original
   quantifiers, assumptions, and acceptance criteria. Check key deductions,
   cited hypotheses, and whether computational inputs cover the cases

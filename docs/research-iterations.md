@@ -50,6 +50,10 @@ establish an improvement.
 | erdos-1159-r01 | Literature-informed route selection | 2026-11-14T03-03-17-670Z-4b8730c7 | quota; RESEARCH; 554.7s; summary saved |
 | erdos-1159-r01 (continue) | Revision 1; same thread and saved work | 2026-11-14T03-14-27-587Z-c3517413 | quota; RESEARCH; 566.8s; summary saved |
 | erdos-1159-r02 | Revision 2; decision-driven work | 2026-11-14T03-15-02-238Z-4db2b5bd | quota; RESEARCH; 598.3s; summary saved |
+| erdos-1159-r03-control | Revision 2; copied checkpoint, new thread | 2026-11-14T03-28-05-001Z-f6a04176 | quota; RESEARCH; 553.3s; summary saved |
+| erdos-1159-r03 | Revision 3; same copied checkpoint, new thread | 2026-11-14T03-28-53-768Z-f1d51e24 | quota; RESEARCH; 529.8s; summary saved |
+| erdos-1159-r04 | Revision 3; fresh replication | 2026-11-14T03-39-45-185Z-19568ebd | timeout; RESEARCH; 630.7s; summary saved |
+| stick-allocation-regression-r03 | Revision 3; original stick problem | 2026-11-14T03-39-45-183Z-0f9fc349 | done; DONE; 540.1s; summary saved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -139,3 +143,73 @@ Next change: distinguish intermediate review from original-problem VERIFY,
 make the main-route transition explicit, and maintain one current plan.
 Test new-context continuation from copied research files, without injecting
 a research answer or editing the agent's mathematical notes.
+
+
+## Revision 3 — current plans and the scope of VERIFY
+
+Clarify that intermediate-claim review stays in RESEARCH. VERIFY requires a
+complete candidate that would resolve PROBLEM.md if correct. Make the
+return to PLAN explicit when evidence rules out the main route, and keep
+PLAN.md focused on the current next action instead of accumulating
+superseded instructions.
+
+The paired trial starts both items from revision 1's completed continuation
+checkpoint (2026-11-14T03-14-27-587Z-c3517413), with 81 copied research/run files.
+Mathematical notes, results, plans, status, index, and checkpoint are copied
+byte-for-byte. Historical summaries retain working relative links. In copied
+run metadata only, threadId becomes sourceThreadId and importedFrom records
+the source path, preventing reuse of the source conversation. New items retain
+their own AGENTS.md and settings from gacha add. The source remains untouched.
+
+This tests file-based recovery with new conversations, including selection of
+the actual next gap, treatment of partial claims, and replacement of stale
+plan entries. The model, effort, quota, and starting research files are the same;
+sampling and shared service load remain uncontrolled.
+
+
+Cold-continuation observations:
+
+- Both new conversations used the saved current gap, investigated thin/shallow
+  hitting sets and incidence rounding, and preserved the distinction between
+  a reformulation and a proof of existence. File-based recovery worked.
+- The control used a known Klein construction to resolve the finite q=11
+  feasibility question left UNKNOWN by earlier solver calls. This is a
+  concrete instance of literature enabling reuse rather than another search.
+- The revised run replaced the accumulated plan during research with a current
+  route and a discriminating fixed-spectrum trial. It reported an order-three
+  infeasible spectrum and bounded order-five UNKNOWNs, without escalating a
+  large search. The control also replaced its plan by the end (29 lines versus
+  21 in the revised run), so this is not a categorical capability difference.
+- Both remained in RESEARCH while checking partial claims, and neither
+  declared DONE. The imported plan already contained a complete-candidate
+  guard, so this pair alone does not isolate the new VERIFY wording.
+- The 4 existing CLI tests pass again. A fresh #1159 replication checks
+  the phase guard without inherited research instructions. A separate original
+  stick-allocation problem checks that a complete candidate can still reach
+  VERIFY and DONE. The stick run received only the user's original statement,
+  with no old proof, answer, or added acceptance checklist.
+
+Fresh-replication observations:
+
+- The #1159 run stayed in RESEARCH while reviewing moment relaxations and
+  finite greedy/exchange obstructions. It saved a specific two-insertion-trade
+  next step, without claiming a resolution or established novelty.
+- The stick run followed PLAN -> RESEARCH -> VERIFY -> DONE. Its complete
+  proof gives c_n = 2^n / (2^(n+1)-1). Review of the saved proof covers arbitrary
+  n, distinct interior marks, and at most n cuts; finite solver checks are
+  supplementary. The observer also read and checked the complete argument.
+- #1159 exceeded the grace period. The wrap-up steer was delivered at
+  03:48:16 UTC and acknowledged in the agent's commentary at 03:48:23.
+  At 03:48:38 it nevertheless launched replays of two experimental scripts.
+  Its next tool call, saving the final notes, checkpoint, and summary, arrived
+  at 03:50:06. The hard stop interrupted the turn at 03:50:15. The checkpoint
+  and summary survived; the run correctly records timeout, not normal quota
+  completion.
+- This is evidence of a wrap-up ordering problem, not a missing steer.
+  Existing instructions put index/status refresh ahead of the durable
+  checkpoint and gave only the wrap-up start time. Next test: state the
+  finish deadline, save the checkpoint and summary first, and leave unfinished
+  checks explicitly pending instead of starting or replaying work at wrap-up.
+
+The fresh runs support the phase distinction for these cases. They do not
+establish a research-performance improvement or guarantee future compliance.
