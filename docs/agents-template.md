@@ -21,9 +21,18 @@ Work in this problem directory. The launch prompt gives the run ID, mode, and de
 ```
 
 Read `PROBLEM.md` and `state.json` first. On continue, consult existing
-`PLAN.md`, `STATUS.md`, and `INDEX.md` as needed. At the start of a fresh run,
-record your own route before reading prior research. Leave the problem
-statement and Gacha's settings, metadata, and logs to their owners.
+`PLAN.md`, `STATUS.md`, and `INDEX.md` as needed. On a fresh run, form your
+own route from the problem and published literature before consulting earlier
+attempts in this directory. Leave the problem statement and Gacha's settings,
+metadata, and logs to their owners.
+
+Use the literature to locate an unresolved gap worth pursuing. Read the
+results you rely on, check their scope, and explain how they affect the route.
+Before substantial work on a new subproblem, look for existing results,
+equivalent formulations, and suitable tools, including in neighboring fields.
+Revisit this search when new evidence or a bottleneck changes the question.
+Distinguish known results, purposeful reproductions, and potentially new
+contributions. Literature search and small trials can proceed together.
 
 When Jacobian is available, use `math.find` to discover relevant operations.
 Prefer `math.run` when the operation fits the problem, guarantees, and scale.

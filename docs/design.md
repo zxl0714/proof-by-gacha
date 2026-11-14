@@ -166,7 +166,7 @@ The research directory is the durable basis for continuation. Reuse a previously
 
 ### Fresh attempt
 
-Start a new Codex thread from the original problem and shared background supplied by the user, without automatically including earlier conclusions and approaches in the initial context. Explore independently, then compare with existing work and save the new findings. Follow-up turns in that run use its new thread. Start with the launch version of `PROBLEM.md` and the working instructions. Ask the agent to form its own route before reading the existing plan, evidence, artifact index, or prior run summaries. Merge the resulting research into the current files after comparison.
+Start a new Codex thread from the original problem and shared background supplied by the user, without automatically including earlier conclusions and approaches in the initial context. Published literature remains available to inform the new route. Explore independently, then compare with existing work and save the new findings. Follow-up turns in that run use its new thread. Start with the launch version of `PROBLEM.md` and the working instructions. Ask the agent to form its own route before reading the existing plan, evidence, artifact index, or prior run summaries. Merge the resulting research into the current files after comparison.
 
 A fresh attempt starts at `PLAN` in `state.json`. Previous run checkpoints and evidence remain available in the run records and research files. When incorporating new findings into `STATUS.md`, explain their relationship to previous results and retain unresolved disagreements.
 
