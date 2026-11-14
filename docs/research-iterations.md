@@ -87,6 +87,7 @@ establish an improvement.
 | erdos-1159-r30-fresh | Revision12; fresh statement-only control; 10m | 2026-11-14T11-19-55-524Z-3d69fc9d | quota; 553.8s; RESEARCH; saved JSON readbacks pass, formal profiles remain feasible, fixed q13 diagnostic UNKNOWN |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; finite-diagnostic checkpoint; 15m | 2026-11-14T11-37-07-679Z-0fa6eda4 | quota; 792.3s; autonomous export repair, bounded solver campaign stopped, all-order formal coding barrier; RESEARCH/PLAN/RESEARCH |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; geometric-compatibility checkpoint; 20m | 2026-11-14T11-54-10-198Z-f7540afc | quota; 1079.7s; scoped structural results and finite repair traps; RESEARCH to PLAN, no full candidate |
+| erdos-1159-r30-fresh (continue) | Revision12 unchanged; return to a general route; 15m | 2026-11-14T12-17-26-391Z-f45b1ae0 | quota; 826.7s; finite traps generalized to every fixed even cap and deletion budget; PLAN/RESEARCH/PLAN, original problem open |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2614,3 +2615,95 @@ whether it develops that connection or abandons the premise, not by counting
 more scripts or configurations. Do not add a special rule for this example
 or rewrite the researcher's plan. This is a log-only update; the previously
 passing product checks are not repeated without a code or guide change.
+
+## Revision 12 continued — returning from finite repairs to the general question
+
+The previous goal turn made progress: r32 completed a structural continuation,
+checked its scoped findings and handoff, and pushed the observation in 56dd9c4.
+The current checkout is clean, and the run is terminal in PLAN with no pending
+computation. Its own plan asks for a new invariant or a uniformly justified
+repair rule before more finite search. Preserve that plan and the guide.
+
+Continue for fifteen minutes from this checkpoint, with seven original files
+saved outside the item in _review/erdos-1159-r30-fresh/global-route-r33. Test
+whether the researcher uses the finite failures to develop a link to the
+original quantifiers or makes a reasoned route change. Watch renewed literature
+use, the PLAN-to-RESEARCH transition, and whether more computation has a stated
+decision purpose. Do not supply a preferred mathematical rule. A larger number
+of variants or artifact files is not itself a successful outcome.
+
+Observed outcome:
+
+- The researcher changes the question from trying another finite exchange
+  to asking whether actual nonblocking sets can have linearly many saturated
+  secants through every outside point. Such a family would refute every
+  fixed-deletion strict-descent rule at the chosen cap. It searches complete
+  arcs, conic constructions and projection methods, saves the chosen plan,
+  and records RESEARCH at 12:20:53.685 UTC in a separate call before the first
+  delegation at 12:21:04.952.
+- An explicit pair of smooth dual conics over F5 intersects in one degree-four
+  Frobenius orbit. Odd-degree extensions preserve that orbit, so no rational
+  dual line contains any common base point. This supplies disjoint branch
+  points in every outside pencil, not merely a generic independence claim.
+  The saved cap4 proof combines genus-one character bounds with incidence
+  counting to produce an infinite family in actual Desarguesian planes.
+- A common dual pencil extends the construction to every fixed even cap
+  C=2r. It contains enough smooth members after increasing the field. The
+  joint-sign count is bounded below by
+  (q+1)/2^r - (r-2+2^(1-r))*sqrt(q) - r. Removing at most 4*binom(r,2)
+  component-crossing lines still leaves Omega_C(q) saturated C-secants
+  through every outside point; simultaneous exterior lines make the set
+  nonblocking. A saved independent review checks the orbit, branch loci,
+  genus, constants and quantifiers. The parent separately checks a
+  [general-genus Hasse-Weil source](https://math.mit.edu/~roed/courses/18.782/LectureNotes37.pdf)
+  rather than extending an elliptic-curve citation beyond its scope.
+- Adding an outside point requires deleting a different old point on every
+  saturated line through it. Thus, for each fixed even cap and deletion
+  budget, these sets defeat every one-step cap-preserving modification that
+  adds a point, regardless of the number of additions. Any same-cap blocking
+  set would require Omega_C(q) deletions from these particular seeds. This
+  rules out the proposed all-starting-sets repair lemma, not blocking-set
+  existence. Cumulative plateau deletions, other starting sets and odd caps
+  remain unexcluded; no novelty claim is made.
+- Exact prime-field trials at 5,13,29,101 retain their matrices, point sets,
+  line counts and small-field failures of positive saturation. At p101 the
+  202-point set has 2501 empty lines and minimum outside four-secant degree
+  18; the trial takes about 0.107 seconds. Jacobian factors the base quartic
+  and other prime-field examples, with a reducible calibration input. The
+  infinite-family conclusion is proved analytically rather than extrapolated
+  from these trials. Optional GF125 enumeration is explicitly not launched,
+  not marked complete or UNKNOWN, and is not needed for the proof.
+- Literature review distinguishes completeness after patching exceptional
+  tangent lines from high saturation at every outside point. The inspected
+  Bastioni-Micheli and Hermitian/BKS results do not automatically give the
+  stronger uniform hypothesis. A proposed odd-cap mechanism is saved with
+  its cubic/projection and degree-12-orbit existence gaps explicitly open.
+
+Final handoff and evaluation:
+
+- Wrap-up arrives at 12:30:28.567. Only checkpoint, summary, plan, status,
+  index and link updates follow. The researcher returns to PLAN at
+  12:31:26.528 after the completed even-cap obstruction removes the reason
+  to repeat fixed-batch strict-descent tests. Its next proposed check concerns
+  the conditional odd-cap construction or a positive route with a justified
+  restriction on starting sets. Both are unstarted. It explicitly notes that
+  even an odd-cap obstruction would not resolve the original question.
+- The run ends at 12:31:31.636, endReason quota, elapsedMs 826744, on the
+  same thread. PROBLEM, AGENTS and item settings are unchanged; all four
+  automatic before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY
+  have 29/1/9 local links, all 106 recursively reached artifact paths and
+  eight checkpoint paths exist, no old index target is removed, and no item
+  process remains. Public trace, artifact audit and scoped content review
+  are saved outside the research item.
+
+Keep revision12 unchanged. This continuation answers the evaluation question:
+finite failures lead to a quantified obstruction to an entire proposed class
+of repairs, with a concrete consequence for route choice. The observer checks
+the saved argument and cited bounds without giving the researcher a hint or
+editing its mathematical files. This is evidence of useful autonomous
+abstraction, not a general performance guarantee or an established new result.
+The next run should justify the value of its chosen continuation for the
+original problem; closing the odd-cap variant is not automatically the best
+next investment. No product or guide change is justified by this observation,
+so only the experimental log changes and the existing product tests are not
+repeated.
