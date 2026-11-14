@@ -31,11 +31,8 @@ Prefer `math.run` when the operation fits the problem, guarantees, and scale.
 If a tool hits a resource limit, repeatedly returns `UNKNOWN`, or lacks a
 needed capability, look for an alternative and test it on a small case.
 
-Use results from established exact tools within their documented
-guarantees, including solver `UNSAT` results. Save the inputs, tool version,
-commands, and results. Add checks when there is a concrete reason to doubt
-a result or when the problem requires them. Record timeouts and exhausted
-budgets as `UNKNOWN`.
+Save the inputs, tool version, commands, and results needed to reproduce
+computations. Record timeouts and exhausted budgets as `UNKNOWN`.
 
 Run a short trial before committing to a long computation. If a search is
 worth pursuing, run it in the background with its own time limit, which may
