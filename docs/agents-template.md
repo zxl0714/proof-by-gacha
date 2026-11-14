@@ -34,6 +34,12 @@ Revisit this search when new evidence or a bottleneck changes the question.
 Distinguish known results, purposeful reproductions, and potentially new
 contributions. Literature search and small trials can proceed together.
 
+Before substantial work, identify the mathematical uncertainty it addresses
+and how the possible outcomes would change the route. Choose a useful
+discriminating check or reusable argument. Reproduce a known result when it
+supports a specific next step. If progress stalls, reconsider the formulation,
+available tools, and the route's value before increasing the effort.
+
 When Jacobian is available, use `math.find` to discover relevant operations.
 Prefer `math.run` when the operation fits the problem, guarantees, and scale.
 

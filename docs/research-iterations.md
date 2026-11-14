@@ -48,6 +48,8 @@ establish an improvement.
 | --- | --- | --- | --- |
 | erdos-1159-r00 | eab4faf baseline | 2026-11-14T03-02-16-365Z-8c494933 | quota; RESEARCH; 567.4s; summary saved |
 | erdos-1159-r01 | Literature-informed route selection | 2026-11-14T03-03-17-670Z-4b8730c7 | quota; RESEARCH; 554.7s; summary saved |
+| erdos-1159-r01 (continue) | Revision 1; same thread and saved work | 2026-11-14T03-14-27-587Z-c3517413 | quota; RESEARCH; 566.8s; summary saved |
+| erdos-1159-r02 | Revision 2; decision-driven work | 2026-11-14T03-15-02-238Z-4db2b5bd | quota; RESEARCH; 598.3s; summary saved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -94,3 +96,46 @@ Observed comparison:
 Next hypothesis: requiring an intended decision before substantial work can
 make experiments and derivations more selective without imposing a fixed
 number of routes or an arbitrary time limit.
+
+
+## Revision 2 — give substantial work a decision purpose
+
+Add a short instruction to identify the mathematical uncertainty and how
+possible outcomes would change the route. A reproduction should support a
+specific next step; stalled work should trigger consideration of the
+formulation, tools, and value of the route before increasing effort.
+
+Hypothesis: this encourages useful discrimination and reuse without prescribing
+a fixed research strategy, number of alternatives, or per-step timeout.
+
+Also continue revision 1 for another ten minutes, with its existing instructions
+unchanged. This separately tests whether the saved gap and evidence support
+new work rather than repeated startup research.
+
+Observed results:
+
+- The revision-1 continuation resumed the same thread and pursued the saved
+  spread-pair gap. It enumerated a different order-27 spread, compared a
+  restricted scalar family with general linearized graphs, saved a finite
+  witness and a restricted-method obstruction, and searched design/covering
+  literature. It did not repeat the initial q=5,7 calibration. This is useful
+  continuity, with novelty still explicitly unestablished.
+- Revision 2 stated an intended moment-versus-incidence distinction, but again
+  performed small solved cases and a bounded q=13 trial. The q=13 trace contains
+  both interface errors and genuine work exhaustion; repairing unsupported
+  bit-vector syntax is not the same as blindly repeating a long solver run.
+  The wording has not yet demonstrated better research selection.
+- A concrete phase error appeared in revision 2 at 03:21:11 UTC. STATUS.md said
+  both VERIFY and that no complete candidate for the original problem existed.
+  The saved candidate was explicitly a partial package. The agent returned
+  to RESEARCH at 03:22:43, and never claimed DONE. Intermediate claims deserve
+  review, but this VERIFY interval misrepresented progress on the original goal.
+- Plans accumulate superseded instructions above the latest checkpoint.
+  The warm continuation followed the latest gap, but file-only recovery
+  still needs a live test. Both revisions also retain RESEARCH while
+  describing material changes of main route.
+
+Next change: distinguish intermediate review from original-problem VERIFY,
+make the main-route transition explicit, and maintain one current plan.
+Test new-context continuation from copied research files, without injecting
+a research answer or editing the agent's mathematical notes.
