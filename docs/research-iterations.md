@@ -96,6 +96,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; secant-avoidance proof and transfer audit; 10m | 2026-11-14T14-01-42-895Z-e751e67a | quota; 524.6s; primary proof and local-filter degree barrier audited; exact tool fallback; returns to finite-field inverse scope |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; finite-field inverse theorem scope; 15m | 2026-11-14T14-15-38-549Z-4b11f5d8 | quota; scoped theorem barriers, exact cubic control and conditional full-graph reduction; PLAN |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; full-graph inverse hypothesis check; 15m | 2026-11-14T14-35-19-185Z-781935f5 | quota; 784.2s; uniform counterexample refutes exact and fixed-exception inverse; robust sublinear-exception repair remains unproved; PLAN |
+| erdos-1159-r30-fresh (continue) | Revision13 unchanged; approximate inverse and related-field scope; 10m | 2026-11-14T14-53-15-328Z-02cf614d | quota; 525.0s; identifies known Green conjectural route and exact-r length obstruction; PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3539,3 +3540,99 @@ proved or refuted; repeating the sufficient reduction alone would add no
 evidence. No new guide rule follows from this run. Only the observation log
 changes, so product tests are not repeated. The observer supplies no hint and
 does not edit the research-owned plan, evidence or problem statement.
+
+## Revision 13 continued — approximate structure and related-field scope
+
+The preceding goal turn made progress: r41 disproved its own exact and
+fixed-exception full-graph inverses, marked superseded notes, and justified
+the sufficient sublinear-exception repair without claiming it proved. The
+observation was pushed in cbbde09. The checkout is clean, the run is terminal
+in PLAN, the guide matches revision13, and no item process remains.
+
+Continue unchanged for ten minutes. Observe whether the selected large-arc
+and fixed-defect-code literature produces an applicable approximation theorem
+or a concrete new obstruction, with its field, length and exception bounds
+checked. Merely restating the sufficient inverse would not advance this
+question. Save seven before-run files outside the item in
+_review/erdos-1159-r30-fresh/approximate-inverse-r42. Supply no mathematical
+hint and make no research-owned edit. No product change requires new tests.
+
+Observed outcome:
+
+- RESEARCH is saved at 14:54:15.505727 UTC before the first delegation at
+  14:54:22.125. The researcher separates fixed-defect code scope, large-arc
+  classification and the possible blocking/length bridge. A search of the
+  preceding notes finds no substantive earlier fixed-defect-code audit.
+- The current Alderson-Zhang paper is inspected at
+  [v2](https://arxiv.org/html/2504.19325v2), revised June2026. For actual
+  maximum secant r>=3, a spanning point set has code defects (r-2,1);
+  the detailed note handles the ordinary r2/MDS case separately. Equal
+  primal/dual-defect statements therefore do not apply to arbitrary capped
+  graphs. The relevant length bound specializes to n<=(r-1)p+1, and a
+  tangent-word specialization recovers an elementary pencil count. None
+  supplies the needed approximate curve classification.
+- The new source audit also reads the 2026 Landjev-Rousseva maximal-length
+  survey and distinguishes its constructions, bounds and conjectures.
+  Full graph length p is not automatically near extremal for a cap at least
+  four: two shifted projective parabolas already give a cap4 set of size
+  2p+1. Maximum length, completeness under adding points and blocking are
+  kept as different properties.
+- The corrected current Ball-Lavrauw *Planar arcs* record is checked,
+  including its version history. Its theorems concern ordinary cap2 arcs.
+  The note accurately retains the fixed high-fraction range from the cited
+  Voloch result, without claiming all such results require p-o(p) size or
+  extending them to cap3 and above. Counting results and constructions
+  starting from algebraic curves are not promoted to universal inverses.
+- The decisive new background source is
+  [Green's current problem collection](https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf),
+  updated December2025, printed page33. Problem68's comments explicitly
+  state the broader bounded-secant approximate-algebraization conjecture
+  and connect it to shallow blocking sets. Thus the saved full-graph repair
+  is a restriction of a known conjectural route. The observer reads this
+  primary passage. The source is not an applicable classification theorem;
+  its earlier ICM framework is identified but not claimed to have been read.
+- A separate elementary calibration rules out a tempting length-only
+  strategy. For each fixed r>=4, put d=floor(r/2). A union of d shifted
+  parabolas, with one extra point when r is odd, has actual maximum secant r
+  and size dp+1+(r mod2). Appropriate nonzero square shifts make the maximum
+  attained on a specified horizontal line. Its size lies inside the exact
+  necessary blocking moment interval for every prime p>2d.
+- A character-count argument gives quadratically many empty lines in those
+  sets for sufficiently large p at fixed r. They are actual nonblocking
+  examples, not formal line spectra. Consequently even the true universal
+  maximum arc length cannot fall below that moment interval's lower
+  endpoint. A new argument must use further structure, such as absence of
+  empty lines. The observer checks the cap, incidence polynomial, parity
+  cases and empty-line count analytically; no computation is replayed.
+
+Final handoff and evaluation:
+
+- PLAN is saved at 14:59:52.427797. It identifies the approximate inverse as
+  an existing conjectural direction, retains the valid robust AGY reduction,
+  and selects the referenced ICM framework to distinguish proved partial
+  statements from a missing implication using the blocking property. It
+  does not schedule another code-length sample without a new condition.
+- No mathematical solver or finite experiment is launched in this run.
+  The three saved source/route audits are the substantive artifacts. No
+  complete original candidate enters VERIFY or DONE, and no improved
+  original bound or novelty is established.
+- Wrap-up arrives at 15:01:59.391. Only the existing state and summary are
+  refreshed afterward. The run ends at 15:02:14.266, endReason quota,
+  elapsedMs 525025, on the same thread. All requested audits are terminal.
+- PROBLEM, AGENTS and item settings are unchanged, and all four automatic
+  before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY have
+  74/2/4 local links; all 197 recursively reached paths and seven checkpoint
+  paths exist. No old index target is removed and no item process remains.
+  Public trace and final observation are saved outside the research item.
+
+This run recovers important missing background and makes the next research
+decision more precise. The explicit known conjectural formulation was found
+only after the inverse route had been developed across earlier continuations;
+successful recovery does not establish sufficient initial coverage. The
+next product experiment should make a small clarification in the existing
+literature paragraph: include known open conjectures, surveys and problem
+discussions. Test earlier recognition in a fresh research context, without
+supplying Green or altering a research-owned plan. This is a prospective
+experiment, not a claim that a wording change has already improved results.
+Revision13 remains unchanged during r42. Only this observation log changes,
+so product tests are not repeated.
