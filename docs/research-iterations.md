@@ -65,6 +65,7 @@ establish an improvement.
 | erdos-1159-r10 (continue) | Revision 7 guidance; runtime revision 8; same thread; 20m | 2026-11-14T05-33-34-014Z-0539fc66 | quota; 1061.0s; autonomous SAT backend change, scoped route barriers and non-Desarguesian controls; unresolved |
 | erdos-1159-r10 (continue) | Unchanged guidance/runtime; same thread; nearfield checkpoint; 10m | 2026-11-14T05-57-17-566Z-b4899381 | quota; 561.6s; scoped infinite-family construction and failed direct extension; unresolved |
 | graph-product-control-r11 | Unchanged guidance/runtime; new problem; 10m | 2026-11-14T05-57-17-541Z-a3a78a12 | done; 325.6s; published counterexample applied; full phase sequence |
+| erdos-1159-r10 (fresh) | Unchanged guidance/runtime; existing research directory; new thread; 10m | 2026-11-14T06-11-24-306Z-39604a78 | quota; 521.0s; prior work consulted, new conditional route, earlier artifacts and index entries retained |
 
 ## Revision 1 — literature-informed decisions
 
@@ -743,3 +744,84 @@ instructions ask the agent to form an independent route before comparing with
 prior local work. That can directly assess whether diversity and accumulated
 knowledge are reconciled without an observer editing the research notes or
 supplying a preferred mathematical direction.
+
+
+## Same-item fresh evaluation — diversity with existing research memory
+
+The previous independent items repeated the core quadratic nearfield result
+without sharing their mathematical records. That observation cannot diagnose
+failure to use available memory. Test fresh mode in the already-populated
+erdos-1159-r10 item instead, with its current guide/runtime and a ten-minute
+quota. The new native thread should form a route from the problem and
+published literature before consulting earlier local attempts, then compare
+and integrate useful previous evidence.
+
+Before launch the observer saved a manifest of all problem, guide, checkpoint,
+plan/status/index, note and experiment files, plus byte-identical copies of
+the current handoff documents in the external review directory. No mathematical
+artifact is edited, no prior result is highlighted, and no route is supplied
+to the research agent.
+
+Review the public trace for the ordering of independent exploration and prior
+work consultation. Check whether available findings prevent a substantial
+repeat or change the next action, whether new work remains tied to the original
+quantifiers, and whether earlier reusable artifacts and their index entries
+remain discoverable after the fresh run. A different sampled thread is not
+a causal comparison of guidance quality.
+
+
+Observed fresh-run outcome:
+
+- A new native thread started with only a fresh PLAN checkpoint, the same
+  problem digest and the recorded authorized execution policy. The previous
+  thread and mathematical next-step fields were not reused.
+- The public trace first shows statement reading, primary-source searches,
+  incidence questions and tool discovery. At 75 seconds the root reads the
+  old PLAN/STATUS/INDEX, then specific previous notes. A complete new plan
+  is saved later. Thus the observable ordering supports initial independent
+  investigation followed by comparison; it does not establish that a fully
+  developed mathematical route existed before all prior-record consultation.
+- The new plan moves from the preceding nearfield construction to a
+  conditional negative route in prime planes. Saved q13 timeout evidence
+  is used to avoid replaying that search. The prior aggregate-moment
+  relaxation is read and explicitly treated as already feasible, so the
+  next proposed condition must concern individual incidences.
+- One PG(2,5) control and a symbolic secant-moment calculation were repeated
+  and labelled known reproductions. They do not establish mathematical
+  novelty. The control completed quickly; no q13 trial was replayed.
+- New work makes the dependence on an unproved algebraic approximation
+  conjecture explicit. Using AGY's uniform skew-line count, the agent
+  derives a scoped robustness bound and checks line components, geometric
+  irreducibility, prime-field scope and the negative quantifiers. The
+  observer checked the quoted AGY formulas and Green's stated conjectural
+  approximation premise. This remains a conditional route, not a solution.
+- Source searches and reviews change possible next steps: real-field
+  inverse theorems are not transferred to finite fields, and a grid theorem's
+  parameter-dependent guarantee is not asserted to be order-independent.
+  A review corrects the stronger claim that such a uniform guarantee is
+  impossible when the source merely does not supply it. The approximation
+  diagnostic also distinguishes a fixed degree from degree growing with
+  the requested accuracy.
+- The run ends at quota after 521.0 seconds, remaining in RESEARCH. Its
+  summary/index/plan have 11/65/3 valid local links, and all saved research
+  and review paths exist. All pre-run research notes and experimental
+  files are byte-identical; only PLAN.md, STATUS.md, INDEX.md and state.json
+  changed among the 131 snapshotted files. No prior index target was removed.
+  The problem and guidance are unchanged. After the wrap signal the public
+  trace has only the final response; no matching research process remains.
+
+The snapshot was also archived byte-for-byte outside the agent's directory,
+with every archived file checked against its pre-run digest. No observer
+edited the mathematical artifacts or supplied a preferred route during the
+trial. The README now explains that fresh mode creates a new thread while
+retaining accessible research files, and that comparison follows the initial
+investigation; this clarifies existing behavior rather than adding a new
+research rule. Documentation diff checks pass; runtime tests are not repeated
+for this documentation-only update.
+
+This run supports useful comparison and preservation in one populated item.
+It does not prove that fresh mode generally improves diversity or avoids
+rediscovery, nor that the conditional route can solve #1159. The next
+substantive check is a longer continuation of the new route: can the agent
+advance or reject its concrete inverse-incidence subproblem, rather than
+repeatedly restating an unproved conjectural dependency?

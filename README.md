@@ -128,7 +128,7 @@ gacha run bb6-hydra-variant
 gacha run bb6-hydra-variant --fresh
 ```
 
-A fresh attempt keeps your existing work. It starts without automatically feeding the previous approach into the agent's context. Each run uses a Codex Goal and records its turns, evidence, and remaining gaps under the problem's `runs/` directory.
+A fresh attempt starts a new Codex thread and keeps the existing notes and experiments in the same problem directory. The research instructions ask the agent to form an initial route from the original question and published literature before consulting previous attempts; it can then reuse their results and update the current plan. Each run uses a Codex Goal and records its turns, evidence, and remaining gaps under the problem's `runs/` directory.
 
 ## Room to think
 
