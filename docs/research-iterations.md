@@ -95,6 +95,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; nonuniform orbit diagnostic and route value; 10m | 2026-11-14T13-48-07-021Z-73061a45 | quota; 534.5s; exact integer orbit model feasible; low-four output dimension at most two; stops cutoff expansion and returns to all-plane proof audit |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; secant-avoidance proof and transfer audit; 10m | 2026-11-14T14-01-42-895Z-e751e67a | quota; 524.6s; primary proof and local-filter degree barrier audited; exact tool fallback; returns to finite-field inverse scope |
 | erdos-1159-r30-fresh (continue) | Revision13 unchanged; finite-field inverse theorem scope; 15m | 2026-11-14T14-15-38-549Z-4b11f5d8 | quota; scoped theorem barriers, exact cubic control and conditional full-graph reduction; PLAN |
+| erdos-1159-r30-fresh (continue) | Revision13 unchanged; full-graph inverse hypothesis check; 15m | 2026-11-14T14-35-19-185Z-781935f5 | quota; 784.2s; uniform counterexample refutes exact and fixed-exception inverse; robust sublinear-exception repair remains unproved; PLAN |
 
 ## Revision 1 — literature-informed decisions
 
@@ -3417,3 +3418,124 @@ specific missing hypothesis can be obtained; further source reading alone
 does not establish that. No new guide requirement is justified by this run.
 Only this observation log changes, so no product tests are repeated. The
 observer supplies no hint and edits no research-owned files.
+
+## Revision 13 continued — testing the full-graph inverse gap
+
+The preceding goal turn made progress: r40 audited current structural
+theorems, separated curve containment from span and interpolation degree,
+and saved a reviewed full-graph reduction with its inverse premise explicitly
+unproved. The observation was pushed in df5ce0d. At this turn's start the
+checkout is clean, the latest run is terminal in PLAN, the guide matches
+revision13, and no item process remains.
+
+Continue unchanged for fifteen minutes. The researcher has selected the
+graph power/index literature and the missing implication from a secant cap.
+Observe whether it obtains the relevant primary hypotheses despite the prior
+access failure, uses its saved controls to accept or reject a concrete
+implication, and advances beyond restating the sufficient inverse target.
+Exact theorem scope is needed; inaccessible material must not be claimed as
+read, and routine trust in an applicable established theorem remains valid.
+Save seven before-run files outside the item in
+_review/erdos-1159-r30-fresh/graph-inverse-r41. Do not supply a mathematical
+hint or modify the research plan. There is no product change requiring new
+tests; the existing passing checks remain applicable.
+
+Observed outcome:
+
+- RESEARCH is saved at 14:36:59.462983 UTC before the first delegation at
+  14:37:16.655. The researcher chooses a discriminating test of its own
+  preceding inverse claim: perturb a parabola while retaining a full cap3
+  graph, and try to force arbitrarily large containing-curve degree. It
+  separates the uniform argument, finite trial and source applicability.
+- The prior full-text access obstacle is resolved through the
+  [Ball-Gacs author PDF](https://web.mat.upc.edu/simeon.michael.ball/fieldfunctions.pdf).
+  The source note distinguishes this November2008 version from the 2009
+  journal record, whose publisher text remains inaccessible. It reads the
+  index hypothesis and the distinction between Conjecture2.5 and the proved
+  cases. A one-fiber parabola perturbation supplies a direct obstruction:
+  it retains cap at most three while its index is one. The reciprocal
+  control has index two. Thus a secant cap does not imply the needed large
+  index, without any search over larger planes.
+- The exterior-set search expands to internal points, external chords and
+  related arc terminology. The researcher distinguishes an exterior set
+  from a set of exterior points, so it does not misapply large exterior-point
+  classifications to a fixed-size internal arc. It notices an inconsistent
+  arXiv journal-reference field and checks the author-institution/publisher
+  records. These source limitations and distinctions remain visible.
+- A uniform analytical construction refutes the exact full-graph inverse.
+  For each fixed D>=2 and all sufficiently large primes, choose a fixed-size
+  set of internal points whose pair-joining lines miss the parabola, with
+  distinct vertical fibers, no three collinear and unisolvent evaluation
+  through degree D-2. The simultaneous nonsquare estimate in
+  [AGYv2 Lemma2.1](https://arxiv.org/html/2510.15332v2) supplies enough choices
+  after each fixed-degree exclusion. The tangent-factor argument verifies
+  square-class independence, and the estimate is uniform in adaptive choices.
+- Replacing the corresponding parabola points gives a full cap3 graph.
+  Any polynomial of degree at most D vanishing on it has too many retained
+  parabola roots, so contains the conic factor. The residual polynomial
+  vanishes on the unisolvent replacement set and must be zero. The observer
+  checks this argument and the imported estimate's exact hypotheses; no
+  computation is needed for the uniform conclusion.
+- The saved fixed-E extension makes every relevant subset of replacement
+  points unisolvent. For every fixed D,E, sufficiently large primes then
+  admit full cap3 graphs for which every degree-D curve misses more than E
+  points. The proof and its independent review both retain the dependence
+  of the prime threshold on D,E. They do not claim a growing-exception
+  counterexample. These p-point graphs are explicitly nonblocking, so they
+  neither refute the blocker-only inverse nor resolve the original problem.
+- The finite trial finds p31/D4 and p101/D5 controls on the first greedy
+  attempt. Complete projective line spectra are (403,251,276,63) and
+  (4637,1444,3808,414), respectively. Both have maximum intersection three,
+  while residual evaluation ranks are 6/6 and 10/10; direct degree-D ranks
+  are 15/15 and 21/21. The local batch takes about 0.010 seconds and reports
+  no UNKNOWN or timeout. The observer reads the code and saved results
+  rather than replaying the experiment or extrapolating the uniform theorem.
+- Jacobian's exact prime-field rank operation is discovered and its bounds
+  inspected. After a documented GF2 rank-two control, both actual residual
+  matrices return full rank. The returned source matrices match the exported
+  inputs. Canonical data, operation contract, script, seed, timing and
+  reproduction are retained; the service version is recorded as unexposed.
+  No oversized request or certificate requirement is introduced.
+- The researcher then repairs the proposed inverse at a meaningful scope.
+  The quantitative AGY proof gives a positive proportion of skew lines,
+  which yields a linear lower bound on a cap-k blocker's points outside any
+  bounded-degree curve, after component cleanup. Consequently bounded-degree
+  containment with o(p) exceptions for every full cap-k graph would still
+  imply the original negative claim. This weaker inverse remains UNPROVED;
+  the fixed-size perturbations do not refute it. The observer checks the
+  primary density statement, component accounting and exceptional-point
+  union bound. A mere existence-of-one-skew-line citation would not suffice.
+
+Final handoff and evaluation:
+
+- PLAN is saved at 14:47:04.975130. The next check is primary stability or
+  classification results for long dimension-three codes with fixed defect
+  and large (n,k)-arcs, specifically for a bounded-degree approximation with
+  sublinear exceptions in growing prime characteristic. The researcher
+  distinguishes constructing examples from classifying all such graphs;
+  no applicable theorem or completed original candidate is claimed.
+- Both preceding full-graph reduction notes now carry a prominent update
+  linking the counterexample and explaining that the decomposition remains
+  valid while the exact inverse premise is false. The new approximate
+  premise is clearly marked unproved. Old evidence is retained, rather
+  than silently overwritten as if the stronger claim had never been used.
+- Wrap-up arrives at 14:48:20.457. Subsequent work refreshes only the saved
+  summary and state; there is no new computation or review. The run ends
+  at 14:48:40.404, endReason quota, elapsedMs 784193, on the same thread.
+  All computations and requested reviews are terminal; no original-problem
+  candidate enters VERIFY or DONE.
+- PROBLEM, AGENTS and item settings remain unchanged. All four automatic
+  before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY have
+  71/1/6 local links; all 194 recursively reached paths and nine checkpoint
+  paths exist. No old index target is removed and no item process remains.
+  Public trace and final observation are saved outside the research item.
+
+Keep revision13 unchanged. This continuation falsifies an earlier proposed
+lemma, tests the scope of a repair, reuses a published quantitative estimate,
+and updates superseded research memory. Those are concrete autonomous research
+decisions, even though no improved original bound or novelty is established.
+The next unresolved task is whether approximate structure can actually be
+proved or refuted; repeating the sufficient reduction alone would add no
+evidence. No new guide rule follows from this run. Only the observation log
+changes, so product tests are not repeated. The observer supplies no hint and
+does not edit the research-owned plan, evidence or problem statement.
