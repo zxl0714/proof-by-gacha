@@ -32,7 +32,8 @@ action. Remove completed or superseded next steps and pending checks when
 saving a checkpoint; retain useful history in `STATUS.md` or `notes/`.
 
 Use the literature to locate an unresolved gap worth pursuing. Read the
-results you rely on, check their scope, and explain how they affect the route.
+current versions of results you rely on, check their scope and any corrections
+or withdrawals, and explain how they affect the route.
 Before substantial work on a new subproblem, look for known results and
 algorithms, equivalent formulations, and suitable tools in related fields.
 Expand thin searches using terminology and references from relevant papers.

@@ -90,6 +90,8 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; return to a general route; 15m | 2026-11-14T12-17-26-391Z-f45b1ae0 | quota; 826.7s; finite traps generalized to every fixed even cap and deletion budget; PLAN/RESEARCH/PLAN, original problem open |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; value of the next route; 15m | 2026-11-14T12-36-28-867Z-d45106c9 | quota; 785.7s; odd-cap obstruction closed, coexistence with known blockers motivates route change; PLAN/RESEARCH/PLAN, original problem open |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; source-proof transfer checkpoint; 15m | 2026-11-14T12-56-39-331Z-290fea0b | quota; 781.3s; source mechanism checked, quadratic-code repair excluded uniformly, narrow-weight code route retained as unproved; PLAN/RESEARCH/PLAN |
+| erdos-1159-r30-fresh (continue) | Revision12 unchanged; sharpen narrow-weight code route; 15m | 2026-11-14T13-15-43-251Z-0462dc35 | quota; 780.9s; conditional pencil obstruction and full coefficient-tail barrier; specific second-order calibration next; current-source coverage gap noted |
+| erdos-1159-r30-fresh (continue) | Revision13; current-source checks and second-order calibration; 10m | 2026-11-14T13-34-40-068Z-d6478f78 | quota; 526.4s; current source checked, calibrated pair transform, 174 direction orbits; uniform choice nonintegral, general profile still open |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2907,3 +2909,195 @@ into a discriminating lemma or reject it before a long sequence of auxiliary
 targets. No original bound, novelty claim or general performance guarantee
 is established. This is a log-only update, so the existing passing product
 checks are not repeated.
+
+## Revision 12 continued — sharpening the narrow-weight code route
+
+The previous goal turn made progress: r35 completed the source-transfer
+audit, ruled out the proposed quadratic-code repair, saved its scope and
+handoff, and pushed the observation in c9ad5db. The current checkout is clean,
+the latest run is terminal in PLAN, and no item process remains. The saved
+next action is a primary-source search for projective dimension-three codes
+with every nonzero weight in [n-k,n-1], looking for a bounded-degree relation
+in growing prime characteristic. This is a substantial unproved target,
+not already a reduction to an easier problem.
+
+Continue for fifteen minutes with revision12 unchanged. Seven before-run
+files are saved outside the item in
+_review/erdos-1159-r30-fresh/narrow-weight-r36. Evaluate whether the researcher
+turns this broad reformulation into a precise discriminating lemma, finds a
+useful theorem or algorithm, or rejects the route before expanding auxiliary
+work. Watch projectivity, the blocking upper weight bound and original
+quantifiers, and distinguish new names for the same problem from evidence
+that changes the next action. Do not supply a mathematical hint or alter the
+research-owned plan. The preceding run already exercised the relevant
+general guidance, so an additional rule is not justified before this test.
+
+Observed outcome:
+
+- The researcher saves RESEARCH at 13:16:19.467570 UTC, before its first
+  delegation at 13:16:26.114. It reads the existing MacWilliams and
+  arrangement notes, distinguishes completed calculations from remaining
+  conditions, and pursues source scope, cover parameters and a precise
+  sparse-pencil consequence in parallel.
+- A direct expansion modulo p^2 proves all Ball-Blokhuis coefficient-tail
+  conditions automatic in the relevant rank-three maximum-weight window.
+  The observer checks
+  [Corollary 5.1 and Theorem 6.1](https://web.mat.upc.edu/simeon.michael.ball/codeswithallone.pdf),
+  the two nonnegative exponents and degree bounds. The saved independent
+  review passes at this numerical scope. This closes a previously untested
+  stronger condition; it does not establish a code or blocker realization.
+- The researcher finds the finite-Abelian-group theorem in
+  [Linear Consistency Testing](https://johanhastad.se/lincon.pdf) and applies
+  it to additive and multiplicative pencil charts. The resulting conditional
+  theorem excludes a three-center cover of residue-exceptional lines for
+  cap-k blockers in PG(2,q), when q>=3k^2 and gcd(q,m)=1. A saved review
+  checks both chart configurations and integer correction bounds. The
+  observer reads the rendered primary Theorem 2 to confirm its rejection
+  threshold and individual correction guarantee after PDF text extraction
+  is unreadable. The argument supplies no exceptional-line cover and does
+  not extend to arbitrary non-Desarguesian planes or resolve the original
+  question. No new mathematical computation is needed.
+- The cover audit retains multiplicity only at nonzero vectors and computes
+  the exact independent-set decomposition number
+  max(1,ceil(r/2),ceil(n/3)). It grows linearly with p despite a fixed secant
+  cap, preventing a substitution of that cap into a fixed-number-of-bases
+  theorem. The researcher checks the published cover paper separately from
+  the [withdrawn 2022 paper](https://arxiv.org/abs/2205.03389), which it
+  excludes. It also recognizes that critical exponent two is already
+  automatic for proper blockers and contributes no cap restriction.
+- The final plan is more concrete than the initial inverse target: calibrate
+  Yang's q+2-orbit second-order MacWilliams transform on actual p5/p7
+  witnesses, preserving projective direction labels and scalar multiplicity.
+  It specifies pair totals, ordinary marginals and low-support dual checks
+  before measuring q13 direction-assignment orbits and trying a small exact
+  relaxation. All these checks remain explicitly unstarted. Feasibility is
+  to prompt route reassessment, not an automatic budget increase; any
+  infeasibility would still be specific to that formal profile.
+
+Final handoff:
+
+- PLAN is saved at 13:26:56.781201. No original candidate enters VERIFY or
+  DONE. Wrap-up arrives at 13:28:41.022, followed only by a checkpoint and
+  summary refresh. The run ends at 13:28:57.360, endReason quota,
+  elapsedMs 780920, on the same thread, with no running computation or review.
+- PROBLEM, AGENTS and item settings are unchanged during r36; the four
+  automatic before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY
+  have 45/1/6 local links. All 139 recursively reached artifact paths and ten
+  checkpoint paths exist, no old index target is removed, and no item process
+  remains. Source checks and the final observation are outside the item.
+
+The observer also identifies a bounded source-version omission. The saved
+cover audit and public fetches use Jafari's August 2026 v1. The
+[September v2](https://arxiv.org/html/2608.23647v2) is a major revision and
+includes rank-three thresholds and a proved low-rank characteristic criterion.
+The extension-degree theorem used in the audit survives; for cap-four sizes
+about 2p, the new low-rank criterion's density hypothesis still fails. Thus
+this does not invalidate the run's proofs or change its route conclusion,
+but the account of what is currently known is incomplete. No hint or update
+is sent to the researcher, and its mathematical files are left untouched.
+
+This run demonstrates historical-memory use, a cross-field theorem application
+and a specific next experiment without new sample accumulation. It establishes
+neither an original bound nor novelty. The observed version omission justifies
+a small generic clarification in the next guide revision; it does not justify
+mandatory literature logs or a rule naming this paper.
+
+## Revision 13 — current source versions and corrections
+
+Clarify the existing literature sentence to read current versions of relied-on
+results and check corrections or withdrawals alongside scope. No new phase,
+artifact, fixed search quota or review role is added. The change addresses the
+r36 omission above while retaining trust in established results at their actual
+scope. It does not rewrite any research-owned proof, plan or problem statement.
+
+Run the existing build and CLI tests, then copy the updated template only to
+the stopped test item's AGENTS.md. Continue its own second-order calibration
+plan for ten minutes. Snapshot the seven starting files outside the item in
+_review/erdos-1159-r30-fresh/source-revisions-r37. Observe source-version checks
+when relevant and whether the proposed small calibration answers its stated
+uncertainty. A single trial without a changed-source encounter cannot establish
+that the revision fixes the omission. Do not supply a paper-specific hint.
+
+Validation before launch: TypeScript build and all seven CLI tests pass.
+The stopped item's guide matches the revised template, with SHA-256
+b6c6749ecafcf3d7a7ee22d0a4e4eaefd35ad093a70ed6289ef97b626147e5aa.
+The previous guide bytes are preserved in the r36 observer snapshot; no
+mathematical handoff file is changed by the observer.
+
+Observed outcome:
+
+- RESEARCH is saved at 13:35:10.824735 UTC, before the first delegation at
+  13:35:18.884. The researcher opens both the current arXiv record and the
+  latest v3 text of
+  [Yang's Second-Order Weight Distributions](https://arxiv.org/abs/1007.3108).
+  Its saved notes explicitly identify the latest version and say no
+  correction or withdrawal is indicated on that inspected record. The
+  observer checks the primary Theorem II.12, including the direction of
+  the matrix substitution and normalization. This demonstrates the intended
+  source check, but no changed or withdrawn source is encountered in this
+  run; it does not establish that revision13 fixes the r36 omission.
+- A short identity-code control precedes exact pair enumeration on the
+  saved actual p5/p7 blockers. Counts, ordinary marginals, dependent-pair
+  multiplicities and all 210/495 direction-resolved dual coefficients
+  through union support four match restricted-column kernel enumeration.
+  The new transform implementation is calibrated at that scope in about
+  three seconds. The observer reads the implementation and saved result
+  without replaying the computation. No formal-profile verdict follows.
+- A separate direction-labeling trial reduces 319319 assignments for the
+  five q13 local histograms to 174 PGL2 orbit variables, in about 0.82
+  seconds. Small controls compare generated and full group actions.
+  Jacobian's exact group-order operation is discovered, its contract read,
+  and its degree limit respected; it returns 2184. The notes distinguish
+  this group-order check from certification of the coloring partition.
+- The theoretical audit proves that the entire independent dual-pair
+  union-support distribution of a cap-four set depends only on n and t4.
+  Together with ordinary dual weights, scalar aggregation therefore adds
+  no direction information at any cutoff. This changes the proposed test:
+  the useful unresolved information starts with four distinct directions
+  and their projective cross-ratio classes. It is a statement about the
+  diagnostic's scope, not a new bound for the original problem.
+- A calibrated four-bin preliminary checks all 84 coefficients through
+  support six for the fixed q13 profile: all are integral and nonnegative.
+  A separately calibrated exact uniform-labeling trial passes positivity
+  through support four, but its four-distinct coefficient is 14976/11.
+  The researcher correctly rejects only this uniform choice as an integral
+  enumerator, not all nonuniform mixtures or the profile itself. The
+  general 174-variable feasibility problem is not run.
+- The three four-subset target orbits have sizes 546, 273 and 182, totaling
+  all 1001 subsets. Frame multiplicities give coefficient steps 48, 96 and
+  144 with integer secant counts summing to 52. The researcher catches and
+  corrects a prose subset-count typo before handoff; the exact export was
+  already correct. The final plan explicitly aligns the two direction
+  labeling conventions, retains stabilizer multiplicities, and proposes
+  a small rational trial before an integer repair. It calls for reassessing
+  value before increasing the cutoff or solver budget.
+
+Final handoff and evaluation:
+
+- The phase remains RESEARCH. Completed calibration steps are replaced
+  with the unstarted coefficient-matrix assembly; no complete original
+  candidate enters VERIFY or DONE. The summary distinguishes a rational
+  diagnostic, an integral enumerator and actual geometric realization,
+  and preserves the all-plane and every-fixed-cap gaps.
+- Wrap-up arrives at 13:43:22.037. Only the existing checkpoint and summary
+  are refreshed afterward. The run ends at 13:43:38.434, endReason quota,
+  elapsedMs 526429, on the same thread. No computation or review remains
+  running; none of the small trials reports a timeout or UNKNOWN.
+- PROBLEM, AGENTS and item settings are unchanged during r37; all four
+  automatic before-run copies match the external snapshots. The guide
+  matches revision13. INDEX/PLAN/SUMMARY have 51/2/6 local links. All 159
+  recursively reached artifact paths and nine checkpoint paths exist,
+  no old index target is removed, and no item process remains. Public
+  trace and final observation are stored outside the research item.
+
+Keep revision13 without another rule. This continuation shows a current-source
+check, purposeful reproduction, inexpensive tool calibration, and a theoretical
+scope check preventing deeper computation of an uninformative aggregation.
+It also preserves the difference between a failed candidate and an impossible
+family. These are useful research behaviors, not evidence of a solved problem,
+novelty, or a general improvement established by one trial. The outstanding
+evaluation question is whether the next finite diagnostic changes the route
+back toward the original quantifiers rather than creating more auxiliary work.
+The observer supplies no mathematical hint and edits no research-owned files.
+The passing build and seven CLI tests remain the product validation; subsequent
+changes are only this experiment log.
