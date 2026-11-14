@@ -95,7 +95,8 @@ note, review, script, input, or result, with its purpose and verification status
 For a batch, link its manifest and describe what it covers. Use relative links.
 Skip scratch files and Gacha logs.
 
-At wrap-up, compare `INDEX.md` with the artifacts saved under `notes/` and
-`experiments/` in this run. Add missing evidence links and refresh verification
-statuses before saving the checkpoint and writing `runs/<run-id>/SUMMARY.md`
-with findings, evidence links, remaining gaps, and the next concrete step.
+At wrap-up, first save the current checkpoint and `runs/<run-id>/SUMMARY.md`
+using existing evidence: findings, evidence links, pending checks, remaining
+gaps, and the next concrete step. Then refresh `INDEX.md` from saved artifacts.
+Leave unfinished checks pending; do not start or replay computations or wait
+for additional reviews. Finish the turn by the deadline in the launch prompt.

@@ -147,10 +147,16 @@ export async function runItem(
     const wrapAt = quota - Math.min(600_000, Math.round(quota * 0.15));
     const hardStop = quota + Math.min(60_000, Math.max(1000, Math.round(quota * 0.05)));
     const at = (offset: number) => new Date(startTime + offset).toISOString();
-    const wrapPrompt = `Gacha is wrapping up run ${runId}. Save evidence, refresh INDEX.md for the artifacts saved in this run, and save the current state.json checkpoint. Write ${summary} with findings, remaining gaps, and the next concrete step. Stop substantive research now. Use DONE only for a result already verified against PROBLEM.md.`;
+    const wrapPrompt = [
+      `Gacha is wrapping up run ${runId}.`,
+      `Finish by: ${at(quota)}`,
+      `Stop research now. First save state.json and ${summary} using existing evidence, with findings, evidence links, pending checks, remaining gaps, and the next concrete step.`,
+      'Then refresh INDEX.md from saved artifacts. Leave unfinished checks pending; do not launch or replay computations or wait for additional reviews.',
+      'Use DONE only for a result already verified against PROBLEM.md. Finish this turn after saving.',
+    ].join('\n');
     const prompt = [
       `Run ID: ${runId}`, `Mode: ${record.mode}`, `Wrap-up begins: ${at(wrapAt)}`,
-      `Run summary: ${summary}`, '',
+      `Finish by: ${at(quota)}`, `Run summary: ${summary}`, '',
       'Follow the research instructions in AGENTS.md. Start work now from state.json.',
       'For DONE, set state.json candidate, verification, and conclusion to item-relative paths of the saved files. Keep problemSha256 and runId on every checkpoint, and refresh updatedAt. Save the run summary before ending the Goal, including on successful completion.',
       '', 'Use the following launch copy of PROBLEM.md as the statement and acceptance criteria for this run.',

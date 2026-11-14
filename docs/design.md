@@ -202,7 +202,7 @@ The intended lifecycle is:
 
 For example, a three-hour run might enter wrap-up around `2h50m`, with a small grace period after the target deadline. Reserve 15% of the quota for wrap-up, capped at ten minutes. The grace period is 5% of the quota, bounded between one second and one minute.
 
-The initial prompt includes the target time and asks the agent to save checkpoints during research. When wrap-up starts, stop Goal continuation and send `turn/steer` with the active turn ID in `expectedTurnId`. If the turn has already ended and the run still needs a summary, start a dedicated wrap-up turn on the same thread while time remains. Acknowledging a steer only confirms receipt of the instruction. Use the final turn event and saved artifacts to determine whether wrap-up completed.
+The initial prompt includes both the wrap-up start and the target finish time, and asks the agent to save checkpoints during research. When wrap-up starts, stop Goal continuation and send `turn/steer` with the active turn ID in `expectedTurnId`. If the turn has already ended and the run still needs a summary, start a dedicated wrap-up turn on the same thread while time remains. Acknowledging a steer only confirms receipt of the instruction. Use the final turn event and saved artifacts to determine whether wrap-up completed. The wrap-up message repeats the same finish deadline. Save the checkpoint and summary from existing evidence first, then refresh the index. Leave unfinished checks pending instead of starting or replaying computations or waiting for additional reviews.
 
 At the end of the grace period, request `turn/interrupt` for the active turn. Give the server a bounded interval to report the final status and flush logs, then stop the app-server process group if it is still running. Record timeouts and cancellations separately from a normal turn completion.
 
@@ -283,6 +283,7 @@ In the interactive Codex CLI, prepend `/goal ` to the objective. In Gacha, send 
 Run ID: {{runId}}
 Mode: {{mode}}
 Wrap-up begins: {{wrapUpAt}}
+Finish by: {{finishAt}}
 Run summary: runs/{{runId}}/SUMMARY.md
 
 Follow the research instructions in AGENTS.md. Start work now from state.json.

@@ -54,6 +54,7 @@ establish an improvement.
 | erdos-1159-r03 | Revision 3; same copied checkpoint, new thread | 2026-11-14T03-28-53-768Z-f1d51e24 | quota; RESEARCH; 529.8s; summary saved |
 | erdos-1159-r04 | Revision 3; fresh replication | 2026-11-14T03-39-45-185Z-19568ebd | timeout; RESEARCH; 630.7s; summary saved |
 | stick-allocation-regression-r03 | Revision 3; original stick problem | 2026-11-14T03-39-45-183Z-0f9fc349 | done; DONE; 540.1s; summary saved |
+| erdos-1159-r05 | Revision 4; r04 checkpoint, new thread | 2026-11-14T03-59-01-318Z-5f970137 | timeout; RESEARCH; 630.7s; summary saved early |
 
 ## Revision 1 — literature-informed decisions
 
@@ -213,3 +214,53 @@ Fresh-replication observations:
 
 The fresh runs support the phase distinction for these cases. They do not
 establish a research-performance improvement or guarantee future compliance.
+
+
+## Revision 4 — finish with a durable checkpoint
+
+The fresh revision-3 run received the wrap-up steer but started expensive
+replays before saving its final checkpoint. Add the target finish timestamp
+to both launch and wrap-up input. At wrap-up, save the checkpoint and summary
+from existing evidence first, then refresh the index. Unfinished checks remain
+pending; do not start/replay computation or wait for additional reviews.
+The research quota, grace period, tool trust, and mathematical verification
+requirements are unchanged.
+
+The integration test now checks that the actual app-server launch input equals
+the saved prompt and that launch and steer receive the same finish deadline,
+derived from the run's start and quota.
+
+A new-context continuation from r04's saved files will test whether the partial
+research remains usable and whether the revised wrap-up saves and finishes in
+time. It receives copied mathematical files without observer modifications.
+This is a recovery and wrap-up test, not a controlled research-quality comparison.
+
+
+Observed results:
+
+- The run resumed the saved two-insertion question, generalized the tangent
+  reduction into a sound propagation rule, and ruled out bounded preserving
+  trades on the saved seeds. It then relaxed preservation and found a
+  net-coverage-improving swap. One-for-one descent still reached a local trap.
+  This is method-level progress, not a solution of the original conjecture.
+- A primary-source secant theorem ruled out a tempting direct polynomial
+  argument before the agent attempted it. Tool discovery exposed carrier and
+  request-size limits, and the agent chose reduced instances or exact
+  enumeration instead of submitting oversized work.
+- The early-save change worked: wrap-up began at 04:07:31 UTC, and both the
+  summary and checkpoint were saved at 04:08:02. No new computation or replay
+  was launched after the steer.
+- The run nevertheless timed out. At 04:09:25 the agent submitted a large
+  documentation patch, including fresh partial-verification and conclusion
+  reports and a PLAN.md replacement. The patch used delete/add operations
+  for the same file, which apply_patch rejected. It did not recover before
+  the 04:09:31 hard stop. PLAN.md remained stale, while state.json and the
+  summary preserved the new findings and actual next step.
+- The 4 integration tests pass, but they establish protocol delivery and
+  lifecycle behavior, not reliable model compliance. This live trial is
+  explicitly a timeout, not a successful wrap-up.
+
+Next change: make unresolved-run wrap-up a compact handoff rather than a
+second report-writing phase. Keep the summary as the central handoff, make
+only essential continuation updates, and leave unfinished checks or cleanup
+pending. Do not add tool-specific patch instructions to the research guide.

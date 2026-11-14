@@ -58,6 +58,9 @@ function complete(status) {
 rl.on('line', line => {
   const { id, method, params } = JSON.parse(line);
   if (id === undefined) return;
+  if (method === 'turn/start' || method === 'turn/steer') {
+    fs.appendFileSync('test-inputs.jsonl', JSON.stringify({ method, text: params.input[0].text }) + '\\n');
+  }
   const reply = result => console.log(JSON.stringify({ id, result }));
   if (method === 'initialize') reply({});
   else if (method === 'config/read') reply({ config: { model: 'mock' } });
@@ -172,6 +175,13 @@ test('wrap-up saves a resumable checkpoint and excludes concurrent writers', asy
   assert.equal(record.endingCheckpoint.phase, 'RESEARCH');
   assert.equal(record.goalStatus, 'paused');
   assert.ok(record.summary && events.some(event => event.type === 'run.wrap_up'));
+  const inputs = (await readFile(join(dir, 'slow/test-inputs.jsonl'), 'utf8')).trim().split('\n').map(JSON.parse);
+  assert.deepEqual(inputs.map(input => input.method), ['turn/start', 'turn/steer']);
+  assert.equal(inputs[0].text, await readFile(join(dir, 'slow/runs', record.id, 'prompt.md'), 'utf8'));
+  const finishAt = new Date(Date.parse(record.startedAt) + 2000).toISOString();
+  for (const input of inputs) {
+    assert.equal(input.text.match(/^Finish by: (.+)$/m)?.[1], finishAt);
+  }
 
   const runs = join(dir, 'slow/runs');
   await writeFile(join(runs, record.id, 'run.json'), JSON.stringify({ ...record, objective: 'Previous objective' }));
