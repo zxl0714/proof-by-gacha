@@ -31,6 +31,10 @@ Prefer `math.run` when the operation fits the problem, guarantees, and scale.
 If a tool hits a resource limit, repeatedly returns `UNKNOWN`, or lacks a
 needed capability, look for an alternative and test it on a small case.
 
+By default, trust results from established tools within their documented
+guarantees. Check a result independently when there is a concrete reason
+to doubt it or when `PROBLEM.md` requires it.
+
 Save the inputs, tool version, commands, and results needed to reproduce
 computations. Record timeouts and exhausted budgets as `UNKNOWN`.
 
