@@ -103,6 +103,8 @@ establish an improvement.
 | erdos-1159-r43-fresh (r45 recovery) | Revision14 unchanged; resumed compatibility experiment; 15m | 2026-11-14T15-42-40-388Z-8cfdb744 | quota; old infinite family excluded, targeted repair passes moments and q47 rational flags; stronger pair system UNKNOWN; two transient missing evidence references |
 | erdos-1159-r43-fresh (continue r46) | Revision15 saved evidence references; 10m | 2026-11-14T16-02-03-050Z-209f53a2 | quota; known Johnson bound rejects W20/W30, W40 has an exact rational pair witness; all-cap lattice formulation; no missing references in seven observed checkpoints |
 | erdos-1159-r43-fresh (continue r47) | Revision15 unchanged; integer compatibility and route value; 10m | 2026-11-14T16-14-43-122Z-bb34aabb | quota; exact signed integer span passes, nonnegative trial UNKNOWN, partial integer branch survives; signed cap-four bridge to cap seven; complete references but late checkpoint refresh |
+| erdos-1159-r43-fresh (controlled interruption r48) | Revision15 unchanged; planned ordinary SIGINT after about 4m | 2026-11-14T16-30-01-340Z-b36cac36 | cancelled intentionally; exit130, lock released, 31 newer artifacts retained, central next action stale and no current summary |
+| erdos-1159-r43-fresh (r48 recovery) | Revision15 unchanged; ordinary continue after verified SIGINT exit; 10m | 2026-11-14T16-35-36-494Z-0ada9fab | quota; recovered 31 unchanged artifacts without replay, stale plan corrected; old branch rejected and replacement refined; conditional signed-weight progress, original unresolved |
 
 ## Revision 1 — literature-informed decisions
 
@@ -4169,3 +4171,135 @@ work is needlessly repeated. Do not alter research files or metadata to
 manufacture the condition, and do not treat an observation timeout as a
 reason to stop or restart. This remains a prospective experiment; r47 itself
 was not interrupted.
+
+## Revision 15 continuation — controlled cancellation and recovery
+
+The preceding goal turn made progress and its observations were pushed in
+c40decd. Reinspection finds a clean checkout, matching revision15 guides,
+unchanged statement/settings, a terminal quota-ended run, and no process
+in the research item. Preserve all research-owned files and guidance.
+
+Save seven-file and 204-artifact inventories outside the item in
+_review/erdos-1159-r43-fresh/interrupt-r48. Predeclare an ordinary SIGINT
+after about 240 seconds, provided this observer's process is still live
+and its run remains active. Capture the actual Gacha PID and Linux process
+start time so interruption cannot target an unrelated or reused PID.
+The first observer-launcher attempt lacks gacha on its non-login PATH and
+fails before a Gacha process exists. Retry through the same login shell
+environment as earlier runs; the actual run starts at 16:30:01.340.
+
+Observe public execution and saved artifacts without telling the research
+agent the planned interruption or supplying mathematical hints. Snapshot
+the active checkpoint and changed artifacts before signaling, wait for
+authoritative cancellation and process exit, then continue normally with
+a new external snapshot and run record. Do not start another run merely
+because an observer times out. Test whether newer saved evidence is
+recovered, stale next actions are reconciled, and expensive completed
+work is avoided. Default continuation may retain the prior thread; this
+is a practical cancellation/continue experiment, not a file-only blind
+recovery test. Product tests are not repeated for this observation-only
+experiment.
+
+The validated observer-owned process receives SIGINT at 16:34:10.870807,
+about 242 seconds of process time after launch. Its PID, kernel start time,
+working directory, command and active run ID all match immediately before
+the signal. The pre-signal snapshot captures 31 new or changed artifacts,
+with no read errors. These include a successful fixed-type-three rational
+completion and its Jacobian result, integer/modular follow-up data, and
+actual-plane signed-weight trials. The central checkpoint still records
+the rational completion as the next action.
+
+The process exits normally for cancellation with code130. Gacha records
+endReason cancelled at 16:34:11.446, elapsedMs 242976, child Goal paused,
+no error and no current-run summary. No item process or owned launcher
+child remains; an actual nonblocking flock check confirms the lock is free.
+All 31 captured artifacts remain byte-identical after exit. Inputs and all
+four automatic before-run copies are intact. Save cancellation evidence
+without fabricating a summary or changing the preserved research state.
+
+Take a new seven-file and artifact inventory in interrupt-r48-recovery,
+then invoke normal gacha run at 16:35:36.494 with a ten-minute quota and
+unchanged model, effort and guide. Restart the read-only checkpoint observer.
+No prompt amendment identifies the successful computation or tells the
+agent what to recover. This restart follows verified terminal metadata,
+process exit and lock release, not an observation timeout.
+
+Observed recovery:
+
+- The same parent thread resumes. Its first public action inspects the
+  checkpoint and newer experiment directories before starting another
+  check. New workers read the saved completion and timeout outputs.
+  At 16:37:18.725485, about 102 seconds after launch, the central next action
+  is corrected. The researcher writes a retrospective interrupted-run
+  handoff explicitly labeled as inspected on resume, and supplies the
+  previously missing experiment manifests. The cancelled run's Gacha
+  metadata remains unchanged; its summary did not exist at cancellation.
+- All 31 pre-interruption artifacts retain both their bytes and modification
+  times through the completed recovery. Public-call inspection finds reads
+  of the prior solving scripts and reproduction commands written into a
+  manifest, not execution or import of the completed fixed-branch solve.
+  The prior rational completion, five modular checks and bounded UNKNOWN
+  results are reused. This supports practical cancellation/continue recovery
+  with retained parent context, not file-only recovery after context loss.
+- The public-trace observer is updated to scan session directories across
+  midnight, including the new descendant sessions as well as the original
+  parent. The complete audit includes four active research threads. Hidden
+  reasoning and collaboration-message bodies remain excluded.
+- New work closes a further signed integer-span gap for the fixed branch:
+  Jacobian HNF on 41 selected remaining columns takes 20 ms and supplies
+  an exact target witness in all 65 reduced equations. This still does
+  not give nonnegative line multiplicities or actual incidence.
+- The next point-side refinement rejects that same four-composition
+  histogram. Its 84 possible point types give integer and real UNSAT under
+  the necessary flag, joining-capacity and refined-line-pair equations.
+  Jacobian takes 314 ms and 269 ms. An actual q5 export check precedes the
+  query. A simpler dual Johnson argument then exposes the obstruction:
+  thirteen selected refined lines would require 94 pair intersections,
+  but have only 78 line pairs. A separate exact separator is also saved.
+  None of these claims excludes other histograms or the original problem.
+- The researcher persists PLAN at 16:40:35 and selects an alternative
+  32/14 histogram already present in the earlier rational witness. Its
+  20-type integer point-side refinement is SAT in 233 ms and is checked
+  against the claimed equations. RESEARCH is saved before executing the
+  selected next check. The next handoff asks for per-line compositions
+  relative to the refined point classes across all five line classes,
+  retaining the distinction between one branch, global histograms and
+  actual incidence. It does not replay the previous global completion.
+- A saved structural proof shows that signed-cap-four energy 6q, for
+  q>=5, forces divisibility of q by three and line values only 1 or 4.
+  Thus other orders have energy at most 4q and positive-support cap at
+  most six. Further order-13 restrictions are recorded at conditional
+  scope. Universal existence of signed cap-four weights remains unproved;
+  no original bound or new construction is established. The observer
+  checks the all-order pencil/counting argument and its quantifiers.
+- Actual-plane order-13 work changes formulations rather than replaying
+  exhausted queries. Bounded normalized PB trials and seeded heuristics
+  remain UNKNOWN. The five- and sixty-second heuristic outputs both have
+  best penalty six, and their saved candidates fail blocking. They are
+  explicitly rejected as solutions. The next plan requires a structural
+  or formulation advance before more of the same search budget.
+- Six checkpoint versions are observed at one-second granularity, with
+  the phase sequence RESEARCH, RESEARCH, PLAN, RESEARCH, RESEARCH,
+  RESEARCH. None references a missing file, and there is no observer
+  read error. Sampling starts about 31 seconds after launch; it does not
+  prove subsecond atomicity or recovery at every possible interruption.
+- Gacha sends wrap-up at 16:44:23.453. Only the compact final handoff is
+  saved afterward. The run ends at 16:44:58.187, endReason quota,
+  elapsedMs 543367, in RESEARCH. No complete candidate enters VERIFY or
+  DONE and no item process remains.
+- PROBLEM, AGENTS and item settings are unchanged. All four automatic
+  before-run copies match the external snapshot. INDEX/PLAN/SUMMARY have
+  64/4/10 direct local links; all 264 recursively reached paths and 53
+  checkpoint paths exist. No old index target is removed. All 48 JSON
+  artifacts in the five relevant experiment groups parse normally. Public
+  traces, pre-signal copies, process identity, cancellation outcome,
+  recovery snapshots and final observations remain outside the item.
+
+The controlled experiment supports the existing ordinary interruption
+workflow: new files survived, the stale next action was reconciled, and
+research continued to a changed route without replaying completed solves.
+Retain revision15. Do not add checkpoint-frequency instructions based on
+one late but successfully recovered handoff. This result has the explicit
+same-thread limitation above. The next research continuation should test
+whether the surviving refined branch produces another useful decision,
+while preserving bounded trials and the separate original-problem gap.
