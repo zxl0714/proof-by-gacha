@@ -88,6 +88,7 @@ establish an improvement.
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; finite-diagnostic checkpoint; 15m | 2026-11-14T11-37-07-679Z-0fa6eda4 | quota; 792.3s; autonomous export repair, bounded solver campaign stopped, all-order formal coding barrier; RESEARCH/PLAN/RESEARCH |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; geometric-compatibility checkpoint; 20m | 2026-11-14T11-54-10-198Z-f7540afc | quota; 1079.7s; scoped structural results and finite repair traps; RESEARCH to PLAN, no full candidate |
 | erdos-1159-r30-fresh (continue) | Revision12 unchanged; return to a general route; 15m | 2026-11-14T12-17-26-391Z-f45b1ae0 | quota; 826.7s; finite traps generalized to every fixed even cap and deletion budget; PLAN/RESEARCH/PLAN, original problem open |
+| erdos-1159-r30-fresh (continue) | Revision12 unchanged; value of the next route; 15m | 2026-11-14T12-36-28-867Z-d45106c9 | quota; 785.7s; odd-cap obstruction closed, coexistence with known blockers motivates route change; PLAN/RESEARCH/PLAN, original problem open |
 
 ## Revision 1 — literature-informed decisions
 
@@ -2707,3 +2708,102 @@ original problem; closing the odd-cap variant is not automatically the best
 next investment. No product or guide change is justified by this observation,
 so only the experimental log changes and the existing product tests are not
 repeated.
+
+## Revision 12 continued — choosing what to do with a method obstruction
+
+The previous goal turn made progress: r33 completes a quantified obstruction
+to all-starting-sets bounded-deletion repair at even caps, checks its scope and
+handoff, and pushes the observation in 25420bc. The checkout is clean and that
+run is terminal. Its PLAN offers either the unproved odd-cap mechanism or a
+positive route with a justified restriction on starting states. Neither has
+started. Preserve those research-owned choices and the unchanged guide.
+
+Run another fifteen-minute continuation, with seven before-run files saved
+outside the item in _review/erdos-1159-r30-fresh/strategy-value-r34. Assess why
+the selected work is worth doing for the original problem, how related
+literature changes that assessment, and whether a failed sufficient hypothesis
+is distinguished from failure of the desired conclusion. The observer may
+independently inspect related finite-geometry/coding literature as a coverage
+control, without steering the researcher or asserting novelty from a search.
+
+Observed outcome:
+
+- The researcher chooses a concrete cubic/conic compatibility check rather
+  than assuming generic monodromy. It saves RESEARCH in a separate call at
+  12:38:50.363 UTC, before its first delegation at 12:39:03.292. Alongside
+  the finite check and proof, it commissions an assessment of whether the
+  result is worth pursuing for the original question.
+- The first F5 pencil fails to supply the desired fiber. An exact F13
+  example succeeds: a smooth cubic with j=7 and a smooth dual conic meet
+  in one degree-twelve dual orbit. Saved polynomial, field-tower and actual
+  Frobenius-orbit checks establish the finite compatibility. Jacobian exact
+  factorizations use an inspected contract and a small reducible calibration
+  input. Failure to find a prime-field parameter is not extrapolated to
+  extension fields, and no computation is treated as an original solution.
+- The saved odd-cap argument checks uniform S3 projection monodromy,
+  disjoint branch loci and the arithmetic constant field. A certified
+  twelve-cycle supplies compatible Frobenius cosets along extension degrees
+  congruent to one modulo twelve; no generic S12 hypothesis is substituted.
+  The observer checks the applicable nontrivial-constant-field version in
+  [Kosters, Theorem 2 and Corollary 1](https://hrcak.srce.hr/file/274189).
+  Together with the earlier even-cap argument, the scoped result gives
+  nonblocking seeds resisting every fixed-deletion repair for each fixed
+  cap at least three. It does not exclude other blocking sets or cumulative
+  deletion strategies, and no novelty claim is established.
+- The route-value audit makes that limitation consequential. Known cap-six
+  blockers, as reported in AGY, coexist with the earlier rigid seeds in
+  characteristic five. Also, the unrestricted graph of cap-preserving
+  additions and deletions is connected through the empty set. More local
+  rigidity therefore cannot by itself become an original negative answer.
+  The researcher explicitly ends local-trap classification as its main route.
+- A renewed literature search finds the October 2026 primary paper
+  [Two-coloring the points of a projective plane](https://arxiv.org/html/2610.41357v1).
+  It distinguishes that paper's one-preferred-intersection hypothesis from
+  the two preferred values in its cap-four question. A naive quadratic
+  annihilator loses the needed structure because the Schur square of the
+  incidence code is the whole coordinate space. The saved inverse statement
+  that would connect to AGY and the original quantifiers remains explicitly
+  unproved. The next plan is to inspect the actual stability proof and test
+  a precise two-value formulation retaining the binary preimage; that check
+  has not started, and a cap-four result alone would not settle all caps.
+
+The observer's independent coverage control also finds a classical baseline.
+The introduction of
+[De Clerck, De Winter and Maes](https://cage.ugent.be/geometry/Files/361/J%20Comb%20Theory%20A%202011%20De%20Clerck.pdf)
+records Denniston maximal d-arcs for even q and d dividing q, of size
+q(d-1)+d with line intersections zero or d. For fixed d and q>d, counting
+through an outside point gives q+1-q/d saturated lines and q/d empty lines.
+Thus these classical examples already give a bounded-deletion obstruction
+for powers-of-two caps in characteristic two. This does not replace the
+odd-characteristic result for arbitrary fixed caps, such as six. The saved
+research notes do not explicitly compare this special case. This is a
+bounded literature-coverage observation, not evidence that all work was
+redundant or that the broader result is new. Nothing is supplied to the
+researcher and no mathematical files are edited.
+
+Final handoff and evaluation:
+
+- The researcher returns to PLAN in a separate call at 12:49:09.548. It
+  saves the reason for abandoning the main route, its evidence and a new
+  concrete next check. No original candidate is promoted to VERIFY or DONE.
+- Wrap-up arrives at 12:49:27.667. An automatic continuation checks the
+  cutoff and only refreshes the checkpoint and summary; no new computation
+  or review is launched. The run ends at 12:49:48.890, endReason quota,
+  elapsedMs 785714, on the same thread, with no pending process or review.
+- PROBLEM, AGENTS and item settings are unchanged; all four automatic
+  before-run copies match the observer snapshots. INDEX/PLAN/SUMMARY have
+  34/1/9 local links; all 118 recursively reached artifact paths and eight
+  checkpoint paths exist, and no old index target is removed. Public trace,
+  artifact audit, literature control and final observation remain outside
+  the research item.
+
+Keep revision12 unchanged. The useful behavior is not merely completing an
+intermediate theorem: the researcher checks what it implies for the original
+goal, recognizes coexistence with known solutions, and changes its plan.
+The coverage control shows that broader terminology can still reveal useful
+classical comparisons. Neither observation warrants a case-specific rule or
+establishes generally improved research performance. The next continuation
+should be assessed by whether the proposed source-proof inspection yields a
+useful original-goal lemma or an early rejection, rather than another long
+sequence of intermediate targets. This is a log-only update; existing passing
+product checks are not repeated without a code or guide change.
